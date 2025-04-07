@@ -10,6 +10,7 @@ import WhyUs from "./ui/sections/WhyUs";
 import Hero from "./ui/sections/Hero";
 import AboutUs from "./ui/sections/AboutUs";
 import Footer from "./ui/layout/Footer";
+import FaqsHome from "./data/faqsHome";
 
 export default function Home() {
   return (
@@ -22,7 +23,9 @@ export default function Home() {
       <Technology />
       <WhyUs />
       <Referring />
-      <Faqs />
+      <Faqs title="Frequently Asked Questions"
+      description="Find answers to common questions about endodontic treatments and our practice."
+      items={FaqsHome} />
       <Testimonials />
       <Contact />
       <Maps />

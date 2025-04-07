@@ -1,9 +1,90 @@
-import React from 'react'
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { testimonials } from "@/app/data/testimonials";
+
 
 const Testimonials = () => {
-  return (
-    <div>Testimonials</div>
-  )
-}
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const intervalRef = useRef(null);
 
-export default Testimonials
+  const startAutoSlide = () => {
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+  };
+
+  const stopAutoSlide = () => {
+    clearInterval(intervalRef.current);
+  };
+
+  useEffect(() => {
+    startAutoSlide();
+    return () => stopAutoSlide();
+  }, []);
+
+  return (
+    <section className='bg-white'>
+      <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
+        <header className='pb-8'>
+        <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>What Our Patients and Referring Doctors Say</h2>
+      </header>
+
+        <div
+          className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 border-2"
+          onMouseEnter={stopAutoSlide}
+          onMouseLeave={startAutoSlide}
+        >
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className={`flex flex-col gap-4 rounded-lg border border-yellow-500 bg-white p-6 shadow-lg transition-opacity duration-500 `}
+            >
+              <div className="flex items-center gap-4 border-2 border-red-600">
+                {testimonial.image ? (
+                  <div className="relative h-16 w-16 overflow-hidden rounded-full">
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="h-16 w-16 rounded-full bg-[#3c8dbc]/20 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-[#3c8dbc]">
+                      {testimonial.initials}
+                    </span>
+                  </div>
+                )}
+                <div>
+                  <h3 className="text-lg font-semibold text-[#0a2a54]">{testimonial.name}</h3>
+                  <p className="text-sm text-[#5a6065]">{testimonial.role}</p>
+                </div>
+              </div>
+              <p className="italic text-[#5a6065]">"{testimonial.text}"</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-8 text-center">
+      
+          <p className="text-lg text-[#5a6065] mb-4">Join our +220 reviews on Google!</p>
+          <button className="rounded-md px-6 py-2 text-lg font-inter text-white border-2 bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] ease-in duration-300">
+            <Link
+              href="https://g.page/r/southside-endodontics/review"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Leave a Review
+            </Link>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Testimonials;
