@@ -1,5 +1,5 @@
 import Image from "next/image"
-import drHorn from "@/public/DrHorn.jpeg"
+import drHorn from "@/public/DrHorn.webp"
 import check from "@/public/icons/check.svg"
 
 const WhyUs = () => {

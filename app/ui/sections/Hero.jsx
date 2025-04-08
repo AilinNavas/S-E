@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import heroPC from '@/public/heroPC.png'
+import heroPC from '@/public/heroPC.webp'
 
 
 const Hero = () => {

@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { testimonials } from "@/app/data/testimonials";
+import star from '@/public/icons/star.svg';
+import google from '@/public/icons/google.svg';
+
 
 
 const Testimonials = () => {
@@ -33,16 +36,16 @@ const Testimonials = () => {
       </header>
 
         <div
-          className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 border-2"
+          className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
           onMouseEnter={stopAutoSlide}
           onMouseLeave={startAutoSlide}
         >
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className={`flex flex-col gap-4 rounded-lg border border-yellow-500 bg-white p-6 shadow-lg transition-opacity duration-500 `}
+              className={`flex flex-col gap-4 rounded-lg border border-gray-300 bg-white p-6 shadow-lg transition-opacity duration-500 `}
             >
-              <div className="flex items-center gap-4 border-2 border-red-600">
+              <div className="flex items-center gap-4 ">
                 {testimonial.image ? (
                   <div className="relative h-16 w-16 overflow-hidden rounded-full">
                     <Image
@@ -63,8 +66,19 @@ const Testimonials = () => {
                   <h3 className="text-lg font-semibold text-[#0a2a54]">{testimonial.name}</h3>
                   <p className="text-sm text-[#5a6065]">{testimonial.role}</p>
                 </div>
+            
               </div>
+              <p className="flex items-center h-6">
+                  <Image src={star} alt="star" className="w-6"/>
+                  <Image src={star} alt="star" className="w-6"/>
+                  <Image src={star} alt="star" className="w-6"/>  
+                  <Image src={star} alt="star" className="w-6"/>
+                  <Image src={star} alt="star" className="w-6"/>
+                </p>
               <p className="italic text-[#5a6065]">"{testimonial.text}"</p>
+              <p className="text-left">
+                <Image src={google} alt="star" className="w-8 inline-block mr-2" />
+              </p>
             </div>
           ))}
         </div>
