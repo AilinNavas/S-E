@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import lock from '@/public/icons/lock.svg'
 import world from '@/public/icons/world.svg'
@@ -24,6 +25,7 @@ const Technology = () => {
 
 
   return (
+
     <section className='bg-gray-200/40'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center'>
         <header className='pb-8'>

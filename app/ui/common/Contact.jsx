@@ -1,21 +1,11 @@
 import Image from "next/image"
-import office from "@/public/office.webp"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import Maps from "./Maps"
 
 const Contact = () => {
   return (
-    <section className='bg-white'>
-      <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
-        <header className='pb-8'>
-          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>Find Us</h2>
-        </header>
-        <div className="flex flex-col lg:flex-row">
-          <div className='lg:w-1/2 p-2 '>
-            <Image src={office} alt="office-manager" className="rounded-md" />
-
-          </div>
-          <div className='lg:w-1/2 lg:ml-8'>
-
+  
+          <div className='w-full'>
             {/* Contact Information */}
             <div className="rounded-lg bg-white p-6 shadow-sm font-inter">
               <h3 className="mb-4 text-xl font-bold text-[#0a2a54] uppercase">Contact Information</h3>
@@ -24,7 +14,8 @@ const Contact = () => {
                   <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-[#3c8dbc]" />
                   <div>
                     <h4 className="font-medium text-[#0a2a54]">Address</h4>
-                    <p className="text-[#5a6065]">123 Main Street, Fort Worth, TX 76104</p>
+                    <p className="text-[#5a6065]">1307 8th Avenue, Suite 303</p>
+                    <p className="text-[#5a6065]">Fort Worth, Texas 76104</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -50,16 +41,11 @@ const Contact = () => {
                     <p className="text-[#5a6065]">Saturday - Sunday: Closed</p>
                   </div>
                 </div>
+                <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book an Appoinment</button>
               </div>
             </div>
-
-
           </div>
-
-
-        </div>
-      </div>
-    </section>
+    
   )
 }
 

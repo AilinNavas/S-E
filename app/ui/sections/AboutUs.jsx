@@ -5,7 +5,7 @@ import family from '@/public/familyHorn.webp'
 const AboutUs = () => {
   return (
     <section className='bg-white'>
-      <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
+      <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
         <header className='pb-8'>
           <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>A Family-Owned Practice You Can Trust</h2>
         </header>
