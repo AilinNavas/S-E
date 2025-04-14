@@ -3,7 +3,7 @@ import office from "@/public/office.webp"
 
 const FormContact = () => {
     return (
-        <section className='bg-[#0a2a54]/5'>
+        <section className='bg-[#3c8dbc]/40'>
             <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
 
 

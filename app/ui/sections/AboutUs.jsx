@@ -13,8 +13,8 @@ const AboutUs = () => {
           <p className='text-secondary font-inter md:text-xl text-center'>
             At Southside Endodontics, Dr. Neal Horn and Leslie are committed to providing the highest quality of care to our patients, treating them like family. We believe in building lasting relationships through compassionate care and clear communication.
           </p>
-          <Image src={family} alt='family-Horn' className='rounded-md mx-auto' />
-          <button className="rounded-md px-6 py-2 text-lg font-inter text-white border-2 bg-primary  hover:bg-transparent hover:text-primary ease-in duration-300">Meet Dr.Horn</button>
+          <Image src={family} alt='family-Horn' className='rounded-md mx-auto ' />
+          <button className="rounded-md px-6 py-2 text-lg font-inter text-white border-2 border-[#0a2a54] bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] ease-in duration-300">Meet Dr. Horn</button>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 // data/testimonials.js
 
-export const testimonials = [
+export const testimonialsForServices = [
     {
       name: "Sarah Johnson",
       role: "Patient",
@@ -45,3 +45,26 @@ export const testimonials = [
     },
   ];
   
+  export const testimonialsMain = [
+    {
+      name: "Sarah Johnson",
+      role: "Patient",
+      image: "/sarah-johnson.png",
+      text:
+        "Dr. Horn and his team made my root canal procedure so much easier than I expected. They were kind, professional, and made sure I was comfortable throughout the entire process.",
+    },
+    {
+      name: "Michael Rodriguez",
+      role: "Patient",
+      image: "/michael-rodriguez.png",
+      text:
+        "I was nervous about my procedure, but the team at Southside Endodontics put me at ease. Their technology made everything quick and efficient, and the follow-up care was excellent.",
+    },
+    {
+      name: "Dr. Emily Chen",
+      role: "Fort Worth Dental Care",
+      image: "/dr-emily-chen.png",
+      text:
+        "I've been referring my patients to Southside Endodontics for years. Their communication is excellent, and my patients always return with positive feedback about their experience.",
+    },
+  ]

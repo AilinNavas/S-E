@@ -13,6 +13,8 @@ import Footer from "./ui/layout/Footer";
 import FaqsHome from "./data/faqsHome";
 import ParallaxSection from "./ui/common/ParallaxSection";
 import FormContact from "./ui/common/FormContact";
+import { testimonialsMain, testimonialsForServices } from "./data/testimonials";
+
 export default function Home() {
   return (
     <>
@@ -20,11 +22,17 @@ export default function Home() {
       <NavbarPC />
       <Hero />
       <AboutUs />
-      <Services />
-      <Technology />
       <WhyUs />
+      <Testimonials data={testimonialsMain}
+        title="What Our Patients and Referring Doctors Say"
+        showCTA={false}/>
+      <Services />
       <Referring />
-      <Testimonials />
+      <Technology />
+     
+      <Testimonials  data={testimonialsForServices}
+        title="What People Are Saying About Our Special Treatment"
+        showCTA={true}/>
       <ParallaxSection />
       <InfoContact />
       <FormContact />

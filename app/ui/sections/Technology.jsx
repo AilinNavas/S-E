@@ -26,7 +26,7 @@ const Technology = () => {
 
   return (
 
-    <section className='bg-gray-200/40'>
+    <section className='bg-white'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center'>
         <header className='pb-8'>
           <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>State-of-the-Art Care with TDO Software</h2>

@@ -81,7 +81,7 @@ const Services = () => {
                 onClick={() => setSelectedTab(service)}
                 className={`px-4 py-2 text-lg font-medium rounded 
               ${selectedTab.id === service.id
-                    ? "bg-[#3c8dbc] text-white"
+                    ? "bg-[#3c8dbc]/40  text-[#5a6065]"
                     : "bg-gray-200 text-[#5a6065] hover:bg-[#3c8dbc]/40"
                   }
             `}
