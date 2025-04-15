@@ -38,7 +38,7 @@ const ParallaxSection = () => {
         <p className="text-lg md:text-xl mb-6 max-w-xl">
         Schedule your consultation and transform your dental health.
         </p>
-        <button className="bg-[#3c8dbc] border-2 border-[#3c8dbc] hover:bg-[#3c8dbc]/80 text-white px-8 py-3 font-inter font-semibold rounded-md hover:bg-primary/70 ease-in-out duration-300">Book an Appoinment</button>
+        <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book an Appoinment</button>
       </div>
 
 

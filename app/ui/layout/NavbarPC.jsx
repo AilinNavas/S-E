@@ -22,10 +22,10 @@ const NavbarPC = () => {
           </ul>
           <div className="hidden lg:flex ml-12 space-x-2">
             <Link href={'/'}>
-              <button className="bg-[#3c8dbc] border-2 border-[#3c8dbc] hover:bg-[#3c8dbc]/80 text-white px-8 py-3 font-inter font-semibold rounded-md hover:bg-primary/70 ease-in-out duration-300">Book an Appoinment</button>
+            <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book An Appointment</button>
             </Link>
             <Link href={'/'}>
-              <button className="text-[#3c8dbc] border-2  border-[#3c8dbc] px-8 py-3 font-inter font-semibold rounded-md hover:bg-primary/70 ease-in-out duration-300">Refer Now</button>
+              <button className="text-[#3c8dbc] border-2  border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-primary/70 ease-in-out duration-300">Refer Now</button>
             </Link>
           </div>
         </div>

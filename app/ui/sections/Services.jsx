@@ -61,10 +61,10 @@ const Services = () => {
   const [selectedTab, setSelectedTab] = useState(services[0]);
 
   return (
-    <section className='bg-gray-100/50'>
+    <section className='bg-white'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
         <header className='pb-8'>
-          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Our Endodontic Services</h2>
+          <h2 className='bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Our Endodontic Services</h2>
         </header>
         <div className="pb-8">
           <p className='text-[#5a6065] font-inter md:text-xl text-left lg:text-center'>
@@ -101,14 +101,14 @@ const Services = () => {
               transition={{ duration: 0.3 }}
               className="rounded border border-[#3c8dbc] shadow-xl p-8 bg-white"
             >
-              <h2 className="text-2xl text-[#0a2a54] uppercase font-zen font-bold mb-2">{selectedTab.title}</h2>
+              <h2 className="text-2xl bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent uppercase font-zen font-bold mb-2">{selectedTab.title}</h2>
               <p className="mb-4 text-[#5a6065] text-lg ">{selectedTab.description}</p>
               <ul className="md:grid md:grid-cols-2 space-y-1 mb-4">
                 {selectedTab.bullets.map((bullet, index) => (
                   <li className="flex text-[#5a6065]" key={index}><Image className="w-6 mr-2" alt='icon-check' src={check} />{bullet}</li>
                 ))}
               </ul>
-              <button className=" bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-inter font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300 px-4 py-2 rounded-md transition-colors">
+              <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
                 Schedule Treatment
               </button>
             </motion.div>

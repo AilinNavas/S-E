@@ -87,12 +87,12 @@ const Referring = () => {
   ];
 
   return (
-    <section className='bg-gray-200/40'>
+    <section className='bg-[#f7f7f7]'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4'>
 
         {/* Título y texto introductorio */}
         <header className='pb-8'>
-          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
+          <h2 className='bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
             For Referring Doctors
           </h2>
         </header>
@@ -118,8 +118,8 @@ const Referring = () => {
           "
         >
           {/* Celda 1 - Tarjeta con Refer[0] */}
-          <div className="bg-white flex flex-col p-6 rounded-lg items-center justify-center">
-            <div className='rounded-full w-20 h-20 bg-[#3c8dbc]/10 flex items-center justify-center mb-4'>
+          <div className="bg-white flex flex-col p-6 rounded-lg items-center justify-center transition-all ease-linear duration-300 hover:shadow-[0px_2px_10px_0px_rgba(60,_141,_188,_0.5)]">
+            <div className='rounded-full  w-20 h-20 bg-[#3c8dbc]/10 flex items-center justify-center mb-4'>
               <Image src={Refer[0].icon} alt='icon' className='h-12 w-12' />
             </div>
             <h3 className="text-xl text-center lg:text-2xl text-[#0a2a54] font-inter mb-2">
@@ -135,7 +135,7 @@ const Referring = () => {
             <Image src={one} alt="image-1" className="rounded-lg" /></div>
 
           {/* Celda 3 - Tarjeta con Refer[1] */}
-          <div className="bg-white flex flex-col p-6 rounded-lg items-center justify-center">
+          <div className="bg-white flex flex-col p-6 rounded-lg items-center justify-center transition-all ease-linear duration-300 hover:shadow-[0px_2px_10px_0px_rgba(60,_141,_188,_0.5)]">
             <div className='rounded-full w-20 h-20 bg-[#3c8dbc]/10 flex items-center justify-center mb-4'>
               <Image src={Refer[1].icon} alt='icon' className='h-12 w-12' />
             </div>
@@ -152,7 +152,7 @@ const Referring = () => {
             <Image src={two} alt="image-2" className="rounded-lg" /></div>
 
           {/* Celda 5 - Tarjeta con Refer[2] */}
-          <div className="bg-white flex flex-col p-6 rounded-lg items-center justify-center">
+          <div className="bg-white flex flex-col p-6 rounded-lg items-center justify-center transition-all ease-linear duration-300 hover:shadow-[0px_2px_10px_0px_rgba(60,_141,_188,_0.5)]">
             <div className='rounded-full w-20 h-20 bg-[#3c8dbc]/10 flex items-center justify-center mb-4'>
               <Image src={Refer[2].icon} alt='icon' className='h-12 w-12' />
             </div>

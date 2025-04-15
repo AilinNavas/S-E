@@ -4,10 +4,10 @@ import check from "@/public/icons/check.svg"
 
 const WhyUs = () => {
     return (
-        <section className='bg-white'>
+        <section className='bg-[#f7f7f7]'>
             <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
                 <header className='pb-8'>
-                    <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>
+                    <h2 className='bg-gradient-to-b from-blue-950  to-blue-900 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>
                 </header>
 
                 <div className="flex flex-col-reverse items-center space-y-8 lg:flex-row">
@@ -21,28 +21,28 @@ const WhyUs = () => {
                             <li className="flex items-start gap-3 font-inter">
                                 <Image alt="icon-check" src={check} className="mt-1 h-6 w-6 flex-shrink-0 text-brand-accent" />
                                 <div>
-                                    <h3 className="text-lg font-semibold text-[#0a2a54]">Fast, Efficient Appointments</h3>
+                                    <h3 className="text-lg font-semibold bg-gradient-to-b text-[#0a2a54]">Fast, Efficient Appointments</h3>
                                     <p className="text-[#5a6065]">With TDO software, we reduce waiting times and paperwork.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3 font-inter">
                                 <Image alt="icon-check" src={check} className="mt-1 h-6 w-6 flex-shrink-0 text-accent" />
                                 <div>
-                                    <h3 className="text-lg font-semibold text-[#0a2a54]">Compassionate Care</h3>
+                                    <h3 className="text-lg font-semibold bg-gradient-to-b text-[#0a2a54]">Compassionate Care</h3>
                                     <p className="text-[#5a6065]">Our team treats every patient like family.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3 font-inter">
                                 <Image alt="icon-check" src={check} className="mt-1 h-6 w-6 flex-shrink-0 text-accent" />
                                 <div>
-                                    <h3 className="text-lg font-semibold text-[#0a2a54]">Affordable Rates</h3>
+                                    <h3 className="text-lg font-semibold bg-gradient-to-b text-[#0a2a54]">Affordable Rates</h3>
                                     <p className="text-[#5a6065]">High-quality care that won't break the bank.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3 font-inter">
                                 <Image alt="icon-check" src={check} className="mt-1 h-6 w-6 flex-shrink-0 text-accent" />
                                 <div>
-                                    <h3 className="text-lg font-semibold text-[#0a2a54]">Seamless Technology</h3>
+                                    <h3 className="text-lg font-semibold bg-gradient-to-b text-[#0a2a54]">Seamless Technology</h3>
                                     <p className="text-[#5a6065]">Everything is streamlined for your convenience.</p>
                                 </div>
                             </li>
