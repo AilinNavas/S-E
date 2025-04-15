@@ -9,7 +9,7 @@ const InfoContact = () => {
                     <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl '>Find Us</h2>
                 </header>
 
-                <div className="lg:w-7xl flex flex-col lg:flex-row lg:space-x-16 ">
+                <div className="md:w-3xl md:p-4 ld:p-0 lg:w-7xl flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:space-x-16 ">
 
                     <div className="lg:w-1/2">
                         <Maps />

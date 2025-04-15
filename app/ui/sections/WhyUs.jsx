@@ -10,7 +10,7 @@ const WhyUs = () => {
                     <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>
                 </header>
 
-                <div className="flex flex-col items-center space-y-8 lg:flex-row">
+                <div className="flex flex-col-reverse items-center space-y-8 lg:flex-row">
 
                     <div className="lg:w-1/2 space-y-8">
                         <p className='text-[#5a6065] font-inter md:text-xl text-left'>
@@ -51,7 +51,7 @@ const WhyUs = () => {
 
                     </div>
 
-                    <div className="lg:w-1/2 p-8">
+                    <div className="pb-8 lg:pb-0 lg:w-1/2 lg:p-8">
                         <Image src={drHorn} alt="dr-horn" className="rounded-md" />
                     </div>
 

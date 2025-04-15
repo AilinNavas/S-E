@@ -9,13 +9,14 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#0a2a54] pt-12 text-white ">
       <div className="max-w-7xl mx-auto px-4 md:px-6 ">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className=''>
             <h3 className="mb-4 text-xl font-bold font-zen">SOUTHSIDE ENDODONTICS</h3>
             <p className="mb-2 flex items-center gap-2 "> <MapPin className="h-5 w-5 flex-shrink-0 text-white" />1307 8th Avenue, Suite 303</p>
             <p className="mb-2">Fort Worth, TX 76104</p>
-            <p className="mb-2 flex items-center gap-2"><Phone className="h-5 w-5 flex-shrink-0 text-white" /> (817) 555-1234</p>
-            <p className='flex items-center gap-2'>  <Mail className="h-5 w-5 flex-shrink-0 text-white" />info@southsideendo.com</p>
+            <p className="mb-2 flex items-center gap-2"><Phone className="h-5 w-5 flex-shrink-0 text-white" /> 817-386-9007</p>
+            <p className='flex items-center gap-2'>  <Mail className="h-5 w-5 flex-shrink-0 text-white" />office@southsideendodontics.com
+            </p>
 
 
 

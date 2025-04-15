@@ -22,23 +22,23 @@ const Contact = () => {
                   <Phone className="mt-1 h-5 w-5 flex-shrink-0 text-[#3c8dbc]" />
                   <div>
                     <h4 className="font-medium text-[#0a2a54]">Phone</h4>
-                    <p className="text-[#5a6065]">(817) 555-1234</p>
+                    <p className="text-[#5a6065]">817-386-9007</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail className="mt-1 h-5 w-5 flex-shrink-0 text-[#3c8dbc]" />
                   <div>
                     <h4 className="font-medium text-[#0a2a54]">Email</h4>
-                    <p className="text-[#5a6065]">info@southsideendo.com</p>
+                    <p className="text-[#5a6065]">office@southsideendodontics.com
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Clock className="mt-1 h-5 w-5 flex-shrink-0 text-[#3c8dbc]" />
                   <div>
                     <h4 className="font-medium text-[#0a2a54]">Office Hours</h4>
-                    <p className="text-[#5a6065]">Monday - Thursday: 8am - 5pm</p>
-                    <p className="text-[#5a6065]">Friday: 8am - 2pm</p>
-                    <p className="text-[#5a6065]">Saturday - Sunday: Closed</p>
+                    <p className="text-[#5a6065]">Monday - Thursday : 8am - 5pm</p>
+                    <p className="text-[#5a6065]">Friday - Saturday - Sunday : Closed</p>
                   </div>
                 </div>
                 <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book an Appoinment</button>

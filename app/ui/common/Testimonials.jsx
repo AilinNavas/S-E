@@ -144,7 +144,7 @@ const Testimonials = ({ data = [], title, showCTA = true }) => {
         {showCTA && (
           <div className="mt-8 text-center">
             <p className="text-lg text-[#5a6065] mb-4">Join our +220 reviews on Google!</p>
-            <button className="rounded-md px-6 py-2 text-lg font-inter text-white border-2 bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] ease-in duration-300">
+            <button className="rounded-md px-6 py-2 text-lg font-inter text-white border-2 border-[#0a2a54] bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] ease-in duration-300">
               <Link
                 href="https://g.page/r/southside-endodontics/review"
                 target="_blank"

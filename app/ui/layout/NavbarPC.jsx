@@ -4,7 +4,7 @@ import logo from '@/public/logo-svg.svg'
 
 const NavbarPC = () => {
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="hidden lg:block sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="max-w-7xl mx-auto h-30 flex justify-between">
         <div className="z-20 h-28 w-2/12 mr-12 mt-1.5">
           <Link href={'/'}>

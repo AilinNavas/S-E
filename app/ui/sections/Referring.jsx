@@ -39,7 +39,7 @@
 //                <div
 //                  key={index}
 //                  className={`flex flex-col bg-gray-200/5 enter p-6 rounded-lg  max-w-sm h-[280px] transition-all ease-linear duration-300 `}
-   
+
 //                >
 //                  <div className="flex flex-col space-y-2 items-center justify-center mb-4">
 //                    <div className='rounded-full w-20 h-20 bg-[#3c8dbc]/10 flex items-center justify-center'>
@@ -62,6 +62,9 @@ import Image from "next/image";
 import clipboard from "@/public/icons/clipboard.svg";
 import check from "@/public/icons/check.svg";
 import lock from "@/public/icons/lock.svg";
+import one from '@/public/refer-section/refering-1.webp';
+import two from '@/public/refer-section/refering-2.webp';
+import three from '@/public/refer-section/refering-3.webp';
 
 const Referring = () => {
 
@@ -86,7 +89,7 @@ const Referring = () => {
   return (
     <section className='bg-gray-200/40'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4'>
-        
+
         {/* Título y texto introductorio */}
         <header className='pb-8'>
           <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
@@ -94,7 +97,7 @@ const Referring = () => {
           </h2>
         </header>
         <div className='pb-8'>
-          <p className='text-[#5a6065] font-inter md:text-xl text-center'>
+          <p className='text-[#5a6065] font-inter md:text-xl lg:text-center'>
             We understand the importance of smooth communication and fast, reliable patient care.
             Our advanced software ensures seamless patient registration, quick data sharing, and
             timely clinical outcomes. Let us help your patients get the best care possible.
@@ -102,13 +105,15 @@ const Referring = () => {
         </div>
 
         {/* GRID de 6 celdas */}
-        <div 
+        <div
           className="
             grid 
             grid-cols-1 
             gap-6 
-            md:grid-cols-3 
-            md:grid-rows-2 
+            md:grid-cols-2 
+            md:grid-rows-3 
+            lg:grid-cols-3 
+            lg:grid-rows-2 
             auto-rows-[minmax(200px,auto)]
           "
         >
@@ -126,7 +131,8 @@ const Referring = () => {
           </div>
 
           {/* Celda 2 - Relleno de color */}
-          <div className="bg-[#3c8dbc]/10 rounded-lg" />
+          <div className="bg-[#3c8dbc]/10 rounded-lg">
+            <Image src={one} alt="image-1" className="rounded-lg" /></div>
 
           {/* Celda 3 - Tarjeta con Refer[1] */}
           <div className="bg-white flex flex-col p-6 rounded-lg items-center justify-center">
@@ -142,7 +148,8 @@ const Referring = () => {
           </div>
 
           {/* Celda 4 - Relleno de color */}
-          <div className="bg-[#3c8dbc]/10 rounded-lg" />
+          <div className="bg-[#3c8dbc]/10 rounded-lg">
+            <Image src={two} alt="image-2" className="rounded-lg" /></div>
 
           {/* Celda 5 - Tarjeta con Refer[2] */}
           <div className="bg-white flex flex-col p-6 rounded-lg items-center justify-center">
@@ -158,7 +165,8 @@ const Referring = () => {
           </div>
 
           {/* Celda 6 - Relleno de color */}
-          <div className="bg-[#3c8dbc]/10 rounded-lg" />
+          <div className="bg-[#3c8dbc]/10 rounded-lg" >
+            <Image src={three} alt="image-3" className="rounded-lg" /></div>
 
         </div>
       </div>

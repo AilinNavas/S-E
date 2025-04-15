@@ -7,9 +7,9 @@ const FormContact = () => {
             <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
 
 
-                <div className="lg:w-7xl flex flex-col lg:flex-row lg:space-x-16 ">
+                <div className="lg:w-7xl flex flex-col-reverse lg:space-y-0 lg:flex-row lg:space-x-16 ">
 
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2 mt-8 lg:mt-0">
                         <div id="appointment" className="rounded-lg bg-white p-6 shadow-sm">
                             <h3 className="mb-4 text-xl font-zen font-bold text-[#0a2a54] uppercase">Request an Appointment</h3>
                             <p className="mb-4 text-[#5a6065] font-inter">
@@ -161,7 +161,7 @@ const FormContact = () => {
                     <div className="lg:w-1/2 ">
                         <Image src={office} alt="office" className="rounded-t-md" />
 
-                        <div className="bg-white/50 p-6 rounded-b-md font-inter text-[#5a6065]">
+                        <div className="bg-white p-6 rounded-b-md font-inter text-[#5a6065]">
                             <p>Leslie Horn, our Office Manager will contact you to answer your questions and schedule an appointment.</p>
                         </div>
 

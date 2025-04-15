@@ -21,7 +21,7 @@ const ParallaxSection = () => {
         className="absolute inset-0 will-change-transform z-0"
       >
         <Image
-          src="/office2.jpeg"
+          src="/office2.webp"
           alt="Consultorio dental"
           fill
           className="object-cover object-center"

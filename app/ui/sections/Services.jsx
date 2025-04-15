@@ -64,10 +64,10 @@ const Services = () => {
     <section className='bg-gray-100/50'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
         <header className='pb-8'>
-          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>Our Endodontic Services</h2>
+          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Our Endodontic Services</h2>
         </header>
         <div className="pb-8">
-          <p className='text-[#5a6065] font-inter md:text-xl text-center'>
+          <p className='text-[#5a6065] font-inter md:text-xl text-left lg:text-center'>
             We offer a comprehensive range of endodontic treatments using the latest technology and techniques to ensure the best outcomes for our patients.
           </p>
         </div>
@@ -108,7 +108,7 @@ const Services = () => {
                   <li className="flex text-[#5a6065]" key={index}><Image className="w-6 mr-2" alt='icon-check' src={check} />{bullet}</li>
                 ))}
               </ul>
-              <button className=" bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-inetr hover:bg-[#3c8dbc]/90 ease-in duration-300 px-4 py-2 rounded-md transition-colors">
+              <button className=" bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-inter font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300 px-4 py-2 rounded-md transition-colors">
                 Schedule Treatment
               </button>
             </motion.div>

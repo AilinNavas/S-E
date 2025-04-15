@@ -14,31 +14,32 @@ import FaqsHome from "./data/faqsHome";
 import ParallaxSection from "./ui/common/ParallaxSection";
 import FormContact from "./ui/common/FormContact";
 import { testimonialsMain, testimonialsForServices } from "./data/testimonials";
+import NavbarMobile from "./ui/layout/NavbarMobile";
 
 export default function Home() {
   return (
     <>
       {/* <InfoTop /> */}
+      <NavbarMobile />
       <NavbarPC />
       <Hero />
       <AboutUs />
       <WhyUs />
       <Testimonials data={testimonialsMain}
         title="What Our Patients and Referring Doctors Say"
-        showCTA={false}/>
+        showCTA={false} />
       <Services />
       <Referring />
-      <Technology />
-     
-      <Testimonials  data={testimonialsForServices}
+      <Testimonials data={testimonialsForServices}
         title="What People Are Saying About Our Special Treatment"
-        showCTA={true}/>
+        showCTA={true} />
+      <Technology />
       <ParallaxSection />
       <InfoContact />
       <FormContact />
       <Faqs title="Frequently Asked Questions"
-      description="Find answers to common questions about endodontic treatments and our practice."
-      items={FaqsHome} />
+        description="Find answers to common questions about endodontic treatments and our practice."
+        items={FaqsHome} />
       <Footer />
 
     </>
