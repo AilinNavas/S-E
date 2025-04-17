@@ -4,10 +4,9 @@ import office from "@/public/office.webp"
 const FormContact = () => {
     return (
         <section className='bg-[#3c8dbc]/40'>
-            <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
+            <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
 
-
-                <div className="lg:w-7xl flex flex-col-reverse lg:space-y-0 lg:flex-row lg:space-x-16 ">
+                <div className="lg:w-7xl flex flex-col-reverse lg:space-y-0 lg:flex-row lg:items-center lg:space-x-16">
 
                     <div className="lg:w-1/2 mt-8 lg:mt-0">
                         <div id="appointment" className="rounded-lg bg-white p-6 shadow-sm">
@@ -82,13 +81,13 @@ const FormContact = () => {
 
                                 {/* Preferred Day(s) of Week */}
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-[#0a2a54] font-inter">Preferred Day(s) of Week</label>
+                                    <label className="text-sm text-[#0a2a54] font-inter">Preferred Day(s) of Week</label>
                                     <div className="flex flex-wrap gap-4">
                                         <div className="flex items-center">
                                             <input
                                                 id="monday"
                                                 type="checkbox"
-                                                className="h-4 w-4 rounded font-inter border-gray-300 text-brand-accent focus:ring-brand-accent"
+                                                className="h-4 w-4 rounded font-inter border-gray-300 text-[#3c8dbc] focus:ring-[#3c8dbc]"
                                             />
                                             <label htmlFor="monday" className="ml-2 font-inter text-sm text-[#5a6065]">
                                                 M
@@ -98,7 +97,7 @@ const FormContact = () => {
                                             <input
                                                 id="tuesday"
                                                 type="checkbox"
-                                                className="h-4 w-4 rounded border-gray-300 text-brand-accent focus:ring-brand-accent"
+                                                className="h-4 w-4 rounded border-gray-300  text-[#3c8dbc] focus:ring-[#3c8dbc]"
                                             />
                                             <label htmlFor="tuesday" className="ml-2 font-inter text-sm text-[#5a6065]">
                                                 T
@@ -108,7 +107,7 @@ const FormContact = () => {
                                             <input
                                                 id="wednesday"
                                                 type="checkbox"
-                                                className="h-4 w-4 rounded border-gray-300 text-brand-accent focus:ring-brand-accent"
+                                                className="h-4 w-4 rounded border-gray-300  text-[#3c8dbc] focus:ring-[#3c8dbc]"
                                             />
                                             <label htmlFor="wednesday" className="ml-2 font-inter text-sm text-[#5a6065]">
                                                 W
@@ -158,10 +157,10 @@ const FormContact = () => {
 
                     </div>
 
-                    <div className="lg:w-1/2 ">
+                    <div className="lg:w-1/2">
                         <Image src={office} alt="office" className="rounded-t-md" />
 
-                        <div className="bg-white p-6 rounded-b-md font-inter text-[#5a6065]">
+                        <div className="bg-white p-6 rounded-b-md font-inter text-[#0a2a54]"> 
                             <p>Leslie Horn, our Office Manager will contact you to answer your questions and schedule an appointment.</p>
                         </div>
 

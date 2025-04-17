@@ -5,9 +5,9 @@ import Maps from "./Maps"
 const Contact = () => {
   return (
   
-          <div className='w-full'>
+          <div className='w-full '>  
             {/* Contact Information */}
-            <div className="rounded-lg bg-white p-6 shadow-sm font-inter">
+            <div className="rounded-lg bg-white p-6  font-inter">
               <h3 className="mb-4 text-xl font-bold text-[#0a2a54] uppercase">Contact Information</h3>
               <div className="space-y-4 text-lg">
                 <div className="flex items-start gap-3">

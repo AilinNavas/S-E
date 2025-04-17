@@ -34,8 +34,8 @@ const ParallaxSection = () => {
 
       {/* Contenido */}
       <div className="relative z-20 h-full flex flex-col items-center justify-center text-center text-white px-4">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4">Save Your Teeth</h2>
-        <p className="text-lg md:text-xl mb-6 max-w-xl">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 font-zen">Save Your Teeth</h2>
+        <p className="text-lg md:text-xl mb-6 max-w-3xl font-inter">
         Schedule your consultation and transform your dental health.
         </p>
         <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book an Appoinment</button>

@@ -5,12 +5,12 @@ import check from "@/public/icons/check.svg"
 const WhyUs = () => {
     return (
         <section className='bg-[#f7f7f7]'>
-            <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
-                <header className='pb-8'>
+            <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
+                <header className='mb-8'>
                     <h2 className='bg-gradient-to-b from-blue-950  to-blue-900 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>
                 </header>
 
-                <div className="flex flex-col-reverse items-center space-y-8 lg:flex-row">
+                <div className="flex flex-col-reverse items-center lg:flex-row lg:space-y-0">
 
                     <div className="lg:w-1/2 space-y-8">
                         <p className='text-[#5a6065] font-inter md:text-xl text-left'>
@@ -51,7 +51,7 @@ const WhyUs = () => {
 
                     </div>
 
-                    <div className="pb-8 lg:pb-0 lg:w-1/2 lg:p-8">
+                    <div className="lg:w-1/2  mb-8 lg:mb-0 lg:p-1">
                         <Image src={drHorn} alt="dr-horn" className="rounded-md" />
                     </div>
 

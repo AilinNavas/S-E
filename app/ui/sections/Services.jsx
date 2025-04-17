@@ -66,13 +66,13 @@ const Services = () => {
         <header className='pb-8'>
           <h2 className='bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Our Endodontic Services</h2>
         </header>
-        <div className="pb-8">
+        <div className="pb-4">
           <p className='text-[#5a6065] font-inter md:text-xl text-left lg:text-center'>
             We offer a comprehensive range of endodontic treatments using the latest technology and techniques to ensure the best outcomes for our patients.
           </p>
         </div>
 
-        <div className="w-full max-w-4xl mx-auto p-4">
+        <div className="w-full max-w-4xl mx-auto ">
           {/* Botones de pestañas */}
           <div className="flex flex-wrap gap-2 mb-4">
             {services.map((service) => (
@@ -101,7 +101,7 @@ const Services = () => {
               transition={{ duration: 0.3 }}
               className="rounded border border-[#3c8dbc] shadow-xl p-8 bg-white"
             >
-              <h2 className="text-2xl bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent uppercase font-zen font-bold mb-2">{selectedTab.title}</h2>
+              <h2 className=" text-2xl bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent uppercase font-zen font-bold mb-2">{selectedTab.title}</h2>
               <p className="mb-4 text-[#5a6065] text-lg ">{selectedTab.description}</p>
               <ul className="md:grid md:grid-cols-2 space-y-1 mb-4">
                 {selectedTab.bullets.map((bullet, index) => (

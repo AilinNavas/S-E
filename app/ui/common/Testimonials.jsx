@@ -90,18 +90,18 @@ const Testimonials = ({ data = [], title, showCTA = true }) => {
     <section className='bg-[#3c8dbc]/40'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
         {title && (
-          <header className='pb-8'>
+          <header className='mb-8'>
             <h2 className='bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
               {title}
             </h2>
           </header>
         )}
 
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {data.map((testimonial, index) => (
             <div
               key={index}
-              className="flex flex-col gap-4 rounded-lg border border-gray-300 bg-white p-6 shadow-[0px_4px_20px_0px_rgba(255,_255,_255,_0.5)] transition-opacity duration-500"
+              className="flex flex-col gap-4 rounded-lg bg-white p-6 shadow-[0px_4px_20px_0px_rgba(255,_255,_255,_0.5)] transition-opacity duration-500"
             >
               <div className="flex items-center gap-4">
                 {testimonial.image ? (
