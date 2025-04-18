@@ -2,6 +2,7 @@
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
+import office2 from '@/public/images/about-us/office2.webp';  
 
 const ParallaxSection = () => {
   const ref = useRef(null);
@@ -21,7 +22,7 @@ const ParallaxSection = () => {
         className="absolute inset-0 will-change-transform z-0"
       >
         <Image
-          src="/office2.webp"
+          src={office2}
           alt="Consultorio dental"
           fill
           className="object-cover object-center"

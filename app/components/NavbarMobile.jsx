@@ -72,21 +72,21 @@ const AnimatedHamburgerButton = () => {
 
                         <div className='flex'>
 
-                            <Link href="/sobre-nosotros" className="text-[#0a2a54]" onClick={handleLinkClick}>About Us</Link>
+                            <Link href="/about-us" className="text-[#0a2a54]" onClick={handleLinkClick}>About Us</Link>
                         </div>
 
                         <div className='flex'>
 
-                            <Link href="/cortinas/tradicional-con-riel" className="text-[#0a2a54]" onClick={handleLinkClick}>Procedures</Link>
+                            <Link href="/procedures" className="text-[#0a2a54]" onClick={handleLinkClick}>Procedures</Link>
                         </div>
 
                         <div className='flex'>
 
-                            <Link href="/cortinas/tradicional-con-barral" className="text-[#0a2a54]" onClick={handleLinkClick}>Patients</Link>
+                            <Link href="/for-patients" className="text-[#0a2a54]" onClick={handleLinkClick}>Patients</Link>
                         </div>
                         <div className='flex'>
 
-                            <Link href="/cortinas/roller" className="text-[#0a2a54]" onClick={handleLinkClick}>Doctors</Link>
+                            <Link href="/for-doctors" className="text-[#0a2a54]" onClick={handleLinkClick}>Doctors</Link>
                         </div>
 
                         <div className='flex flex-col items-start justify-center space-y-8'>

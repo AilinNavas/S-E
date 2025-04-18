@@ -1,5 +1,5 @@
 import Image from "next/image"
-import office from "@/public/office.webp"
+import office from "@/public/images/about-us/office.webp"
 
 const FormContact = () => {
     return (
@@ -11,7 +11,7 @@ const FormContact = () => {
                     <div className="lg:w-1/2 mt-8 lg:mt-0">
                         <div id="appointment" className="rounded-lg bg-white p-6 shadow-sm">
                             <h3 className="mb-4 text-xl font-zen font-bold text-[#0a2a54] uppercase">Request an Appointment</h3>
-                            <p className="mb-4 text-[#5a6065] font-inter">
+                            <p className="mb-4 text-[#5a6065] font-inter text-lg">
                                 Fill out the form below and we'll contact you to schedule your appointment.
                             </p>
                             <form className="space-y-4">
@@ -54,7 +54,7 @@ const FormContact = () => {
 
                                 {/* Best Time of Day */}
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-[#0a2a54]">Best Time of Day</label>
+                                    <label className="text-sm font-inter text-[#0a2a54]">Best Time of Day</label>
                                     <div className="flex gap-4">
                                         <div className="flex items-center">
                                             <input
@@ -160,7 +160,7 @@ const FormContact = () => {
                     <div className="lg:w-1/2">
                         <Image src={office} alt="office" className="rounded-t-md" />
 
-                        <div className="bg-white p-6 rounded-b-md font-inter text-[#0a2a54]"> 
+                        <div className="bg-white p-6 rounded-b-md font-inter text-[#0a2a54] text-lg"> 
                             <p>Leslie Horn, our Office Manager will contact you to answer your questions and schedule an appointment.</p>
                         </div>
 

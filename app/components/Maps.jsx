@@ -3,7 +3,7 @@ import React, { useState, useMemo } from 'react';
 import Map, { Marker, NavigationControl, Popup } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Image from 'next/image';
-import DrHornImage from '@/public/Neal.webp';
+import DrHornImage from '@/public/images/about-us/Neal.webp';
 import { Navigation } from 'lucide-react';
 
 const Maps = () => {

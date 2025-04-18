@@ -12,7 +12,7 @@ const AccordionItem = ({ question, answer }) => {
                 onClick={() => setIsOpen(!isOpen)}
                 className={`w-full text-left p-4 border-t border-t-[#0a2a54] rounded-md text-secondary focus:outline-none bg-primary font-inter `}
             >
-                <h3 className="text-lg flex justify-between text-[#0a2a54] lg:text-xl font-inter">{question}
+                <h3 className="text-lg flex justify-between text-[#0a2a54] font-inter">{question}
                     <motion.svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -35,7 +35,7 @@ const AccordionItem = ({ question, answer }) => {
                 animate={{ height: isOpen ? 'auto' : 0 }}
                 className="overflow-hidden"
             >
-                <div className="p-4 text-left text-lg md:text-xl text-[#5a6065] font-inter">
+                <div className="p-4 text-left text-lg text-[#5a6065] font-inter">
                     <p> {answer}</p>
                 </div>
             </motion.div>

@@ -13,14 +13,14 @@ const NavbarPC = () => {
         </div>
         {/* larger screen navigation */}
         <div className="flex justify-end items-center w-10/12">
-          <ul className="hidden lg:flex text-[20px] space-x-12 ">
-            <Link href={'/'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 ">About Us</li></Link>
-            <Link href={'/'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 ">Procedures</li></Link>
-            <Link href={'/'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 max-w-32 ">Patients</li></Link>
-            <Link href={'/'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 max-w-32 ">Doctors</li></Link>
+          <ul className="hidden lg:flex text-[20px] space-x-8 ">
+            <Link href={'/about-us'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter">About Us</li></Link>
+            <Link href={'/procedures'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter">Procedures</li></Link>
+            <Link href={'/for-doctors'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300  font-inter ">Doctors</li></Link>
+            <Link href={'/for-patients'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter">Patients</li></Link>
 
           </ul>
-          <div className="hidden lg:flex ml-12 space-x-2">
+          <div className="hidden lg:flex ml-12 space-x-4">
             <Link href={'/'}>
             <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book An Appointment</button>
             </Link>

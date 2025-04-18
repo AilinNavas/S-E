@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import family from '@/public/familyHorn.webp'
+import family from '@/public/images/about-us/familyHorn.webp'
 
 const AboutUs = () => {
   return (

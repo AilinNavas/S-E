@@ -1,8 +1,10 @@
 "use client"
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 import check from "@/public/icons/check.svg";
+
 
 
 
@@ -12,6 +14,7 @@ const Services = () => {
     {
       id: 1,
       title: "Root Canal Therapy",
+      link: "/procedures/root-canal-therapy",
       description:
         "Root Canal Therapy is a treatment used to repair and save a tooth that is badly decayed or infected. During a root canal procedure, the nerve and pulp are removed, and the inside of the tooth is cleaned and sealed.",
       bullets: [
@@ -24,6 +27,7 @@ const Services = () => {
     {
       id: 2,
       title: "Endodontic Retreatment",
+      link: "/procedures/endodontic-retreatment",
       description:
         "Endodontic retreatment is performed on a tooth that has had a root canal but did not heal properly or has developed new problems.",
       bullets: [
@@ -36,6 +40,7 @@ const Services = () => {
     {
       id: 3,
       title: "Endodontic Surgery",
+      link: "/procedures/endodontic-surgery",
       description:
         "Endodontic surgery can help save a tooth in situations where traditional root canal treatments are not sufficient.",
       bullets: [
@@ -47,6 +52,7 @@ const Services = () => {
     {
       id: 4,
       title: "Emergency Care",
+      link: "/procedures/emergency-care",
       description:
         "Emergency endodontic care addresses sudden tooth pain or trauma, providing quick relief and treatment.",
       bullets: [
@@ -79,7 +85,7 @@ const Services = () => {
               <button
                 key={service.id}
                 onClick={() => setSelectedTab(service)}
-                className={`px-4 py-2 text-lg font-medium rounded 
+                className={`px-4 py-2 text-lg font-medium rounded font-inter
               ${selectedTab.id === service.id
                     ? "bg-[#3c8dbc]/40  text-[#5a6065]"
                     : "bg-gray-200 text-[#5a6065] hover:bg-[#3c8dbc]/40"
@@ -101,13 +107,14 @@ const Services = () => {
               transition={{ duration: 0.3 }}
               className="rounded border border-[#3c8dbc] shadow-xl p-8 bg-white"
             >
-              <h2 className=" text-2xl bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent uppercase font-zen font-bold mb-2">{selectedTab.title}</h2>
-              <p className="mb-4 text-[#5a6065] text-lg ">{selectedTab.description}</p>
+              <Link href={selectedTab.link} ><h2 className=" text-2xl bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent uppercase font-zen font-bold mb-2">{selectedTab.title}</h2></Link>
+              <p className="mb-4 text-[#5a6065] text-lg font-inter">{selectedTab.description}</p>
               <ul className="md:grid md:grid-cols-2 space-y-1 mb-4">
                 {selectedTab.bullets.map((bullet, index) => (
-                  <li className="flex text-[#5a6065]" key={index}><Image className="w-6 mr-2" alt='icon-check' src={check} />{bullet}</li>
+                  <li className="flex text-[#5a6065] font-inter" key={index}><Image className="w-6 mr-2" alt='icon-check' src={check} />{bullet}</li>
                 ))}
               </ul>
+
               <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
                 Schedule Treatment
               </button>

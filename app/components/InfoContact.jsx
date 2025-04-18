@@ -1,5 +1,5 @@
 import Contact from "./Contact"
-import Maps from "./Maps"
+import Map2 from "./Map2"
 
 const InfoContact = () => {
     return (
@@ -12,7 +12,7 @@ const InfoContact = () => {
                 <div className="md:w-3xl md:p-4 ld:p-0 lg:w-7xl flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:items-center lg:space-x-16 ">
 
                     <div className="lg:w-1/2">
-                        <Maps />
+                        <Map2 />
                     </div>
 
                     <div className="lg:w-1/2">
