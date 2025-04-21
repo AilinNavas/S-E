@@ -27,7 +27,7 @@ const Technology = () => {
   return (
 
     <section className='bg-white'>
-      <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center'>
+      <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center'>
         <header className='pb-8'>
           <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>State-of-the-Art Care with TDO Software</h2>
         </header>
@@ -44,7 +44,7 @@ const Technology = () => {
 
             >
               <div className="flex flex-col space-y-2 items-center justify-center mb-4">
-                <div className='rounded-full w-20 h-20 bg-accent/20 flex items-center justify-center'>
+                <div className='rounded-full w-20 h-20 bg-[#3c8dbc]/20 flex items-center justify-center'>
                   <Image src={value.icon} alt='icon' className='h-12 w-12' />
                 </div>
                 <h3 className="text-xl text-center lg:text-2xl bg-gradient-to-b text-[#0a2a54] font-inter">{value.title}</h3>

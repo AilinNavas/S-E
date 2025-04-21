@@ -6,7 +6,7 @@ import Services from "./components/home/Services";
 import Technology from "./components/home/Technology";
 import Testimonials from "./components/Testimonials";
 import WhyUs from "./components/home/WhyUs";
-import Hero from "./components/home/Hero";
+import Hero from "./components/Hero";
 import AboutUs from "./components/home/AboutUs";
 import Footer from "./components/Footer";
 import FaqsHome from "./data/faqsHome";
@@ -14,6 +14,7 @@ import ParallaxSection from "./components/ParallaxSection";
 import FormContact from "./components/FormContact";
 import { testimonialsMain, testimonialsForServices } from "./data/testimonials";
 import NavbarMobile from "./components/NavbarMobile";
+import DrHorn from '@/public/images/about-us/Neal.webp'
 
 export default function Home() {
 
@@ -22,7 +23,16 @@ export default function Home() {
       {/* <InfoTop /> */}
       <NavbarMobile />
       <NavbarPC />
-      <Hero />
+      <Hero
+      title="Fort Worth's Trusted Endodontist Practice"
+      subtitle="Delivering Compassionate Endodontic Care with the Latest Technology in Fort Worth, TX."
+      primaryButtonText="Book An Appointment"
+      primaryButtonLink="/appointments"
+      secondaryButtonText="Refer Now"
+      secondaryButtonLink="/referrals"
+      imageSrc={DrHorn}
+      imageAlt="Dr. Neal Horn at Southside Endodontics"
+     />
       <AboutUs />
       <WhyUs />
       <Testimonials data={testimonialsMain}
