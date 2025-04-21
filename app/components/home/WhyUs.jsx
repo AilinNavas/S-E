@@ -7,7 +7,7 @@ const WhyUs = () => {
         <section className='bg-[#f7f7f7]'>
             <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
                 <header className='mb-8'>
-                    <h2 className='bg-gradient-to-b from-blue-950  to-blue-900 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>
+                    <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>
                 </header>
 
                 <div className="flex flex-col-reverse items-center lg:flex-row lg:space-y-0">
@@ -47,7 +47,7 @@ const WhyUs = () => {
                                 </div>
                             </li>
                         </ul>
-                        <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book An Appointment</button>
+                        <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book An Appointment</button>
 
                     </div>
 

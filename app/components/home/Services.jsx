@@ -70,7 +70,7 @@ const Services = () => {
     <section className='bg-white'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
         <header className='pb-8'>
-          <h2 className='bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Our Endodontic Services</h2>
+          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Our Endodontic Services</h2>
         </header>
         <div className="pb-4">
           <p className='text-[#5a6065] font-inter md:text-xl text-left lg:text-center'>
@@ -85,7 +85,7 @@ const Services = () => {
               <button
                 key={service.id}
                 onClick={() => setSelectedTab(service)}
-                className={`px-4 py-2 text-lg font-medium rounded font-inter
+                className={`cursor-pointer px-4 py-2 text-lg font-medium rounded font-inter
               ${selectedTab.id === service.id
                     ? "bg-[#3c8dbc]/40  text-[#5a6065]"
                     : "bg-gray-200 text-[#5a6065] hover:bg-[#3c8dbc]/40"
@@ -115,7 +115,7 @@ const Services = () => {
                 ))}
               </ul>
 
-              <button className="rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
+              <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
                 Schedule Treatment
               </button>
             </motion.div>

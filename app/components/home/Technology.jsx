@@ -29,7 +29,7 @@ const Technology = () => {
     <section className='bg-white'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center'>
         <header className='pb-8'>
-          <h2 className='bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl text-center'>State-of-the-Art Care with TDO Software</h2>
+          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>State-of-the-Art Care with TDO Software</h2>
         </header>
         <div className="pb-8">
          <p className='text-[#5a6065] font-inter md:text-xl text-left lg:text-center'>

@@ -10,11 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className=''>
             <h3 className="mb-4 text-xl font-bold font-zen">SOUTHSIDE ENDODONTICS</h3>
-            <p className="mb-2 flex items-center gap-2 "> <MapPin className="h-5 w-5 flex-shrink-0 text-white" />1307 8th Avenue, Suite 303</p>
-            <p className="mb-2">Fort Worth, TX 76104</p>
-            <p className="mb-2 flex items-center gap-2"><Phone className="h-5 w-5 flex-shrink-0 text-white" /> 817-386-9007</p>
-            <p className='flex items-center gap-2'>  <Mail className="h-5 w-5 flex-shrink-0 text-white" />office@southsideendodontics.com
-            </p>
+            <a href="https://maps.app.goo.gl/xx2i9XrdQaAjtDbW7" target="_blank"><p className="mb-2 flex items-center gap-2 "> <MapPin className="h-5 w-5 flex-shrink-0 text-white" />1307 8th Avenue, Suite 303</p>
+            <p className="mb-2">Fort Worth, TX 76104</p></a>
+            <a href="tel:+8173869007"><p className="mb-2 flex items-center gap-2"><Phone className="h-5 w-5 flex-shrink-0 text-white" /> 817-386-9007</p></a>
+            <a href="mailto:office@southsideendodontics.com"><p className='flex items-center gap-2'>  <Mail className="h-5 w-5 flex-shrink-0 text-white" />office@southsideendodontics.com
+            </p></a>
 
 
 
@@ -31,22 +31,22 @@ const Footer = () => {
             <h3 className="mb-4 text-xl font-bold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#about" className="hover:underline">
+                <Link href="about-us" className="hover:underline">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="hover:underline">
+                <Link href="procedures" className="hover:underline">
                   Procedures
                 </Link>
               </li>
               <li>
-                <Link href="#patients" className="hover:underline">
+                <Link href="for-patients" className="hover:underline">
                   For Patients
                 </Link>
               </li>
               <li>
-                <Link href="#doctors" className="hover:underline">
+                <Link href="for-doctors" className="hover:underline">
                   For Doctors
                 </Link>
               </li>

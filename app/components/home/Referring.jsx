@@ -33,7 +33,7 @@ const Referring = () => {
 
         {/* Título y texto introductorio */}
         <header className='pb-8'>
-          <h2 className='bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
+          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
             For Referring Doctors
           </h2>
         </header>
