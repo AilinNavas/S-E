@@ -9,20 +9,20 @@ import WhyUs from "./components/home/WhyUs";
 import Hero from "./components/Hero";
 import AboutUs from "./components/home/AboutUs";
 import Footer from "./components/Footer";
-import FaqsHome from "./data/faqsHome";
+import {FaqsHome }  from "./data/faqsHome";
 import ParallaxSection from "./components/ParallaxSection";
 import FormContact from "./components/FormContact";
 import { testimonialsMain, testimonialsForServices } from "./data/testimonials";
 import NavbarMobile from "./components/NavbarMobile";
 import DrHorn from '@/public/images/about-us/Neal.webp'
+import officeParallax from '@/public/images/about-us/office2.webp'
 
 export default function Home() {
 
   return (
     <>
-      {/* <InfoTop /> */}
-      <NavbarMobile />
-      <NavbarPC />
+      {/* <NavbarMobile />
+      <NavbarPC /> */}
       <Hero
       title="Fort Worth's Trusted Endodontist Practice"
       subtitle="Delivering Compassionate Endodontic Care with the Latest Technology in Fort Worth, TX."
@@ -44,14 +44,16 @@ export default function Home() {
         title="What People Are Saying About Our Special Treatment"
         showCTA={true} />
       <Technology />
-      <ParallaxSection />
-      <InfoContact />
-      <FormContact />
-      <Faqs title="Frequently Asked Questions"
+      <ParallaxSection
+      imageSrc={officeParallax}
+      title="Save Your Teeth"
+      description="Schedule your consultation and transform your dental health."
+      buttonText="Book an Appointment"
+    />
+       <Faqs title="Frequently Asked Questions"
         description="Find answers to common questions about endodontic treatments and our practice."
         items={FaqsHome} />
-      <Footer />
-
+     
     </>
   );
 }

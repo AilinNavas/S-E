@@ -50,7 +50,7 @@ const Journey = () => {
                                         {step.icon}
                                     </div>
                                     <div
-                                        className={`rounded-lg border border-gray-200 bg-white p-6 shadow-sm md:w-[calc(50%-4rem)] ${i % 2 === 0 ? "md:text-left" : "md:text-right"
+                                        className={`rounded-lg border border-gray-200 shadow-[0px_2px_10px_0px_rgba(60,_141,_188,_0.5)] bg-white p-6  md:w-[calc(50%-4rem)] ${i % 2 === 0 ? "md:text-left" : "md:text-right"
                                             }`}
                                     >
                                         <h3 className="mb-2 text-xl font-inter text-[#1D3557]">{step.title}

@@ -4,7 +4,7 @@ const Trust = () => {
   return (
     <section className="bg-[#f7f7f7]">
     <div className="mx-auto max-w-7xl py-16 lg:py-32 px-4">
-      <div className="mb-12 text-center">
+      <div className="mb-8 text-center">
         <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl mb-8">
           Why Patients & Doctors Trust Dr. Horn
         </h2>

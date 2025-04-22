@@ -8,18 +8,19 @@ import Testimonials from "../components/Testimonials"
 import { testimonialsMain } from "../data/testimonials";
 import AfterOffice from "./components/AfterOffice"
 import ParallaxSection from "../components/ParallaxSection"
-import InfoContact from "../components/InfoContact" 
+import InfoContact from "../components/InfoContact"
 import FormContact from "../components/FormContact"
 import Faqs from "../components/Faqs"
-import FaqsHome from "../data/faqsHome"
+import { faqsAboutUs } from "../data/faqsHome"
 import Footer from "../components/Footer"
+import NealParallax from '@/public/images/about-us/DrHorn&Leslie.jpeg'
 
 
 const AboutUsPage = () => {
   return (
     <>
-      <NavbarMobile />
-      <NavbarPC />
+      {/* <NavbarMobile />
+      <NavbarPC /> */}
       <Hero
         title="Experienced Endodontist in Fort Worth, TX"
         subtitle="With over 15 years of experience in endodontics, Dr. Neal Horn is committed to providing expert, patient-centered care in Fort Worth's Medical District. Fluent in Spanish and passionate about his community, he ensures every patient feels comfortable and well-informed."
@@ -35,13 +36,15 @@ const AboutUsPage = () => {
         title="What Patients & Doctors Say About Dr. Horn"
         showCTA={false} />
       <AfterOffice />
-      <ParallaxSection />
-      <InfoContact />
-      <FormContact />
+      <ParallaxSection
+        imageSrc={NealParallax}
+        title="Schedule a Consultation with Dr. Horn"
+        description="Experience expert endodontic care with Dr. Horn."
+        buttonText="Call Us: (817) 555-1234"
+      />
       <Faqs title="Frequently Asked Questions About Dr. Horn"
         description="Find answers to common questions about endodontic treatments and our practice."
-        items={FaqsHome} />
-      <Footer />
+        items={faqsAboutUs} />
     </>
 
   )

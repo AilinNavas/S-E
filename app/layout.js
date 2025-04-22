@@ -1,5 +1,10 @@
 import { Zen_Maru_Gothic , Inter } from "next/font/google"
 import "./globals.css";
+import NavbarMobile from "./components/NavbarMobile";
+import NavbarPC from "./components/NavbarPC";
+import Footer from "./components/Footer";
+import FormContact from "./components/FormContact";
+import InfoContact from "./components/InfoContact";
 
 const zenMaruGothic = Zen_Maru_Gothic({
   subsets: ["latin"],
@@ -30,7 +35,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
           <body className={`${inter.variable} ${zenMaruGothic.variable} font-sans`}>
+            <NavbarMobile />
+            <NavbarPC />
         {children}
+        <FormContact />
+        <InfoContact />
+        <Footer />
       </body>
     </html>
   );
