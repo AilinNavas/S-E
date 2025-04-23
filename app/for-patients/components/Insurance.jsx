@@ -1,5 +1,6 @@
 
 import { CreditCard, FileText, Calendar } from 'lucide-react'
+import DoubleCrrousel from './DoubleCrrousel'
 
 const Insurance = () => {
 
@@ -17,7 +18,7 @@ const Insurance = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6 font-zen uppercase">
+                {/* <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6 font-zen uppercase">
                     <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
                         <span className="text-xl font-bold text-[#0a2a54]">Aetna</span>
                     </div>
@@ -60,7 +61,8 @@ const Insurance = () => {
                     <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
                         <span className="text-xl font-bold text-[#0a2a54]">United Healthcare</span>
                     </div>
-                </div>
+                </div> */}
+                <DoubleCrrousel />
 
                 <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3 font-inter">
                     <div className="bg-white border-none shadow-sm">

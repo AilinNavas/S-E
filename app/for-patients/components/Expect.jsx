@@ -1,8 +1,8 @@
 import Image from "next/image"
 import { CheckCircle } from "lucide-react"
-import before from "@/public/images/about-us/before.webp"
-import during from "@/public/images/about-us/during.webp"
-import after from "@/public/images/about-us/after.webp"
+import before from "@/public/images/about-us/2.webp"
+import during from "@/public/images/about-us/3.webp"
+import after from "@/public/images/about-us/1.webp"
 
 
 const Expect = () => {

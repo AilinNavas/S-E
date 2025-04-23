@@ -1,4 +1,5 @@
 import Contact from "./Contact"
+import DentalClinicMap from "./home/DentalClinicMap"
 import Map2 from "./Map2"
 
 const InfoContact = () => {
@@ -12,7 +13,8 @@ const InfoContact = () => {
                 <div className="md:w-3xl md:p-4 ld:p-0 lg:w-7xl flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:items-center lg:space-x-16 ">
 
                     <div className="lg:w-1/2">
-                        <Map2 />
+                        {/* <Map2 /> */}
+                        <DentalClinicMap />
                     </div>
 
                     <div className="lg:w-1/2">

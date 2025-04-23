@@ -10,6 +10,7 @@ import office from '@/public/images/about-us/during.webp'
 import Faqs from "../components/Faqs"
 import { faqsForPatients } from "../data/faqsHome"
 
+
 const PatientsPage = () => {
     return (
         <>
@@ -29,6 +30,7 @@ const PatientsPage = () => {
                 showCTA={false} />
 
             <Insurance />
+           
             <ParallaxSection
                 imageSrc={office}
                 title="Need Help?"

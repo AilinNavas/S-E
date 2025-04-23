@@ -1,6 +1,6 @@
+'use client'
+import React, { useEffect } from "react";
 import Faqs from "./components/Faqs";
-import InfoContact from "./components/InfoContact";
-import NavbarPC from "./components/NavbarPC";
 import Referring from "./components/home/Referring";
 import Services from "./components/home/Services";
 import Technology from "./components/home/Technology";
@@ -8,16 +8,20 @@ import Testimonials from "./components/Testimonials";
 import WhyUs from "./components/home/WhyUs";
 import Hero from "./components/Hero";
 import AboutUs from "./components/home/AboutUs";
-import Footer from "./components/Footer";
 import {FaqsHome }  from "./data/faqsHome";
 import ParallaxSection from "./components/ParallaxSection";
-import FormContact from "./components/FormContact";
 import { testimonialsMain, testimonialsForServices } from "./data/testimonials";
-import NavbarMobile from "./components/NavbarMobile";
 import DrHorn from '@/public/images/about-us/Neal.webp'
 import officeParallax from '@/public/images/about-us/office2.webp'
+import DentalClinicMap from "./components/home/DentalClinicMap";
 
 export default function Home() {
+    // Asegurar que la página comienza en la parte superior al cargar
+    useEffect(() => {
+      // Restaurar la posición de scroll al inicio de la página
+      window.scrollTo(0, 0)
+    }, [])
+  
 
   return (
     <>
@@ -53,7 +57,8 @@ export default function Home() {
        <Faqs title="Frequently Asked Questions"
         description="Find answers to common questions about endodontic treatments and our practice."
         items={FaqsHome} />
-     
+     <DentalClinicMap />
     </>
+    
   );
 }
