@@ -28,7 +28,7 @@ const Journey = () => {
      
         <section className="bg-[#ffffff]">
             <div className=" mx-auto max-w-7xl py-16 lg:py-32 px-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#0a2a54] text-center font-zen mb-4 uppercase"
+                <h2 className="text-3xl md:text-5xl font-bold text-[#0a2a54] text-center font-zen mb-4 uppercase"
                 >  Dr. Horn's Journey in Dentistry
                 </h2>
                 <p  className="text-[#5a6065] text-lg md:text-xl text-center font-inter mb-8 mx-auto"

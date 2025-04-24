@@ -6,11 +6,11 @@ import google from '@/public/icons/google.svg';
 
 const Testimonials = ({ data = [], title, showCTA = true }) => {
   return (
-    <section className='bg-[#3c8dbc]/40'>
+    <section className='bg-[#0a2a54] '>
       <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
         {title && (
           <header className='mb-8'>
-            <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
+            <h2 className='text-white font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
               {title}
             </h2>
           </header>
@@ -20,7 +20,7 @@ const Testimonials = ({ data = [], title, showCTA = true }) => {
           {data.map((testimonial, index) => (
             <div
               key={index}
-              className="flex flex-col gap-4 rounded-lg bg-white p-6 shadow-[0px_4px_20px_0px_rgba(255,_255,_255,_0.5)] transition-opacity duration-500"
+              className="flex flex-col gap-4 rounded-lg bg-white p-6 shadow-[0px_2px_10px_0px_rgba(255,_255,_255,_0.5)] transition-opacity duration-500"
             >
               <div className="flex items-center gap-4">
                 {testimonial.image ? (
@@ -62,8 +62,8 @@ const Testimonials = ({ data = [], title, showCTA = true }) => {
 
         {showCTA && (
           <div className="mt-8 text-center">
-            <p className="text-lg text-[#5a6065] mb-4">Join our +240 reviews on Google!</p>
-            <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter text-white border-2 border-[#0a2a54] bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] ease-in duration-300">
+            <p className="text-lg text-white mb-4">Join our +240 reviews on Google!</p>
+            <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter text-white border-2 border-white bg-[#0a2a54] hover:bg-white hover:text-[#0a2a54] ease-in duration-300">
               <Link
                 href="https://g.page/r/southside-endodontics/review"
                 target="_blank"

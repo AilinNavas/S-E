@@ -105,7 +105,7 @@ const Services = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -30 }}
               transition={{ duration: 0.3 }}
-              className="rounded border border-[#3c8dbc] shadow-xl p-8 bg-white"
+              className="rounded border border-[#3c8dbc] shadow-xl p-8 bg-white "
             >
               <Link href={selectedTab.link} ><h2 className=" text-2xl bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent uppercase font-zen font-bold mb-2">{selectedTab.title}</h2></Link>
               <p className="mb-4 text-[#5a6065] text-lg font-inter">{selectedTab.description}</p>

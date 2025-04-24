@@ -16,7 +16,7 @@ const PatientsPage = () => {
         <>
             <Hero
                 title="Compassionate Endodontic Care You Can Trust"
-                subtitle="Everything You Need to Know Before, During, and After Your Visit. At Southside Endodontics, we make your treatment experience as smooth and stress-free as possible. Here's what to expect and how to prepare for your visit."
+                subtitle="Everything You Need to Know Before, During, and After Your Visit."
                 primaryButtonText="Book An Appointment"
                 primaryButtonLink="/appointments"
                 secondaryButtonText="Insurance"

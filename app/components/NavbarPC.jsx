@@ -4,7 +4,7 @@ import logo from '@/public/logo-svg.svg'
 
 const NavbarPC = () => {
   return (
-    <header className="hidden lg:block sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="hidden lg:block sticky top-0 z-50 w-full bg-white/80 backdrop-blur-lg shadow-md">
       <nav className="max-w-7xl mx-auto h-30 flex justify-between">
         <div className="z-20 h-28 w-2/12 mr-12 mt-1.5">
           <Link href={'/'}>
@@ -14,10 +14,10 @@ const NavbarPC = () => {
         {/* larger screen navigation */}
         <div className="flex justify-end items-center w-10/12">
           <ul className="hidden lg:flex text-[20px] space-x-8 ">
-            <Link href={'/about-us'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter">About Us</li></Link>
-            <Link href={'/procedures'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter">Procedures</li></Link>
-            <Link href={'/for-doctors'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300  font-inter ">Doctors</li></Link>
-            <Link href={'/for-patients'}><li className="text-[#0a2a54] hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter">Patients</li></Link>
+            <Link href={'/about-us'}><li className="text-[#0a2a54] drop-shadow hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter">About Us</li></Link>
+            <Link href={'/procedures'}><li className="text-[#0a2a54] drop-shadow hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter">Procedures</li></Link>
+            <Link href={'/for-doctors'}><li className="text-[#0a2a54] drop-shadow hover:text-[#0a2a54]/70 ease-in-out duration-300  font-inter ">Doctors</li></Link>
+            <Link href={'/for-patients'}><li className="text-[#0a2a54] drop-shadow hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter">Patients</li></Link>
 
           </ul>
           <div className="hidden lg:flex ml-12 space-x-4">

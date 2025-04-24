@@ -3,10 +3,10 @@ import office from "@/public/images/about-us/office.webp"
 
 const FormContact = () => {
     return (
-        <section className='bg-[#3c8dbc]/40'>
+        <section className='bg-[#0a2a54]'>
             <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
             <header className='pb-8'>
-                    <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl '>Contact Us</h2>
+                    <h2 className='text-white font-zen font-bold uppercase text-3xl md:text-5xl '>Contact Us</h2>
                 </header>
 
                 <div className="lg:w-7xl flex flex-col-reverse lg:space-y-0 lg:flex-row lg:items-center lg:space-x-16">
