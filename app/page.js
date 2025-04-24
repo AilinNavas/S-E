@@ -13,7 +13,6 @@ import ParallaxSection from "./components/ParallaxSection";
 import { testimonialsMain, testimonialsForServices } from "./data/testimonials";
 import DrHorn from '@/public/images/about-us/Neal.webp'
 import officeParallax from '@/public/images/about-us/office2.webp'
-import DentalClinicMap from "./components/home/DentalClinicMap";
 
 export default function Home() {
     // Asegurar que la página comienza en la parte superior al cargar
@@ -57,7 +56,7 @@ export default function Home() {
        <Faqs title="Frequently Asked Questions"
         description="Find answers to common questions about endodontic treatments and our practice."
         items={FaqsHome} />
-     <DentalClinicMap />
+    
     </>
     
   );

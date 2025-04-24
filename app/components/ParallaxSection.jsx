@@ -88,7 +88,7 @@ const ParallaxSection = ({
       </motion.div>
 
       {/* Capa oscura encima */}
-      <div className="absolute inset-0 bg-black/50 z-10" />
+      <div className="absolute inset-0 bg-black/70 z-10" />
 
       {/* Contenido */}
       <div className="relative z-20 h-full flex flex-col items-center justify-center text-center text-white px-4">

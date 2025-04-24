@@ -230,7 +230,7 @@ export default function DentalClinicMap() {
         map.current.scrollZoom.enable()
         map.current.dragPan.enable()
         map.current.touchZoomRotate.enable()
-        map.current._container.focus = () => {} // Anular la función de enfoque
+        map.current._container.focus = () => { } // Anular la función de enfoque
         map.current.getCanvas().setAttribute("tabindex", "-1") // Evitar que reciba enfoque por tabulación
       }, 500)
 
@@ -253,26 +253,26 @@ export default function DentalClinicMap() {
         const doctorImg = document.createElement("img")
         doctorImg.src = clinicData.doctorImage
         doctorImg.alt = clinicData.doctor
-        doctorImg.className = "w-16 h-16 rounded-full object-cover mb-2"
+        doctorImg.className = "w-12 h-12 rounded-full object-cover mb-2"
         popupContent.appendChild(doctorImg)
 
         // Nombre de la clínica
         const clinicName = document.createElement("h3")
         clinicName.textContent = clinicData.name
-        clinicName.className = "font-bold text-sm mb-1"
+        clinicName.className = "font-bold text-sm mb-1 font-zen"
         popupContent.appendChild(clinicName)
 
         // Nombre del doctor
         const doctorName = document.createElement("p")
         doctorName.textContent = clinicData.doctor
-        doctorName.className = "text-xs text-gray-600 mb-2"
+        doctorName.className = "text-xs text-gray-600 mb-2 font-inetr"
         popupContent.appendChild(doctorName)
 
         // Botón para direcciones
         const directionsBtn = document.createElement("button")
         directionsBtn.textContent = "Go to the office"
         directionsBtn.className =
-          "bg-[#0a2a54] hover:border-[#0a2a54] hover:border-2 hover:text-[#0a2a54] hover:bg-trasparent text-white text-xs py-1 px-3 rounded-md transition-colors duration-300 mb-2 font-inter"
+          "bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] font-inter border border-[#0a2a54] text-white text-xs py-1 px-3 rounded-md transition-colors duration-300 mb-2 font-inter"
         directionsBtn.onclick = (e) => {
           // Prevenir comportamiento por defecto
           e.preventDefault()
@@ -288,7 +288,7 @@ export default function DentalClinicMap() {
 
         // Crear el popup con el elemento personalizado
         const popup = new mapboxgl.Popup({
-          offset: [0, -40], // Cambiar el offset para que aparezca más arriba
+          offset: [-110, 20], // Cambiar el offset para que aparezca más arriba
           closeButton: true,
           closeOnClick: false,
           maxWidth: "300px",

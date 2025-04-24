@@ -1,5 +1,5 @@
 
-import { CreditCard, FileText, Calendar } from 'lucide-react'
+import { CheckCircle } from 'lucide-react'
 import DoubleCrrousel from './DoubleCrrousel'
 
 const Insurance = () => {
@@ -65,36 +65,34 @@ const Insurance = () => {
                 <DoubleCrrousel />
 
                 <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3 font-inter">
-                    <div className="bg-white border-none shadow-sm">
+                    <div >
                         <div className="flex flex-col items-center gap-4 p-6 text-center">
-                            <div className="rounded-full bg-[#3c8dbc]/10 p-4">
-                                <CreditCard className="h-8 w-8 text-[#3c8dbc]" />
+                            <div className="flex space-x-2 items-center">
+                                <CheckCircle className="h-8 w-8 text-[#3c8dbc]" /><h3 className="text-xl font-semibold text-[#0a2a54]">Insurance Accepted</h3>
                             </div>
-                            <h3 className="text-xl font-semibold text-[#0a2a54]">Insurance Accepted</h3>
+                           
                             <p className="text-[#5a6065]">
                                 We work with most major insurance providers to ensure you get the maximum benefits.
                             </p>
                         </div>
                     </div>
 
-                    <div className="bg-white border-none shadow-sm">
+                    <div>
                         <div className="flex flex-col items-center gap-4 p-6 text-center">
-                            <div className="rounded-full bg-[#3c8dbc]/10 p-4">
-                                <FileText className="h-8 w-8 text-[#3c8dbc]" />
+                            <div className="flex space-x-2 items-center">
+                                <CheckCircle className="h-8 w-8 text-[#3c8dbc]" /><h3 className="text-xl font-semibold text-[#0a2a54]">Transparent Pricing</h3>
                             </div>
-                            <h3 className="text-xl font-semibold text-[#0a2a54]">Transparent Pricing</h3>
                             <p className="text-[#5a6065]">
                                 We provide clear cost estimates before treatment so there are no surprises.
                             </p>
                         </div>
                     </div>
 
-                    <div className="bg-white border-none shadow-sm">
+                    <div className="">
                         <div className="flex flex-col items-center gap-4 p-6 text-center">
-                            <div className="rounded-full bg-[#3c8dbc]/10 p-4">
-                                <Calendar className="h-8 w-8 text-[#3c8dbc]" />
+                            <div className="flex space-x-2 items-center">
+                                <CheckCircle className="h-8 w-8 text-[#3c8dbc]" /><h3 className="text-xl font-semibold text-[#0a2a54]">Flexible Payment Plans</h3>
                             </div>
-                            <h3 className="text-xl font-semibold text-[#0a2a54]">Flexible Payment Plans</h3>
                             <p className="text-[#5a6065]">
                                 We offer payment plans to help make your treatment more affordable.
                             </p>

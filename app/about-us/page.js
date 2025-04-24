@@ -1,6 +1,4 @@
 import Hero from "../components/Hero"
-import NavbarMobile from "../components/NavbarMobile"
-import NavbarPC from "../components/NavbarPC"
 import DrHorn from '@/public/images/about-us/DrHorn.webp'
 import Journey from "./components/Journey"
 import Trust from "./components/Trust"
@@ -8,12 +6,9 @@ import Testimonials from "../components/Testimonials"
 import { testimonialsMain } from "../data/testimonials";
 import AfterOffice from "./components/AfterOffice"
 import ParallaxSection from "../components/ParallaxSection"
-import InfoContact from "../components/InfoContact"
-import FormContact from "../components/FormContact"
 import Faqs from "../components/Faqs"
 import { faqsAboutUs } from "../data/faqsHome"
-import Footer from "../components/Footer"
-import NealParallax from '@/public/images/about-us/DrHorn&Leslie.jpeg'
+import NealParallax from '@/public/images/about-us/DrHyL.webp'
 
 
 const AboutUsPage = () => {
