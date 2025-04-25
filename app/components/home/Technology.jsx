@@ -32,8 +32,8 @@ const Technology = () => {
           <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>State-of-the-Art Care with TDO Software</h2>
         </header>
         <div className="pb-8">
-         <p className='text-[#5a6065] font-inter md:text-xl text-left lg:text-center'>
-         Our practice uses TDO, the gold standard in endodontic electronic records, to streamline patient care. With HIPAA-compliant records, efficient workflows, and integration with the global community of endodontists, TDO ensures the highest level of care for our patients.
+         <p className='text-xl font-semibold font-inter text-[#5a6065] md:text-2xl text-center'>
+         We use TDO for efficient, HIPAA-compliant endodontic care.
          </p>
          </div>
         <div className="grid gap-6 grid-cols-1 justify-items-center items-center md:grid-cols-2 lg:grid-cols-3">

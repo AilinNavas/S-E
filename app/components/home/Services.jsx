@@ -16,7 +16,7 @@ const Services = () => {
       title: "Root Canal Therapy",
       link: "/procedures/root-canal-therapy",
       description:
-        "Root Canal Therapy is a treatment used to repair and save a tooth that is badly decayed or infected. During a root canal procedure, the nerve and pulp are removed, and the inside of the tooth is cleaned and sealed.",
+        "Root Canal Therapy is a treatment used to repair and save a tooth that is decayed or infected.",
       bullets: [
         "Relieves tooth pain and sensitivity",
         "Prevents infection from spreading",
@@ -29,7 +29,7 @@ const Services = () => {
       title: "Endodontic Retreatment",
       link: "/procedures/endodontic-retreatment",
       description:
-        "Endodontic retreatment is performed on a tooth that has had a root canal but did not heal properly or has developed new problems.",
+        "Performed when a previously treated tooth doesn't heal properly or develops new issues.",
       bullets: [
         "Fixes persistent or new infection",
         "Extends the life of the tooth",
@@ -42,11 +42,13 @@ const Services = () => {
       title: "Endodontic Surgery",
       link: "/procedures/endodontic-surgery",
       description:
-        "Endodontic surgery can help save a tooth in situations where traditional root canal treatments are not sufficient.",
+        "Endodontic surgery can save a tooth when traditional root canal treatments are not sufficient.",
       bullets: [
         "Apicoectomy to remove infected tissue",
         "Preserves your natural tooth",
         "Minor surgical procedure",
+        "Supports long-term stability",
+
       ],
     },
     {
@@ -54,11 +56,12 @@ const Services = () => {
       title: "Emergency Care",
       link: "/procedures/emergency-care",
       description:
-        "Emergency endodontic care addresses sudden tooth pain or trauma, providing quick relief and treatment.",
+        "Emergency endodontic care immediate treatment for sudden tooth pain or dental trauma.",
       bullets: [
         "Immediate pain relief",
         "Prevents further complications",
         "Often available same-day",
+        "Protects surrounding teeth"
       ],
     },
   ];
@@ -69,18 +72,17 @@ const Services = () => {
   return (
     <section className='bg-white'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
-        <header className='pb-8'>
-          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Our Endodontic Services</h2>
-        </header>
-        <div className="pb-4">
-          <p className='text-[#5a6065] font-inter md:text-xl text-left lg:text-center'>
-            We offer a comprehensive range of endodontic treatments using the latest technology and techniques to ensure the best outcomes for our patients.
+        <header className='space-y-8 mb-8'>
+          <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Our Endodontic Procedures</h2>
+          <p className='text-xl font-semibold font-inter text-[#5a6065] md:text-2xl text-center'>
+            We offer a comprehensive range of endodontic treatments.
           </p>
-        </div>
+        </header>
+      
 
-        <div className="w-full max-w-4xl mx-auto ">
+        <div className="w-full max-w-4xl mx-auto pb-8">
           {/* Botones de pestañas */}
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap gap-2 mb-8 w-full justify-center">
             {services.map((service) => (
               <button
                 key={service.id}
@@ -105,9 +107,9 @@ const Services = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -30 }}
               transition={{ duration: 0.3 }}
-              className="rounded border border-[#3c8dbc] shadow-xl p-8 bg-white "
+              className="rounded border border-[#3c8dbc] p-8 bg-white"
             >
-              <Link href={selectedTab.link} ><h2 className=" text-2xl bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent uppercase font-zen font-bold mb-2">{selectedTab.title}</h2></Link>
+              <Link href={selectedTab.link} ><h2 className=" text-2xl  text-[#0a2a54] uppercase font-zen font-bold mb-2">{selectedTab.title}</h2></Link>
               <p className="mb-4 text-[#5a6065] text-lg font-inter">{selectedTab.description}</p>
               <ul className="md:grid md:grid-cols-2 space-y-1 mb-4">
                 {selectedTab.bullets.map((bullet, index) => (
@@ -121,6 +123,7 @@ const Services = () => {
             </motion.div>
           </AnimatePresence>
         </div>
+        <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter text-white border-2 border-[#0a2a54] bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] ease-in duration-300">See All Procedures</button>
       </div>
     </section>
   )

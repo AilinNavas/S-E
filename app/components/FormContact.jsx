@@ -5,8 +5,9 @@ const FormContact = () => {
     return (
         <section className='bg-[#0a2a54]'>
             <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
-            <header className='pb-8'>
-                    <h2 className='text-white font-zen font-bold uppercase text-3xl md:text-5xl '>Contact Us</h2>
+                <header className='pb-8 space-y-8'>
+                    <h2 className='text-white font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Contact Us</h2>
+                    <p className='text-xl font-semibold font-inter text-center text-white md:text-2xl'>Get in touch with us. We're here to assist you.</p>
                 </header>
 
                 <div className="lg:w-7xl flex flex-col-reverse lg:space-y-0 lg:flex-row lg:items-center lg:space-x-16">
@@ -163,7 +164,7 @@ const FormContact = () => {
                     <div className="lg:w-1/2">
                         <Image src={office} alt="office" className="rounded-t-md" />
 
-                        <div className="bg-white p-6 rounded-b-md font-inter text-[#0a2a54] text-lg"> 
+                        <div className="bg-white p-6 rounded-b-md font-inter text-[#0a2a54] text-lg">
                             <p>Leslie Horn, our Office Manager will contact you to answer your questions and schedule an appointment.</p>
                         </div>
 

@@ -6,43 +6,44 @@ const WhyUs = () => {
     return (
         <section className='bg-[#f7f7f7]'>
             <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
-                <header className='mb-8'>
+                <header className='flex flex-col items-center space-y-8 mb-8'>
                     <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>
+                    <p className='text-xl font-semibold font-inter text-[#5a6065] md:text-2xl'> We provide compassionate care, affordable treatments, and efficient service using the latest technology.</p>
                 </header>
 
-                <div className="flex flex-col-reverse items-center lg:flex-row lg:space-y-0">
+                <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start lg:space-x-8 lg:space-y-0">
 
                     <div className="lg:w-1/2 space-y-8">
                         <p className='text-[#5a6065] font-inter md:text-xl text-left'>
-                            We provide compassionate care, affordable treatments, and efficient service using the latest technology. Here's how we make your experience as seamless and comfortable as possible.
+                            Here's how we make your experience as seamless and comfortable as possible.
                         </p>
 
-                        <ul className="mt-4 space-y-4 font-inter">
+                        <ul className="mt-4 space-y-4 font-inter md:text-xl">
                             <li className="flex items-start gap-3 font-inter">
                                 <Image alt="icon-check" src={check} className="mt-1 h-6 w-6 flex-shrink-0 text-brand-accent" />
                                 <div>
-                                    <h3 className="text-lg font-semibold bg-gradient-to-b text-[#0a2a54]">Fast, Efficient Appointments</h3>
+                                    <h3 className=" font-semibold bg-gradient-to-b text-[#0a2a54]">Fast, Efficient Appointments</h3>
                                     <p className="text-[#5a6065]">With TDO software, we reduce waiting times and paperwork.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3 font-inter">
                                 <Image alt="icon-check" src={check} className="mt-1 h-6 w-6 flex-shrink-0 text-accent" />
                                 <div>
-                                    <h3 className="text-lg font-semibold bg-gradient-to-b text-[#0a2a54]">Compassionate Care</h3>
+                                    <h3 className=" font-semibold bg-gradient-to-b text-[#0a2a54]">Compassionate Care</h3>
                                     <p className="text-[#5a6065]">Our team treats every patient like family.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3 font-inter">
                                 <Image alt="icon-check" src={check} className="mt-1 h-6 w-6 flex-shrink-0 text-accent" />
                                 <div>
-                                    <h3 className="text-lg font-semibold bg-gradient-to-b text-[#0a2a54]">Affordable Rates</h3>
+                                    <h3 className=" font-semibold bg-gradient-to-b text-[#0a2a54]">Affordable Rates</h3>
                                     <p className="text-[#5a6065]">High-quality care that won't break the bank.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3 font-inter">
                                 <Image alt="icon-check" src={check} className="mt-1 h-6 w-6 flex-shrink-0 text-accent" />
                                 <div>
-                                    <h3 className="text-lg font-semibold bg-gradient-to-b text-[#0a2a54]">Seamless Technology</h3>
+                                    <h3 className=" font-semibold bg-gradient-to-b text-[#0a2a54]">Seamless Technology</h3>
                                     <p className="text-[#5a6065]">Everything is streamlined for your convenience.</p>
                                 </div>
                             </li>

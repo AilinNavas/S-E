@@ -42,8 +42,8 @@ const ParallaxSection = ({
 
       {/* Contenido */}
       <div className="relative z-20 h-full flex flex-col items-center justify-center text-center text-white px-4">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 font-zen uppercase">{title}</h2>
-        <p className="text-lg md:text-xl mb-6 max-w-3xl font-inter">{description}</p>
+        <h2 className="text-3xl md:text-5xl font-bold mb-8 font-zen uppercase ">{title}</h2>
+        <p className=" max-w-3xl font-inter mb-8 text-xl font-semibold font-inter text-center text-white md:text-2xl">{description}</p>
         {buttonText && (
           <button
         

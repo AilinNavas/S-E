@@ -4,15 +4,16 @@ import Link from "next/link";
 import star from '@/public/icons/star.svg';
 import google from '@/public/icons/google.svg';
 
-const Testimonials = ({ data = [], title, showCTA = true }) => {
+const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
   return (
     <section className='bg-[#0a2a54] '>
       <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
         {title && (
-          <header className='mb-8'>
+          <header className='mb-8 space-y-8'>
             <h2 className='text-white font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
               {title}
             </h2>
+            <p className='text-xl font-semibold font-inter text-center text-white md:text-2xl'>{subtitle}</p>
           </header>
         )}
 

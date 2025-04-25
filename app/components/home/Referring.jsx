@@ -32,18 +32,21 @@ const Referring = () => {
       <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4'>
 
         {/* Título y texto introductorio */}
-        <header className='pb-8'>
+        <header className='pb-8 space-y-8'>
           <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
             For Referring Doctors
           </h2>
+          <p className='text-xl font-semibold font-inter text-[#5a6065] md:text-2xl text-center'>
+            Let us help your patients get the best care possible.
+          </p>
         </header>
-        <div className='pb-8'>
+        {/* <div className='pb-8'>
           <p className='text-[#5a6065] font-inter md:text-xl lg:text-center'>
             We understand the importance of smooth communication and fast, reliable patient care.
             Our advanced software ensures seamless patient registration, quick data sharing, and
             timely clinical outcomes. Let us help your patients get the best care possible.
           </p>
-        </div>
+        </div> */}
 
         {/* GRID de 6 celdas */}
         <div
@@ -110,6 +113,14 @@ const Referring = () => {
             <Image src={three} alt="image-3" className="rounded-lg" /></div>
 
         </div>
+        <div className="text-center mt-8">
+        <button className=" cursor-pointer text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-primary/70 ease-in-out duration-300">
+          Refer a Patient
+        </button>
+        </div>
+
+        
+
       </div>
     </section>
   );

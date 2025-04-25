@@ -2,20 +2,20 @@
 
 import { useEffect, useRef } from "react"
 import Image from "next/image"
-import one from '@/public/insurances/1.jpeg'
-import two from '@/public/insurances/2.jpeg'
-import three from '@/public/insurances/3.jpeg'
-import four from '@/public/insurances/4.jpeg'
-import five from '@/public/insurances/5.jpeg'
-import six from '@/public/insurances/6.jpeg'
-import seven from '@/public/insurances/7.jpeg'
-import eight from '@/public/insurances/8.jpeg'
-import nine from '@/public/insurances/9.jpeg'
-import ten from '@/public/insurances/10.jpeg'
-import eleven from '@/public/insurances/11.jpeg'
-import twelve from '@/public/insurances/12.jpeg'
-import thirteen from '@/public/insurances/13.jpeg'
-import fourteen from '@/public/insurances/14.jpeg'
+import one from '@/public/insurancebyn/1.jpeg'
+import two from '@/public/insurancebyn/2.jpeg'
+import three from '@/public/insurancebyn/3.jpeg'
+import four from '@/public/insurancebyn/4.jpeg'
+import five from '@/public/insurancebyn/5.jpeg'
+import six from '@/public/insurancebyn/6.jpeg'
+import seven from '@/public/insurancebyn/7.jpeg'
+import eight from '@/public/insurancebyn/8.jpeg'
+import nine from '@/public/insurancebyn/9.jpeg'
+import ten from '@/public/insurancebyn/10.jpeg'
+import eleven from '@/public/insurancebyn/11.jpeg'
+import twelve from '@/public/insurancebyn/12.jpeg'
+import thirteen from '@/public/insurancebyn/13.jpeg'
+import fourteen from '@/public/insurancebyn/14.jpeg'
 
 const DoubleCrrousel = () => {
 
