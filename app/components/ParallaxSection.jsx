@@ -22,7 +22,7 @@ const ParallaxSection = ({
   const y = useTransform(scrollYProgress, [0, 1], ['-50%', '50%'])
 
   return (
-    <section ref={ref} className="relative h-[60vh] md:h-[80vh] overflow-hidden">
+    <section ref={ref} className="relative h-[60vh] md:h-[100vh] overflow-hidden">
       {/* Imagen con efecto parallax */}
       <motion.div
         style={{ y }}
@@ -38,12 +38,12 @@ const ParallaxSection = ({
       </motion.div>
 
       {/* Capa oscura encima */}
-      <div className="absolute inset-0 bg-black/70 z-10" />
+      <div className="absolute inset-0 bg-black/80 z-10" />
 
       {/* Contenido */}
       <div className="relative z-20 h-full flex flex-col items-center justify-center text-center text-white px-4">
         <h2 className="text-3xl md:text-5xl font-bold mb-8 font-zen uppercase ">{title}</h2>
-        <p className=" max-w-3xl font-inter mb-8 text-xl font-semibold font-inter text-center text-white md:text-2xl">{description}</p>
+        <p className=" max-w-4xl font-inter mb-8 text-xl font-semibold font-inter text-center text-white md:text-2xl">{description}</p>
         {buttonText && (
           <button
         

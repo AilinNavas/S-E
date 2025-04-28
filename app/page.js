@@ -12,7 +12,8 @@ import {FaqsHome }  from "./data/faqsHome";
 import ParallaxSection from "./components/ParallaxSection";
 import { testimonialsMain, testimonialsForServices } from "./data/testimonials";
 import DrHorn from '@/public/images/about-us/Neal.webp'
-import officeParallax from '@/public/images/about-us/office2.webp'
+import smile from '@/public/images/smile.webp'
+import { services } from "./data/services";
 
 export default function Home() {
     // Asegurar que la página comienza en la parte superior al cargar
@@ -42,19 +43,28 @@ export default function Home() {
         title="What Our Patients and Referring Doctors Say"
         subtitle="We are proud to have earned the trust of our patients and referring doctors."
         showCTA={false} />
-      <Services />
+       <Services
+      title="Our Endodontic Procedures"
+      subtitle="We offer a comprehensive range of endodontic treatments."
+      services={services}
+      showButton={true} // o false si no quieres mostrar el botón
+      buttonText="See All Procedures" // opcional, puedes personalizarlo
+      buttonLink="/procedures" // opcional, puedes cambiar el link
+    />
+      <ParallaxSection
+      imageSrc={smile}
+      title="Save Your Teeth"
+      description="Schedule your consultation and transform your dental health."
+      buttonText="Book an Appointment"
+    />
+      <Technology />
       <Referring />
       <Testimonials data={testimonialsForServices}
         title=" What People Are Saying About us"
         subtitle="We're grateful for the trust and kind words from our patients and partners."
         showCTA={true} />
-      <Technology />
-      <ParallaxSection
-      imageSrc={officeParallax}
-      title="Save Your Teeth"
-      description="Schedule your consultation and transform your dental health."
-      buttonText="Book an Appointment"
-    />
+    
+    
        <Faqs title="Frequently Asked Questions"
         description="Find answers to common questions about endodontic treatments and our practice."
         items={FaqsHome} />

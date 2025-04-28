@@ -12,56 +12,11 @@ const Insurance = () => {
                     <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl mb-8">
                         Affordable Care with Flexible Payment Options
                     </h2>
-                    <p className="text-[#5a6065] text-lg md:text-xl text-center font-inter mb-8 mx-auto">
-                        We accept most insurance plans and offer flexible payment options. Our team will help verify your coverage
-                        and discuss financing options.
-                    </p>
+                    <p className='text-xl font-semibold font-inter text-[#5a6065] md:text-2xl text-center'>
+                    Our team will help verify your coverage and discuss financing options.
+         </p>
                 </div>
 
-                {/* <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6 font-zen uppercase">
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">Aetna</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">Cigna</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">Geha</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">Humana</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">DeltaDental</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">DeltaCare</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">Unicare</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">Ameritas</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">AlwaysCare</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">MetLife</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">Unum</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">Guardian</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">Careington</span>
-                    </div>
-                    <div className="flex items-center justify-center rounded-lg bg-white p-4 shadow-sm">
-                        <span className="text-xl font-bold text-[#0a2a54]">United Healthcare</span>
-                    </div>
-                </div> */}
                 <DoubleCrrousel />
 
                 <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3 font-inter">

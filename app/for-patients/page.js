@@ -6,9 +6,10 @@ import Testimonials from "../components/Testimonials"
 import { testimonialsMain } from "../data/testimonials";
 import Insurance from "./components/Insurance"
 import ParallaxSection from "../components/ParallaxSection"
-import office from '@/public/images/about-us/during.webp'
+import men from '@/public/images/men.webp'
 import Faqs from "../components/Faqs"
 import { faqsForPatients } from "../data/faqsHome"
+import { trustPatients } from "../data/TrustData"
 
 
 const PatientsPage = () => {
@@ -23,21 +24,21 @@ const PatientsPage = () => {
                 secondaryButtonLink="/"
                 imageSrc={DrHorn}
                 imageAlt="Dr. Neal Horn at Southside Endodontics" />
-            <TrustPatients />
+            <TrustPatients cards={trustPatients} />
             <Expect />
             <Testimonials data={testimonialsMain}
                 title="What Patients & Doctors Say About Dr. Horn"
                 showCTA={false} />
 
             <Insurance />
-           
+
             <ParallaxSection
-                imageSrc={office}
+                imageSrc={men}
                 title="Need Help?"
                 description="Call our office for immediate assistance or to schedule an appointment."
                 buttonText="Call Us: (817) 555-1234" />
             <Faqs title="Have Questions? We Have Answers."
-                description=""
+                description="Find answers to common endodontic questions."
                 items={faqsForPatients} />
         </>
     )

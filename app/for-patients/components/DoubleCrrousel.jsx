@@ -2,20 +2,19 @@
 
 import { useEffect, useRef } from "react"
 import Image from "next/image"
-import one from '@/public/insurancebyn/1.jpeg'
-import two from '@/public/insurancebyn/2.jpeg'
-import three from '@/public/insurancebyn/3.jpeg'
-import four from '@/public/insurancebyn/4.jpeg'
-import five from '@/public/insurancebyn/5.jpeg'
-import six from '@/public/insurancebyn/6.jpeg'
-import seven from '@/public/insurancebyn/7.jpeg'
-import eight from '@/public/insurancebyn/8.jpeg'
-import nine from '@/public/insurancebyn/9.jpeg'
-import ten from '@/public/insurancebyn/10.jpeg'
-import eleven from '@/public/insurancebyn/11.jpeg'
-import twelve from '@/public/insurancebyn/12.jpeg'
-import thirteen from '@/public/insurancebyn/13.jpeg'
-import fourteen from '@/public/insurancebyn/14.jpeg'
+import one from '@/public/insurances/1.jpeg'
+import two from '@/public/insurances/2.jpeg'
+import three from '@/public/insurances/3.jpeg'
+import four from '@/public/insurances/4.jpeg'
+import five from '@/public/insurances/5.jpeg'
+import six from '@/public/insurances/6.jpeg'
+import seven from '@/public/insurances/7.jpeg'
+import eight from '@/public/insurances/8.jpeg'
+import nine from '@/public/insurances/9.jpeg'
+import ten from '@/public/insurances/10.jpeg'
+import eleven from '@/public/insurances/11.jpeg'
+import twelve from '@/public/insurances/12.jpeg'
+
 
 const DoubleCrrousel = () => {
 
@@ -36,8 +35,7 @@ const DoubleCrrousel = () => {
         { id: 10, src: ten, alt: "Logo 10" },
         { id: 11, src: eleven, alt: "Logo 11" },
         { id: 12, src: twelve, alt: "Logo 12" },
-        { id: 13, src: thirteen, alt: "Logo 13" },
-        { id: 14, src: fourteen, alt: "Logo 14" },
+     
     ]
 
     // Duplicamos los logos para crear el efecto infinito
@@ -110,7 +108,7 @@ const DoubleCrrousel = () => {
     return (
         <div className="w-full overflow-hidden py-8">
             {/* Carrusel superior - se mueve hacia la derecha */}
-            <div ref={topCarouselRef} className="flex overflow-x-hidden mb-8 py-4">
+            <div ref={topCarouselRef} className="flex overflow-x-hidden  py-4">
                 {duplicatedLogos.map((logo, index) => (
                     <div key={`top-${logo.id}-${index}`} className="flex-shrink-0 mx-6">
                         <Image src={logo.src || "/placeholder.svg"} alt={logo.alt} className="h-24 w-auto object-contain" />
@@ -119,13 +117,13 @@ const DoubleCrrousel = () => {
             </div>
 
             {/* Carrusel inferior - se mueve hacia la izquierda */}
-            <div ref={bottomCarouselRef} className="flex overflow-x-hidden py-4">
+            {/* <div ref={bottomCarouselRef} className="flex overflow-x-hidden py-4">
                 {duplicatedLogos.map((logo, index) => (
                     <div key={`bottom-${logo.id}-${index}`} className="flex-shrink-0 mx-6">
                         <Image src={logo.src || "/placeholder.svg"} alt={logo.alt} className="h-24 w-auto object-contain" />
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     )
 }
