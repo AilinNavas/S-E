@@ -9,15 +9,15 @@ const AboutUs = () => {
         <header className='flex flex-col items-center space-y-8 mb-8'>
           {/* <span className='font-zen font-semibold text-md text-[#3c8dbc] uppercase'>Many desktop publishing</span> */}
           <h2 className='text-[#0a2a54] font-zen text-center font-bold uppercase text-3xl md:text-5xl'>A Family-Owned Practice You Can Trust</h2>
-       <p className='text-xl font-semibold font-inter text-[#5a6065] md:text-2xl'>We believe in building lasting relationships through compassionate care and clear communication.</p>
+          <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl'>We believe in building relationships through compassionate care and clear communication.</p>
         </header>
         <div className="flex flex-col items-center space-y-8">
-         
+
           <Image src={family} alt='family-Horn' className='rounded-md mx-auto ' />
-          
-          <p className='text-[#5a6065] font-inter md:text-xl text-left lg:text-center'>
+          <p className='text-[#5a6065] font-inter md:text-xl text-left lg:text-center max-w-3xl'>
             At Southside Endodontics, Dr. Neal Horn and Leslie are committed to providing the highest quality of care to our patients, treating them like family.
           </p>
+
           <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter text-white border-2 border-[#0a2a54] bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] ease-in duration-300">Meet Dr. Horn</button>
         </div>
       </div>

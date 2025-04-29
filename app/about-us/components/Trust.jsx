@@ -8,8 +8,8 @@ const Trust = () => {
         <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl mb-8">
           Why Patients & Doctors Trust Dr. Horn
         </h2>
-        <p className="text-[#5a6065] text-lg md:text-xl text-center font-inter mb-8 mx-auto">
-          Dr. Horn combines clinical expertise with a compassionate approach to provide exceptional endodontic care.
+        <p className="text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center">
+          Dr. Horn combines clinical expertise with a compassionate approach.
         </p>
       </div>
 

@@ -25,16 +25,18 @@ const timeline = [
 
 const Journey = () => {
     return (
-     
+
         <section className="bg-[#ffffff]">
             <div className=" mx-auto max-w-7xl py-16 lg:py-32 px-4">
-                <h2 className="text-3xl md:text-5xl font-bold text-[#0a2a54] text-center font-zen mb-4 uppercase"
-                >  Dr. Horn's Journey in Dentistry
-                </h2>
-                <p  className="text-[#5a6065] text-lg md:text-xl text-center font-inter mb-8 mx-auto"
-                >
-                    From his early education to his specialized training in endodontics, Dr. Horn has dedicated his career to excellence in dental care.
-                </p>
+
+                <header className="space-y-8 mb-8">
+                    <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center">
+                    Dr. Horn's Journey in Dentistry
+                    </h2>
+                    <p className="text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center">
+                    Dr. Horn has dedicated his career to excellence in dental care.
+                    </p>
+                </header>
 
                 <div className="relative mx-auto">
                     <div className="absolute left-[50%] top-0 bottom-0 hidden w-0.5 -translate-x-1/2 bg-[#3c8dbc]/40 md:block"></div>

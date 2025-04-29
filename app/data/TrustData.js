@@ -1,4 +1,4 @@
-import { Award, Cpu , Heart, AlertCircle, Handshake, HandHeart } from 'lucide-react';
+import { Award, Cpu , Heart, AlertCircle, Handshake, HandHeart , Clock } from 'lucide-react';
 
 export const trustPatients = [
     {
@@ -45,6 +45,28 @@ export const trustPatients = [
       title: "Seamless Doctor Communication",
       description: "We maintain clear communication with referring dentists through secure referrals and detailed case updates.",
       benefits: ["Comprehensive treatment reports", "Secure digital image sharing", "Easy online referral process"],
+    },
+   
+  ];
+
+  export const trustDoctors = [
+    {
+      icon: Award,
+      title: "Advanced Endodontic Care",
+      description: "Specialized expertise, cutting-edge technology, and a patient-first approach for optimal outcomes.",
+      benefits: ["Precise diagnosis & planning", "High success in complex cases", "Stress-free, comfortable care"],
+    },
+    {
+      icon: HandHeart,
+      title: "Seamless Communication",
+      description: "We provide detailed reports, imaging, and follow-ups so you're always informed about your patients' care.",
+      benefits: ["Complete treatment reports", "Secure image sharing", "Direct access to Dr. Horn"],
+    },
+    {
+      icon: Clock,
+      title: "Stress-Free Referral Process",
+      description: "Easy digital referrals with quick turnaround times for urgent cases and emergencies.",
+      benefits: ["Online referral system", "Same-day emergency slots", "Quick return to your care"],
     },
    
   ];

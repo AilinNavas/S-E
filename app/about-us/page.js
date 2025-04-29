@@ -18,7 +18,7 @@ const AboutUsPage = () => {
       <NavbarPC /> */}
       <Hero
         title="Experienced Endodontist in Fort Worth, TX"
-        subtitle="With over 15 years of experience in endodontics, Dr. Neal Horn is committed to providing expert, patient-centered care in Fort Worth's Medical District. Fluent in Spanish and passionate about his community, he ensures every patient feels comfortable and well-informed."
+        subtitle="Trusted, Skilled, and Passionate About Patient Care."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/appointments"
         secondaryButtonText="Refer Now"
@@ -29,6 +29,7 @@ const AboutUsPage = () => {
       <Trust />
       <Testimonials data={testimonialsMain}
         title="What Patients & Doctors Say About Dr. Horn"
+        subtitle="Real feedback on exceptional endodontics care"
         showCTA={false} />
       <AfterOffice />
       <ParallaxSection
