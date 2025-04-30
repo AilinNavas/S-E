@@ -19,10 +19,7 @@ const Expect = () => {
                     {/* Before Your Visit */}
                     <div className="bg-white border-none shadow-sm">
                         <div className="flex flex-col gap-6 p-6">
-                            <div className="flex items-center gap-4">
-                                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#3c8dbc] text-white">
-                                    <span className="text-xl font-bold">1</span>
-                                </div>
+                            <div className="flex items-center justify-center gap-4">
                                 <h3 className="text-2xl font-semibold text-[#0a2a54]">Before Your Visit</h3>
                             </div>
                             <div className="relative h-[200px] w-full overflow-hidden rounded-lg">
@@ -41,15 +38,12 @@ const Expect = () => {
                                 Complete Form Now
                             </button>
                         </div>
-                    </div>
+                    </div> 
 
                     {/* During Your Treatment */}
-                    <div className="bg-white border-none shadow-sm">
+                  <div className="bg-white border-none shadow-sm">
                         <div className="flex flex-col gap-6 p-6">
-                            <div className="flex items-center gap-4">
-                                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#3c8dbc] text-white">
-                                    <span className="text-xl font-bold">2</span>
-                                </div>
+                            <div className="flex items-center justify-center gap-4">
                                 <h3 className="text-2xl font-semibold text-[#0a2a54]">During Your Treatment</h3>
                             </div>
                             <div className="relative h-[200px] w-full overflow-hidden rounded-lg">
@@ -79,15 +73,12 @@ const Expect = () => {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> 
 
                     {/* Aftercare & Recovery */}
                     <div className="bg-white border-none shadow-sm">
                         <div className="flex flex-col gap-6 p-6">
-                            <div className="flex items-center gap-4">
-                                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#3c8dbc] text-white">
-                                    <span className="text-xl font-bold">3</span>
-                                </div>
+                            <div className="flex items-center justify-center gap-4">
                                 <h3 className="text-2xl font-semibold text-[#0a2a54]">Aftercare & Recovery</h3>
                             </div>
                             <div className="relative h-[200px] w-full overflow-hidden rounded-lg">
@@ -106,7 +97,10 @@ const Expect = () => {
                                 View Aftercare Instructions
                             </button>
                         </div>
-                    </div>
+                    </div> 
+                  
+
+
                 </div>
             </div>
         </section>

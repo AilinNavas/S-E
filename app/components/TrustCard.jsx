@@ -6,7 +6,7 @@ const TrustCard = ({ icon: Icon, title, description, benefits = [] }) => {
             <div className="rounded-full bg-[#3c8dbc]/10 p-4">
                 <Icon className="h-8 w-8 text-[#3c8dbc]" />
             </div>
-            <h3 className="text-2xl text-[#0a2a54]">{title}</h3>
+            <h3 className="text-xl text-[#0a2a54] font-semibold">{title}</h3>
             <p className="text-[#5a6065] text-lg">{description}</p>
             <ul className="mt-4 space-y-2">
                 {benefits.map((benefit, index) => (

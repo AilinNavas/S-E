@@ -1,4 +1,4 @@
-import { Award, Cpu , Heart, AlertCircle, Handshake, HandHeart , Clock } from 'lucide-react';
+import { Award, Cpu , Heart, AlertCircle, Handshake, HandHeart , Clock  } from 'lucide-react';
 
 export const trustPatients = [
     {
@@ -70,3 +70,32 @@ export const trustPatients = [
     },
    
   ];
+  export const trustAboutUs = [
+    {
+      icon: Award,
+      title: "Expert Endodontic Care",
+      description: "Over 15 years of experience in root canal treatment and endodontic procedures.",
+      benefits: ["15+ years experience", "Complex case expertise"],
+    },
+    {
+      icon: HandHeart,
+      title: "Bilingual in Spanish",
+      description: "Communicates fluently with Spanish-speaking patients for better understanding",
+      benefits: ["Clear communication", "Cultural understanding"],
+    },
+    {
+      icon: Clock,
+      title: "Compassionate Care",
+      description: "Creates a stress-free, comfortable environment for all patients.",
+      benefits: ["Prioritizes Comfort", "Gentle Approach"],
+    },
+    {
+      icon: Cpu,
+      title: "Advanced Technology",
+      description: "Uses the latest innovations in endodontics for precise, effective treatments.",
+      benefits: ["Digital Imaging", "Microscopic endodontics"],
+    },
+   
+  ];
+  
+  

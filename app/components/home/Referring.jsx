@@ -28,7 +28,7 @@ const Referring = () => {
   ];
 
   return (
-    <section className='bg-[#f7f7f7]'>
+    <section className='bg-[#3c8dbc]/5'>
       <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4'>
 
         {/* Título y texto introductorio */}

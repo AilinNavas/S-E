@@ -9,7 +9,7 @@ const InfoContact = () => {
                 <header className='pb-8 space-y-8'>
                     <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>Find Us</h2>
                     <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center'>
-                    We're conveniently located in Fort Worth to serve you and your family.
+                    We're conveniently located in Fort Worth to serve you.
           </p>
                 </header>
 

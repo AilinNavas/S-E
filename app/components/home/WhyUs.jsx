@@ -4,7 +4,7 @@ import check from "@/public/icons/check.svg"
 
 const WhyUs = () => {
     return (
-        <section className='bg-[#f7f7f7]'>
+        <section className='bg-[#3c8dbc]/5'>
             <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
                 <header className='flex flex-col items-center space-y-8 mb-8'>
                     <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>

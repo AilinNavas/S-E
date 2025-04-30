@@ -40,7 +40,7 @@ const Contact = () => {
                     <p className="text-[#5a6065]">Friday - Saturday - Sunday : Closed</p>
                   </div>
                 </div>
-                <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book an Appoinment</button>
+                {/* <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">Book an Appoinment</button> */}
               </div>
             </div>
           </div>

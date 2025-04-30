@@ -81,3 +81,30 @@ export const faqsForPatients = [
     answer: "Root canal treatment has a high success rate of approximately 95%. With proper care, most teeth that have had root canal treatment can last a lifetime. Getting a proper restoration (crown) after your root canal is crucial for long-term success.",  
   },
 ]
+
+export const faqsForDoctors = [ 
+  {
+    question: 'How do I refer a patient?',
+    answer: "You can use our secure online form below, send referrals through TDO if you're already connected to our system, or call our office directly at (817) 555-1234. We've made the process as simple as possible to save you time.",
+  },
+  {
+    question: 'How soon can my patient be seen?',
+    answer: "Most cases are scheduled within 24-48 hours. Emergencies are prioritized and often seen the same day. We understand the importance of prompt care, especially for patients in pain.",
+  },
+  {
+    question: 'What information do you need for a referral?',
+    answer:"Basic patient contact information, reason for referral, and any relevant radiographs are helpful. If you have specific concerns or notes about the case, please include those as well. The more information we have, the better we can prepare for the patient's visit.",
+  },
+  {
+    question: "How will I be updated about my patient's treatment?",
+    answer:"We provide comprehensive reports after each appointment, including treatment details, radiographs, and recommendations for restoration. These are sent securely via email or through TDO. For complex cases, Dr. Horn may call you directly to discuss treatment planning.",
+  },
+  {
+    question: 'Do you handle insurance verification?',
+    answer: 'Yes, our team verifies insurance coverage and discusses financial arrangements with patients before treatment. We accept most major insurance plans and work to maximize benefits for patients.',
+  },
+  {
+    question: "What if my patient needs emergency care after hours?" ,
+    answer: "We offer after-hours emergency care for referred patients. Dr. Horn provides his cell phone number to referring doctors for urgent cases. We understand that dental emergencies don't always happen during business hours and are committed to providing relief when patients need it most.",  
+  },
+]
