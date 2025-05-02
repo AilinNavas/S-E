@@ -15,8 +15,6 @@ import WhyTrustUs from "../procedures/components/WhyTrustUs"
 const AboutUsPage = () => {
   return (
     <>
-      {/* <NavbarMobile />
-      <NavbarPC /> */}
       <Hero
         title="Experienced Endodontist in Fort Worth, TX"
         subtitle="Discover trusted, skilled, and passionate endodontic care at Southside Endodontics"
