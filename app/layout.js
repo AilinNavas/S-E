@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <NavbarMobile />
         <NavbarPC />
         {children}
-       <ConditionalFormContact />
+        <ConditionalFormContact />
         <InfoContact />
         <Footer />
       </body>
