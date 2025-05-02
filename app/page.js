@@ -28,7 +28,7 @@ export default function Home() {
       {/* <NavbarMobile />
       <NavbarPC /> */}
       <Hero
-        title="sOUTHSIDE ENDODONTICS IN FORT WORTH, TX"
+        title="SOUTHSIDE ENDODONTICS  FORT WORTH, TX"
         subtitle="We make your experience as seamless and comfortable as possible"
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/appointments"
@@ -61,7 +61,7 @@ export default function Home() {
       <Technology />
 
       <Testimonials data={testimonialsForServices}
-        title=" What People Are Saying About us"
+        title="Painless Experience"
         subtitle="We're grateful for the trust and kind words from our patients and partners."
         showCTA={true} />
 

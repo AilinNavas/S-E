@@ -128,9 +128,6 @@ const Footer = () => {
         </div>
         <div className="mt-8 text-center text-sm text-white">
           <p>&copy; {new Date().getFullYear()} Southside Endodontics. All rights reserved.</p>
-          <p className="mt-2">
-            <span className="font-medium text-white">Tagline:</span> Trusted, Community-Oriented Care for Every Patient.
-          </p>
 
           {/* Hidden structured data for SEO */}
           <div className="hidden" aria-hidden="true">

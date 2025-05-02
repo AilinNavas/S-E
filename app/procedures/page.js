@@ -17,7 +17,7 @@ const ProceduresPage = () => {
     <>
       <Hero
         title="Endodontic Care for a Healthier, Pain-Free Smile"
-        subtitle="Endodontic treatments delivered with precision, comfort, and care"
+        subtitle="Endodontic treatments delivered with precision, and care."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/appointments"
         secondaryButtonText="Refer Now"

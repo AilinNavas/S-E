@@ -17,7 +17,7 @@ const PatientsPage = () => {
         <>
             <Hero
                 title="Compassionate Endodontic Care You Can Trust"
-                subtitle="Everything you need to know before, during, and after your visit"
+                subtitle="Everything you need to know before, during, and after your visit."
                 primaryButtonText="Book An Appointment"
                 primaryButtonLink="/appointments"
                 secondaryButtonText="Insurance"
@@ -26,7 +26,7 @@ const PatientsPage = () => {
                 imageAlt="Dr. Neal Horn at Southside Endodontics" />
             <WhyTrustUs cards={trustPatients}
                 title="Why Patients Choose Southside Endodontics"
-                subtitle="Dr. Horn combines clinical expertise with a compassionate approach"
+                subtitle="Dr. Horn combines clinical expertise with a compassionate approach."
                 bgColor="bg-white"
                 mdCols={4} />
             <Expect />

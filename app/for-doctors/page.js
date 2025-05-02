@@ -17,10 +17,10 @@ const DoctorsPage = () => {
   return (
     <>
       <Hero title="Your Trusted Endodontic Partner"
-        subtitle="Seamless referrals and clear communication. Ensure the best outcomes for your patients"
-        primaryButtonText="Book An Appointment"
+        subtitle="Seamless referrals and clear communication. Ensure the best outcomes for your patients."
+        primaryButtonText="Refer Now"
         primaryButtonLink="/appointments"
-        secondaryButtonText="Refer Now"
+        secondaryButtonText="Call Us"
         secondaryButtonLink="/referrals"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />

@@ -30,7 +30,7 @@ const Expect = () => {
                                     className="object-contain"
                                 />
                             </div>
-                            <p className="text-[#5a6065]">
+                            <p className="text-[#5a6065] text-center">
                                 Fill out your patient forms online to save time. Avoid eating right before your appointment if
                                 sedation is used.
                             </p>

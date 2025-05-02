@@ -3,8 +3,8 @@ import { Award, Cpu , Heart, AlertCircle, Handshake, HandHeart , Clock  } from '
 export const trustPatients = [
     {
       icon: Award,
-      title: "Experienced & Caring Specialists",
-      description: "Our endodontists have years of experience in pain-free root canal therapy.",
+      title: "Experienced Specialist",
+      description: "Dr. Horn has years of experience in pain-free root canal therapy.",
       benefits: ["Gentle procedures", "Proven success rates"],
     },
     {
@@ -15,14 +15,14 @@ export const trustPatients = [
     },
     {
       icon: Heart,
-      title: "Comfort & Anxiety-Free Treatments",
+      title: "Anxiety-Free",
       description: "Focus on patient comfort with sedation options available.",
       benefits: ["Sedation available", "Friendly staff"],
     },
     {
       icon: AlertCircle,
-      title: "Same-Day Emergency Care",
-      description: "Immediate appointments for urgent dental issues.",
+      title: "Same-Day Emergency",
+      description: "Immediate appointments for urgent dental issues. Call us for same-day treatment.",
       benefits: ["Fast attention", "Pain relief first"],
     },
   ];
@@ -43,7 +43,7 @@ export const trustPatients = [
     {
       icon: Handshake,
       title: "Seamless Doctor Communication",
-      description: "We maintain clear communication with referring dentists through secure referrals and detailed case updates.",
+      description: "We maintain clear communication with referring dentists through secure referrals and detailed case updates. We take care of everything.",
       benefits: ["Comprehensive treatment reports", "Secure digital image sharing", "Easy online referral process"],
     },
    
