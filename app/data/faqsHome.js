@@ -42,15 +42,15 @@ export const faqsAboutUs = [
     answer: 'Yes, Dr. Horn is fluent in Spanish. He spent two years in Argentina as a missionary during his college years, where he became proficient in the language. This allows him to communicate effectively with Spanish-speaking patients, ensuring they fully understand their treatment options and care instructions.',
   },
   {
-    question: ' What technology does Dr. Horn use in his practice? ',
+    question: 'What technology does Dr. Horn use in his practice? ',
     answer: 'Dr. Horn utilizes state-of-the-art technology including digital radiography, 3D cone beam CT imaging, operating microscopes, and the TDO (The Digital Office) software system. These advanced tools allow for precise diagnosis, efficient treatment, and optimal patient outcomes.',
   },
   {
-    question: ' How does Dr. Horn ensure patient comfort during procedures?',
+    question: 'How does Dr. Horn ensure patient comfort during procedures?',
     answer: 'Dr. Horn prioritizes patient comfort through effective local anesthesia, a gentle approach, and clear communication throughout the procedure. He takes time to explain each step and ensures patients feel at ease. For anxious patients, additional comfort options are available upon request.',
   },
   {
-    question: " What is Dr. Horn's approach to emergency cases?" ,
+    question: "What is Dr. Horn's approach to emergency cases?" ,
     answer: "Dr. Horn understands that dental emergencies require prompt attention. He makes every effort to see emergency patients the same day they call, providing immediate relief from pain and addressing urgent dental needs quickly and effectively."  
   },
 ]
@@ -108,3 +108,29 @@ export const faqsForDoctors = [
     answer: "We offer after-hours emergency care for referred patients. Dr. Horn provides his cell phone number to referring doctors for urgent cases. We understand that dental emergencies don't always happen during business hours and are committed to providing relief when patients need it most.",  
   },
 ]
+export const faqsEnEspañol = [ 
+  {
+    question: '¿El procedimiento será doloroso?',
+    answer: "¡Para nada! Con la anestesia moderna y la tecnología actual, el tratamiento de conducto no es más incómodo que una simple obturación. Nos aseguramos de que estés completamente anestesiado antes de comenzar, y muchos pacientes se sorprenden de lo indoloro que resulta.",
+  },
+  {
+    question: '¿Cuánto dura un tratamiento de conducto?',
+    answer: "Normalmente, entre 60 y 90 minutos por sesión. Algunos casos pueden requerir dos visitas, dependiendo de su complejidad. Nuestra tecnología avanzada nos permite trabajar de forma eficiente sin comprometer la calidad del tratamiento.",
+  },
+  {
+    question: '¿Qué sucede después del procedimiento?',
+    answer:" Es normal sentir una ligera molestia, pero puedes retomar tus actividades habituales en un día. Deberás visitar a tu dentista general para colocar una restauración permanente (generalmente una corona) que proteja el diente tratado. Hasta entonces, evita masticar con ese diente y sigue nuestras indicaciones postoperatorias.",
+  },
+  {
+    question: '¿El seguro cubre el tratamiento?',
+    answer:" La mayoría de los planes de seguro cubren la atención endodóntica. Te ayudaremos a verificar tu cobertura antes del tratamiento y te explicaremos cualquier costo adicional. Nuestro equipo trabaja contigo para maximizar tus beneficios y hacer el tratamiento accesible.",
+  },
+  {
+    question: '¿Cómo sé si necesito un tratamiento de conducto?',
+    answer: 'Los síntomas comunes incluyen dolor dental intenso, sensibilidad prolongada al calor o al frío, decoloración del diente, inflamación o sensibilidad en las encías cercanas y la presencia de una fístula (granito) persistente en las encías. Sin embargo, en algunos casos no hay síntomas. Las revisiones dentales regulares pueden detectar estos problemas antes de que se vuelvan urgentes.',
+  },
+  {
+    question: '¿Cuál es la tasa de éxito del tratamiento de conducto?',
+    answer: "El tratamiento de conducto tiene una alta tasa de éxito, aproximadamente del 95%. Con el cuidado adecuado, la mayoría de los dientes tratados pueden durar toda la vida. Colocar una restauración adecuada (corona) después del tratamiento es clave para su éxito a largo plazo.",  
+  },
+];
