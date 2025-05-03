@@ -2,69 +2,145 @@
 
 export const testimonialsForServices = [
     {
-      name: "Sarah Johnson",
+      name: "Stuart White",
       role: "Patient",
-      image: "/images/reviews/sarah-johnson.png",
+      image: "/images/reviews/Stuart-White.png",
       text:
-        "Dr. Horn and his team made my root canal procedure so much easier than I expected. They were kind, professional, and made sure I was comfortable throughout the entire process.",
+        "Professional and personable service. Stephanie and Dr. Horn were able to put me at ease quickly. I was able to make an appointment on short notice as well.",
     },
     {
-      name: "Michael Rodriguez",
+      name: "Terry Johnson",
       role: "Patient",
-      image: "/images/reviews/michael-rodriguez.png",
+      image: "/images/reviews/Terry-Johnson.png",
       text:
-        "I was nervous about my procedure, but the team at Southside Endodontics put me at ease. Their technology made everything quick and efficient, and the follow-up care was excellent.",
+        "The people in this office were quick, thorough, friendly and professional. I would recommend them to everyone.",
     },
     {
-      name: "Dr. Emily Chen",
-      role: "Fort Worth Dental Care",
-      image: "/images/reviews/dr-emily-chen.png",
-      text:
-        "I've been referring my patients to Southside Endodontics for years. Their communication is excellent, and my patients always return with positive feedback about their experience.",
-    },
-    {
-      name: "James Davis",
+      name: "Dawn Green",
       role: "Patient",
-      initials: "JD",
+      image: "/images/reviews/Dawn-Green.png",
       text:
-        "After putting off my root canal for months due to fear, I finally visited Southside Endodontics. Dr. Horn was patient, explained everything clearly, and the procedure was completely painless. I wish I hadn't waited so long!",
+        "The doctor and his staff are so incredibly kind and gentle. Anyone who doesn’t like to go to the dentist/endodontist would benefit greatly by making an appointment here!",
     },
     {
-      name: "Lisa Martinez",
+      name: "Carter Family",
       role: "Patient",
-      initials: "LM",
+      image: "/images/reviews/Carter-Family.png",
       text:
-        "The entire staff at Southside Endodontics is amazing! From the moment I walked in with severe tooth pain, they made me feel cared for. Dr. Horn's expertise is evident, and I'm so grateful for their emergency care.",
+        "We had to bring our 15 year old in due to a dental emergency and they got us in the same day. Dr. Horn was very knowledgeable and showed us different angles of X-rays and explained why our son’s tooth couldn’t be saved. He was very compassionate and helped this momma be at peace about what needs to be done with my son. I have been praying for direction as we’ve seen multiple doctors in the last couple of weeks and I know Dr. Horn has been an answer to my prayers.",
+    },
+
+  
+    {
+      name: "Renee Contreras",
+      role: "Patient",
+      image: "/images/reviews/Renee-Contreras.png",
+      text:
+        "I went into my appointment with Dr.Horne with anxiety and fear. I have a high fear of the dentist, and let the office know. They provided top tier care and were very supportive and continued to check if I was doing on during my procedure. Thank you for putting my fear at ease. 5 stars for sure, I strongly recommend ⭐️",
     },
     {
-      name: "Dr. Robert Wilson",
-      role: "Wilson Family Dentistry",
-      initials: "RW",
+      name: "Terry Valles",
+      role: "Patient",
+      image: "/images/reviews/Terry-Valles.png",
       text:
-        "As a referring dentist, I appreciate the detailed reports and excellent care my patients receive at Southside Endodontics. Dr. Horn's expertise with complex cases has saved many teeth that might otherwise have been lost.",
+        "My experience with Dr. Horn and Kayla were great. They made me very comfortable during my procedure. They did a great job explaining the process and checking on me during the procedure. Additional staff was professional and friendly. I definitely would recommend Southside Endodontics.",
     },
   ];
   
   export const testimonialsMain = [
     {
-      name: "Sarah Johnson",
+      name: "Marcus Taite",
       role: "Patient",
-      image: "/images/reviews/sarah-johnson.png",
+      image: "/images/reviews/Marcus-Taite.png",
       text:
-        "Dr. Horn and his team made my root canal procedure so much easier than I expected. They were kind, professional, and made sure I was comfortable throughout the entire process.",
+        "If you need dental work performed (Root Canal) I highly recommend Southside Orthodontist, Dr. Horn does an excellent job and the customer service is top notch. Everyone is very professional and treat you with the utmost courtesy.",
     },
     {
-      name: "Michael Rodriguez",
+      name: "Karla Speck",
       role: "Patient",
-      image: "/images/reviews/michael-rodriguez.png",
+      image: "/images/reviews/Karla-Speck.png",
       text:
-        "I was nervous about my procedure, but the team at Southside Endodontics put me at ease. Their technology made everything quick and efficient, and the follow-up care was excellent.",
+        "I have severe dental anxiety and was very much dreading this. The staff was supportive and compassionate. Dr. Horn was very professional and you can tell he is very good at what he does. If I need another procedure I will definitely go back. Thank you everyone!",
     },
     {
-      name: "Dr. Emily Chen",
-      role: "Fort Worth Dental Care",
-      image: "/images/reviews/dr-emily-chen.png",
+      name: "Judy Corbeille",
+      role: "Patient",
+      image: "/images/reviews/Judy-Corbeille.png",
       text:
-        "I've been referring my patients to Southside Endodontics for years. Their communication is excellent, and my patients always return with positive feedback about their experience.",
+        "Dr. Horn and his staff were exceedingly professional and kind. Highly recommend his services for anyone needing endodontic care.",
     },
+  ]
+
+  export const testimonialsAboutUs3 = [
+    {
+      name: "Daniel Lopez",
+      role: "Patient",
+      image: "/images/reviews/Daniel-Lopez.png",
+      text:
+        "I recently visited the office and was thoroughly impressed by the exceptional level of care and professionalism displayed by the entire team. From the moment I walked in, I was greeted with warmth and kindness. Dr. Horn, Leslie, and Stephanie went above and beyond to ensure I felt comfortable and well-informed throughout my visit.",
+    },
+    {
+      name: "Megan C",
+      role: "Patient",
+      image: "/images/reviews/Megan-C.png",
+      text:
+        "I honestly can’t say enough about my experience. The office and staff are so efficient and organized. My treatment was explained to me clearly and expectations set. But probably the best thing about this office is how kind and understanding they are and the best playlists of music while you’re there!",
+    },
+    {
+      name: "Henry Casillas",
+      role: "Patient",
+      image: "/images/reviews/Henry-Casillas.png",
+      text:
+        "Very pleasant experience today at Dr Horn office very compassionate and professional. He was very concerned about my tooth. They even took me in early as someone else had canceled. It’s a small office just him, his wife and her assistant. They were so kind and good to me.",
+    },
+  ]
+
+  export const testimonialsForDoctors3 = [
+    {
+      name: "Robert Keith",
+      role: "Patient",
+      image: "/images/reviews/Robert-Keith.png",
+      text:
+        "I drive almost 3 hours for my appointments, but it is absolutely worth it! The care I receive here is far beyond anything I could ever hope to receive back home. If you’re looking for someone to do your root canal extraction or oral surgery, this is the place. You will not regret it!",
+    },
+    {
+      name: "Mark Crutchfield",
+      role: "Dentist",
+      image: "/images/reviews/Mark-Crutchfield.png",
+      text:
+        "Dr. Horn is thorough, caring and competent. I have seen three Endodontists during the last ten years and Dr. Neal Horn is certainly the best of the three.",
+    },
+    {
+      name: "Scott Tanner",
+      role: "Patient",
+      image: "/images/reviews/Scott-Tanner.png",
+      text:
+        "Dr. Horn and his staff were excellent. First, they were so great to fit us into their busy schedule with very little notice for an emergency root canal. The process and experience were so good. Friendly and professional. I highly recommend them to anyone.",
+    },
+
+  ]
+
+  export const testimonialsForDPatients3 = [
+    {
+      name: "Gloria Singleton",
+      role: "Patient",
+      image: "/images/reviews/Gloria-Singleton.png",
+      text:
+        "The Dr and staff were very professional and friendly…Dr. Horn did an amazing job on retreating my root canal ... I highly recommend!!",
+    },
+    {
+      name: "Jerihmy Dalton",
+      role: "Patient",
+      image: "/images/reviews/Jerihmy-Dalton.png",
+      text:
+        "Very polite and professional staff! Dr. Horn did a fantastic job! I would absolutely recommend Southside Endodontics!",
+    },
+    {
+      name: "Kathryn Fleming",
+      role: "Patient",
+      image: "/images/reviews/Kathryn-Fleming.png",
+      text:
+        "I almost fell asleep during the root canal!Very professional, empathetic, courteous!",
+    },
+
   ]

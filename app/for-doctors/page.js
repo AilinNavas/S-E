@@ -4,7 +4,7 @@ import DrHorn from '@/public/images/about-us/DrHorn.webp'
 import { trustDoctors } from '../data/TrustData'
 import ReferralProcess from './components/ReferralProcess'
 import Testimonials from '../components/Testimonials'
-import { testimonialsMain } from '../data/testimonials'
+import { testimonialsForDoctors3 } from '../data/testimonials'
 import Faqs from '../components/Faqs'
 import { faqsForDoctors } from '../data/faqsHome'
 import ParallaxSection from '../components/ParallaxSection'
@@ -30,7 +30,7 @@ const DoctorsPage = () => {
         bgColor="bg-white"
         mdCols={3} />
       <ReferralProcess />
-      <Testimonials data={testimonialsMain}
+      <Testimonials data={testimonialsForDoctors3}
         title="Fort Worth dentists trust"
         subtitle="Real experiences working with Southside Endodontics."
         showCTA={true} />

@@ -14,6 +14,7 @@ import { testimonialsMain, testimonialsForServices } from "./data/testimonials";
 import DrHorn from '@/public/images/about-us/Neal.webp'
 import smile from '@/public/images/smile.webp'
 import { services } from "./data/services";
+import Referring2 from "./components/home/Referring2";
 
 export default function Home() {
   // Asegurar que la página comienza en la parte superior al cargar
@@ -29,7 +30,7 @@ export default function Home() {
       <NavbarPC /> */}
       <Hero
         title="SOUTHSIDE ENDODONTICS  FORT WORTH, TX"
-        subtitle="We make your experience as seamless and comfortable as possible"
+        subtitle="We make your experience as seamless and comfortable as possible."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/appointments"
         secondaryButtonText="Refer Now"
@@ -51,13 +52,8 @@ export default function Home() {
         buttonText="See All Procedures" // opcional, puedes personalizarlo
         buttonLink="/procedures" // opcional, puedes cambiar el link
       />
-      <Referring />
-      <ParallaxSection
-        imageSrc={smile}
-        title="Save Your Teeth"
-        description="Schedule your consultation and transform your dental health."
-        buttonText="Book an Appointment"
-      />
+      <Referring2 />
+   
       <Technology />
 
       <Testimonials data={testimonialsForServices}
@@ -65,7 +61,12 @@ export default function Home() {
         subtitle="We're grateful for the trust and kind words from our patients and partners."
         showCTA={true} />
 
-
+<ParallaxSection
+        imageSrc={smile}
+        title="SOUTHSIDE ENDODONTICS FORT WORTH, TX"
+        description="We make your experience as seamless and comfortable as possible."
+        buttonText="Book an Appointment"
+      />
       <Faqs title="Frequently Asked Questions"
         description="Find answers to common questions about endodontic treatments and our practice."
         items={FaqsHome} />

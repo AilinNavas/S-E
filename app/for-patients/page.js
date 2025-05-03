@@ -2,7 +2,7 @@ import Hero from "../components/Hero"
 import DrHorn from '@/public/images/about-us/DrHorn.webp'
 import Expect from "./components/Expect"
 import Testimonials from "../components/Testimonials"
-import { testimonialsMain } from "../data/testimonials";
+import { testimonialsForDPatients3 } from "../data/testimonials";
 import Insurance from "./components/Insurance"
 import ParallaxSection from "../components/ParallaxSection"
 import office from "@/public/images/about-us/before.webp"
@@ -30,7 +30,7 @@ const PatientsPage = () => {
                 bgColor="bg-white"
                 mdCols={4} />
             <Expect />
-            <Testimonials data={testimonialsMain}
+            <Testimonials data={testimonialsForDPatients3}
                 title="What Patients & Doctors Say About Dr. Horn"
                 showCTA={false} />
 

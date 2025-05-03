@@ -2,7 +2,7 @@ import Hero from "../components/Hero"
 import DrHorn from '@/public/images/about-us/DrHorn.webp'
 import Journey from "./components/Journey"
 import Testimonials from "../components/Testimonials"
-import { testimonialsMain } from "../data/testimonials";
+import { testimonialsAboutUs3 } from "../data/testimonials";
 import AfterOffice from "./components/AfterOffice"
 import ParallaxSection from "../components/ParallaxSection"
 import Faqs from "../components/Faqs"
@@ -30,7 +30,7 @@ const AboutUsPage = () => {
         subtitle="Dr. Horn combines clinical expertise with a compassionate approach."
         bgColor="bg-[#3c8dbc]/5"
         mdCols={4} />
-      <Testimonials data={testimonialsMain}
+      <Testimonials data={testimonialsAboutUs3}
         title="What Patients & Doctors Say About Dr. Horn"
         subtitle="Real feedback on exceptional endodontics care"
         showCTA={false} />
