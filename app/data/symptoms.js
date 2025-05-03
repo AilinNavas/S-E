@@ -77,3 +77,31 @@ export const symptomsEndodonticSurgery = [
         subtitle: "When a biopsy or examination of the root surface is needed to diagnose the cause of persistent problems.",
     },
 ]
+
+export const symptomsEmergencyCare = [
+    {
+      title: "Severe Toothache",
+      subtitle: "Intense, throbbing pain that doesn’t subside and may worsen with pressure or temperature changes.",
+    },
+    {
+      title: "Facial Swelling",
+      subtitle: "Visible swelling in the face or jaw, often due to a deep infection spreading beyond the tooth.",
+    },
+    {
+      title: "Knocked-Out Tooth",
+      subtitle: "A tooth that has been completely dislodged due to trauma and requires immediate intervention.",
+    },
+    {
+      title: "Cracked or Broken Tooth",
+      subtitle: "A fracture that exposes the pulp or root, leading to pain, sensitivity, and risk of infection.",
+    },
+    {
+      title: "Recurring Infection",
+      subtitle: "A previously treated tooth becomes reinfected, causing pain, swelling, or discharge.",
+    },
+    {
+      title: "Bleeding After Trauma",
+      subtitle: "Persistent bleeding from a tooth or gum injury that may signal internal damage.",
+    },
+  ];
+  

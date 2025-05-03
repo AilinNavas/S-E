@@ -36,6 +36,11 @@ const NavbarPC = () => {
       href: "/procedures/emergency-care",
     },
     {
+      en: "All Procedures",
+      es: "Todos los Tratamientos",
+      href: "/procedures",
+    },
+    {
       en: "Speaking Spanish Endodontics",
       es: "Endodoncia en Español",
       href: "/speaking-spanish-endodontics",

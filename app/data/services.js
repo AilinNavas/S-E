@@ -148,3 +148,14 @@ export const whatIsEndodonticSurgery = [{
     "imageSrc": rootCanal,
     "imageAlt": "Endodontic Surgery Diagram"
 }]
+export const whatIsEmergencyCare = [{
+    "title": "Specialized care when it matters most",
+    "description": "Early intervention makes all the difference",
+    "paragraphs": [
+        "Our emergency care service handles urgent issues like intense toothaches, swelling, cracked or knocked-out teeth, and infections. Acting quickly can relieve pain and prevent complications.",
+        "As an endodontist, Dr. Neal Horn specializes in treating infections inside the tooth. With advanced tools and training, he can save your natural tooth—even in difficult cases.",
+        "Dental emergencies can worsen fast. Our team is equipped to respond quickly and effectively, giving you the focused care you need, right when you need it.",
+    ],
+    "imageSrc": rootCanal,
+    "imageAlt": "Emergency Care Diagram"
+}]

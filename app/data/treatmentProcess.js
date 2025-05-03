@@ -97,3 +97,39 @@ export const afterCareItemsEndodonticSurgery = [
   'Complete healing of the surgical site within a few months',
   'Follow-up appointments to monitor healing and ensure success'
 ]
+
+export const stepsEmergencyCare = [
+  {
+    title: 'Immediate Evaluation',
+    description: 'We assess your symptoms and take X-rays to identify the problem quickly.',
+    benefit: 'Fast diagnosis',
+  },
+  {
+    title: 'Pain Relief & Stabilization',
+    description: 'We manage pain and stabilize the affected area to prevent further damage.',
+    benefit: 'Quick comfort',
+  },
+  {
+    title: 'Endodontic Treatment',
+    description: 'We perform the necessary procedure to treat infection or trauma inside the tooth.',
+    benefit: 'Tooth-saving care',
+  },
+  {
+    title: 'Disinfection & Protection',
+    description: 'We clean and seal the tooth to eliminate bacteria and avoid reinfection.',
+    benefit: 'Infection control',
+  },
+  {
+    title: 'Aftercare & Follow-Up',
+    description: 'We provide care instructions and monitor healing through follow-up visits.',
+    benefit: 'Lasting results',
+  },
+];
+export const afterCareItemsEmergencyCare = [
+  'Pain relief is usually immediate after treatment',
+  'Mild sensitivity may last a few days',
+  'Avoid chewing on the treated side for 24 hours',
+  'Use ice packs to reduce swelling if present',
+  'Take prescribed or over-the-counter medication as directed',
+ 
+];

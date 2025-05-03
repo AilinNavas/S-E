@@ -67,7 +67,7 @@ const Hero = ({
     <section className="relative">
       <div className="container grid grid-cols-1 items-center gap-8 px-4 md:grid-cols-2 mx-auto max-w-7xl py-16">
         <div className="flex flex-col gap-6">
-          <h1 className="font-zen text-4xl font-bold leading-tight text-[#0a2a54] uppercase md:text-5xl lg:text-6xl">
+          <h1 className="font-zen text-4xl font-bold leading-tight text-[#0a2a54] uppercase md:text-5xl lg:text-7xl">
             {title}
           </h1>
           <p className="text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl">

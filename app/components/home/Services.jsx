@@ -36,10 +36,9 @@ const Services = ({
                 key={service.id}
                 onClick={() => setSelectedTab(service)}
                 className={`cursor-pointer px-4 py-2 text-lg font-medium rounded font-inter
-                  ${
-                    selectedTab.id === service.id
-                      ? "bg-[#3c8dbc]/40 text-[#0a2a54]"
-                      : "bg-gray-200 text-[#5a6065] hover:bg-[#3c8dbc]/40"
+                  ${selectedTab.id === service.id
+                    ? "bg-[#3c8dbc]/40 text-[#0a2a54]"
+                    : "bg-gray-200 text-[#5a6065] hover:bg-[#3c8dbc]/40"
                   }
                 `}
               >
@@ -95,10 +94,11 @@ const Services = ({
 
         {/* Botón final opcional */}
         {showButton && (
-          <Link href={buttonLink}>
-            <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter text-white border-2 border-[#0a2a54] bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] ease-in duration-300">
-              {buttonText}
-            </button>
+          <Link
+            href='/procedures'
+            className="ml-1 inline-flex items-center text-[#3c8dbc] hover:underline text-xl"
+          >
+            See All Procedures <ArrowRight className="ml-1 h-6 w-6" />
           </Link>
         )}
       </div>
