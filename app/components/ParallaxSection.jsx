@@ -22,7 +22,7 @@ const ParallaxSection = ({
   const y = useTransform(scrollYProgress, [0, 1], ['-50%', '50%'])
 
   return (
-    <section ref={ref} className="relative h-[60vh] md:h-[100vh] overflow-hidden">
+    <section ref={ref} className="relative h-[100vh] md:h-[100vh] overflow-hidden">
       {/* Imagen con efecto parallax */}
       <motion.div
         style={{ y }}

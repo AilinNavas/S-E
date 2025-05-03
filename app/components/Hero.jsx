@@ -75,7 +75,7 @@ const Hero = ({
           </p>
           <div className="flex flex-col lg:flex-row gap-4">
             <Link href={primaryButtonLink}>
-              <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
+              <button className="cursor-pointer w-full rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
                 {primaryButtonText}
               </button>
             </Link>
