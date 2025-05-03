@@ -54,7 +54,7 @@ const Expect = () => {
                                     className="object-contain"
                                 />
                             </div>
-                            <p className="text-[#5a6065]">
+                            <p className="text-[#5a6065] text-center">
                                 Your comfort is our priority. Expect a painless procedure with advanced digital imaging and expert
                                 care.
                             </p>
@@ -89,7 +89,7 @@ const Expect = () => {
                                     className="object-contain"
                                 />
                             </div>
-                            <p className="text-[#5a6065]">
+                            <p className="text-[#5a6065] text-center">
                                 Post-treatment care is simple. Avoid chewing on the treated tooth until fully restored by your general
                                 dentist.
                             </p>
