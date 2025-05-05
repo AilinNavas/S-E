@@ -28,7 +28,7 @@ const EmergencyCarePage = () => {
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhatIs content={whatIsEmergencyCare[0]} />
       <Symptoms title="When to Seek Emergency Endodontic Care"
-        subtitle="Act fast. These symptoms need urgent dental attention."
+        subtitle="These symptoms need urgent dental attention."
         symptoms={symptomsEmergencyCare} />
       <TreatmentProcess title="Our Emergency Care Process"
         subtitle="Step-by-step care when every minute matters."

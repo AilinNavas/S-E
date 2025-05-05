@@ -144,7 +144,7 @@ export const whatIsRetreatment = [{
 
 export const whatIsEndodonticSurgery = [{
     "title": "What Is Endodontic Surgery?",
-    "description": "Precise surgical treatment for dental root issues",
+    "description": "Precise surgical treatment for dental root issues.",
     "paragraphs": [
         "Endodontic surgery is a specialized treatment used when a root canal alone isn't enough to heal an infected tooth. It helps remove lingering infection and gives your natural tooth another chance to recover.",
         "The most common type of endodontic surgery is called an apicoectomy. In this procedure, the endodontist carefully removes the tip of the tooth’s root, along with any surrounding infected tissue, to stop the spread of infection and promote healing.",
@@ -155,7 +155,7 @@ export const whatIsEndodonticSurgery = [{
 }]
 export const whatIsEmergencyCare = [{
     "title": "Specialized care when it matters most",
-    "description": "Early intervention makes all the difference",
+    "description": "Early intervention makes all the difference.",
     "paragraphs": [
         "Our emergency care service handles urgent issues like intense toothaches, swelling, cracked or knocked-out teeth, and infections. Acting quickly can relieve pain and prevent complications.",
         "As an endodontist, Dr. Neal Horn specializes in treating infections inside the tooth. With advanced tools and training, he can save your natural tooth—even in difficult cases.",
