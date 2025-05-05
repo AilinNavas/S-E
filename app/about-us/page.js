@@ -19,7 +19,7 @@ const AboutUsPage = () => {
         title="Experienced Endodontist in Fort Worth, TX"
         subtitle="Discover trusted, skilled, and passionate endodontic care at Southside Endodontics."
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/#contact"
+        primaryButtonLink="/contact"
         secondaryButtonText="Refer Now"
         secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}

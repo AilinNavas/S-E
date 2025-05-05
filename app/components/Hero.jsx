@@ -79,7 +79,7 @@ const Hero = ({
                 {primaryButtonText}
               </button>
             </Link>
-            <a href={secondaryButtonLink}>
+            <a href={secondaryButtonLink} target='_blank' rel="noopener noreferrer">
               <button className="cursor-pointer w-full text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
                 {secondaryButtonText}
               </button>

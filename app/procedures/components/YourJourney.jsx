@@ -10,8 +10,8 @@ const YourJourney = () => {
                 <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl mb-8">
                     Your Journey to a Healthy Smile
                 </h2>
-                <p className="text-xl font-semibold font-inter text-[#5a6065] md:text-2xl text-center">
-                    We've designed a process to ensure your treatment is  comfortable and effective
+                <p className="text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center">
+                    We've designed a process to ensure your treatment is comfortable and effective.
                 </p>
 
             </div>
