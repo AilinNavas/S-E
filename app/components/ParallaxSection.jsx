@@ -10,6 +10,7 @@ const ParallaxSection = ({
   title,
   description,
   buttonText,
+  buttonLink,
 
 }) => {
   const ref = useRef(null)
@@ -45,12 +46,13 @@ const ParallaxSection = ({
         <h2 className="text-3xl md:text-5xl font-bold mb-8 font-zen uppercase ">{title}</h2>
         <p className=" max-w-4xl font-inter mb-8 text-xl font-semibold font-inter text-center text-white md:text-2xl">{description}</p>
         {buttonText && (
-          <button
+          
+          <a href={buttonLink}><button
 
             className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300"
           >
             {buttonText}
-          </button>
+          </button></a>
         )}
       </div>
     </section>

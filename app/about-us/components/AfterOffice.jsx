@@ -15,7 +15,7 @@ const AfterOffice = () => {
           </p>
         </header>
 
-          <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2  text-[#5a6065] font-inter md:text-xl">
+          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2  text-[#5a6065] font-inter md:text-xl">
             <div className="flex flex-col gap-6">
               <p className="text-lg text-brand-secondary">
                 Beyond his dedication to dentistry, Dr. Horn enjoys spending time with his wife, Leslie, and their three

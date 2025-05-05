@@ -15,7 +15,7 @@ const Expect = () => {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 gap-12 md:grid-cols-3 font-inter">
+                <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 font-inter">
                     {/* Before Your Visit */}
                     <div className="bg-white border-none shadow-sm">
                         <div className="flex flex-col gap-6 p-6">

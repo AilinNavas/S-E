@@ -19,7 +19,7 @@ const WhyTrustUs = ( {title,
           </p>
         </div>
 
-        <div className={`grid grid-cols-1 gap-8 md:grid-cols-${mdCols}`}>
+        <div className={`grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-${mdCols}`}>
           {cards.map((card, index) => (
             <TrustCard
               key={index}

@@ -10,9 +10,7 @@ const Services = ({
   title,
   subtitle,
   services,
-  showButton = true,
-  buttonText = "See All Procedures",
-  buttonLink = "/procedures",
+  showButton = true
 }) => {
   const [selectedTab, setSelectedTab] = useState(services[0]);
 
@@ -30,12 +28,12 @@ const Services = ({
 
         <div className="w-full max-w-4xl mx-auto pb-8">
           {/* Botones de pestañas */}
-          <div className="flex flex-wrap gap-2 mb-8 w-full justify-center">
+          <div className="flex flex-wrap gap-2 mb-8 w-full justify-center ">
             {services.map((service) => (
               <button
                 key={service.id}
                 onClick={() => setSelectedTab(service)}
-                className={`cursor-pointer px-4 py-2 text-lg font-medium rounded font-inter
+                className={`cursor-pointer px-4 py-2 text-lg font-medium rounded font-inter w-full md:w-auto  transition-colors duration-300 ease-in-out
                   ${selectedTab.id === service.id
                     ? "bg-[#3c8dbc]/40 text-[#0a2a54]"
                     : "bg-gray-200 text-[#5a6065] hover:bg-[#3c8dbc]/40"
@@ -55,7 +53,7 @@ const Services = ({
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -30 }}
               transition={{ duration: 0.3 }}
-              className="rounded border border-[#3c8dbc] p-8 bg-white"
+              className="rounded border border-[#3c8dbc] p-8 bg-white "
             >
               <Link href={selectedTab.link}>
                 <h2 className="text-2xl text-[#0a2a54] uppercase font-zen font-bold mb-2">
@@ -81,13 +79,14 @@ const Services = ({
                   href={selectedTab.link}
                   className="ml-1 inline-flex items-center text-[#3c8dbc] hover:underline"
                 >
-                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                  Learn more 
                 </Link>
               </div>
-
-              <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
+             
+             
+              <Link href={'/#contact'}><button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
                 Schedule Treatment
-              </button>
+              </button></Link>
             </motion.div>
           </AnimatePresence>
         </div>

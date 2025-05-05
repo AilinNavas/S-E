@@ -18,25 +18,25 @@ const ReferralProcess = () => {
 
                 <div className="relative">
                     {/* Desktop connector line */}
-                    <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#3c8dbc]/20 hidden md:block"></div>
+                    <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#3c8dbc]/20 hidden lg:block"></div>
 
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-4 font-inter">
+                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-4 font-inter">
                         {/* Step 1 */}
                         <div className="relative flex flex-col items-center">
                             <div className="z-10 flex h-16 w-16 items-center justify-center rounded-full border-4 border-[#3c8dbc] text-white mb-4">
                                 <span className="text-2xl font-bold text-[#3c8dbc]">1</span>
                             </div>
-                            <div className="w-full bg-white border-none shadow-sm lg:h-[220px]">
+                            <div className="w-full bg-white border-none shadow-sm h-[190px] lg:h-[220px]">
                                 <div className="flex flex-col gap-4 p-6 text-center">
                                     <h3 className="text-xl font-semibold text-[#0a2a54]">Submit a Referral</h3>
                                     <p className="text-brand-secondary">
-                                        Use our online referral form or send patient information securely through TDO.
+                                        Use our referral form or send patient information securely through TDO.
                                     </p>
 
                                 </div>
                                 <div className="flex items-end justify-center text-[#3c8dbc]">
                                     <Send className="h-6 w-6 mr-2" />
-                                    <Link href="#referral-form"><span>Submit a Referral</span></Link>
+                                    <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"><span>Submit a Referral</span></a>
                                 </div>
 
 
@@ -48,11 +48,11 @@ const ReferralProcess = () => {
                             <div className="z-10 flex h-16 w-16 items-center justify-center rounded-full border-4 border-[#3c8dbc] text-white mb-4">
                                 <span className="text-2xl font-bold text-[#3c8dbc]">2</span>
                             </div>
-                            <div className="w-full bg-white border-none shadow-sm lg:h-[220px]">
+                            <div className="w-full bg-white border-none shadow-sm h-[190px] lg:h-[220px]">
                                 <div className="flex flex-col gap-4 p-6 text-center">
                                     <h3 className="text-xl font-semibold text-[#0a2a54]">We Contact the Patient</h3>
                                     <p className="text-brand-secondary">
-                                        We reach out to schedule an appointment and explain the procedure in detail.
+                                        We reach out to schedule an appointment and explain the procedure.
                                     </p>
                                 </div>
                                 <div className=" flex items-end justify-center text-[#3c8dbc]">
@@ -67,7 +67,7 @@ const ReferralProcess = () => {
                             <div className="z-10 flex h-16 w-16 items-center justify-center rounded-full border-4 border-[#3c8dbc] text-white mb-4">
                                 <span className="text-2xl font-bold text-[#3c8dbc]">3</span>
                             </div>
-                            <div className="w-full bg-white border-none shadow-sm lg:h-[220px]">
+                            <div className="w-full bg-white border-none shadow-sm h-[190px] lg:h-[220px]">
                                 <div className="flex flex-col gap-4 p-6 text-center">
                                     <h3 className="text-xl font-semibold text-[#0a2a54]">Treatment & Updates</h3>
                                     <p className="text-brand-secondary">
@@ -87,7 +87,7 @@ const ReferralProcess = () => {
                             <div className="zz-10 flex h-16 w-16 items-center justify-center rounded-full border-4 border-[#3c8dbc] text-white mb-4">
                                 <span className="text-2xl font-bold text-[#3c8dbc]">4</span>
                             </div>
-                            <div className="w-full bg-white border-none shadow-sm lg:h-[220px]">
+                            <div className="w-full bg-white border-none shadow-sm  h-[190px] lg:h-[220px]">
                                 <div className="flex flex-col gap-4 p-6 text-center">
                                     <h3 className="text-xl font-semibold text-[#0a2a54]">Returning the Patient</h3>
                                     <p className="text-brand-secondary">

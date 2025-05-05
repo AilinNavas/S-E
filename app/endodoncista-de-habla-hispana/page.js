@@ -2,9 +2,8 @@ import React from 'react'
 import Hero from '../components/Hero'
 import DrHorn from '@/public/images/about-us/DrHorn.webp'
 import { trustHablaHispana } from '../data/TrustData'
-import ReferralProcess from '../for-doctors/components/ReferralProcess'
 import Testimonials from '../components/Testimonials'
-import { testimonialsMain } from '../data/testimonials'
+import { testimonialsInSpanish } from '../data/testimonials'
 import Faqs from '../components/Faqs'
 import { faqsEnEspañol, faqsForDoctors } from '../data/faqsHome'
 import ParallaxSection from '../components/ParallaxSection'
@@ -21,9 +20,9 @@ const EndodoncistaHablaEspañolPage = () => {
       <Hero title="Endodoncista Que Habla Español en Fort Worth"
         subtitle="Atención endodontica en español para un tratamiento sin estrés y con confianza"
         primaryButtonText="Agendar Cita"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="/#contact"
         secondaryButtonText="Referir Paciente"
-        secondaryButtonLink="/referrals"
+        secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhyTrustUs cards={trustHablaHispana}
@@ -35,9 +34,9 @@ const EndodoncistaHablaEspañolPage = () => {
         description="Tratamientos de conducto y más para mantener su sonrisa saludable."
         services={servicios}
         showAllLink={false} />
-      <Testimonials data={testimonialsMain}
-        title="Fort Worth dentists trust"
-        subtitle="Real experiences working with Southside Endodontics."
+      <Testimonials data={testimonialsInSpanish}
+        title="Comentarios de Pacientes"
+        subtitle="Experiencias reales en Southside Endodontics."
         showCTA={false} />
 
       <Faqs title="Preguntas Frecuentes"

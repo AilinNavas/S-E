@@ -17,7 +17,7 @@ const TreatmentProcess = ({ title, subtitle, gridCols,  steps, subtitle2, afterC
         </header>
 
         <div className="relative">
-          <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#3c8dbc]/20 hidden md:block"></div>
+          <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#3c8dbc]/20 hidden lg:block"></div>
 
           <div className={`grid grid-cols-1 gap-8 ${gridCols}`}>
             {steps.map((step, index) => (

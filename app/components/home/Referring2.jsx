@@ -5,17 +5,17 @@ const Referring2 = () => {
 
     const benefits = [
         {
-          
+
             title: "Timely, Custom Reports",
             subtitle: "Tailored reports for each patient with quick updates.",
         },
         {
-            
+
             title: "Seamless Communication",
             subtitle: "We ensure that you are always up-to-date with your patient's treatment progress.",
         },
         {
-            
+
             title: "Efficient, HIPAA-Compliant Process",
             subtitle: "Minimize paperwork and administrative overhead.",
         },
@@ -58,11 +58,11 @@ const Referring2 = () => {
                 </div>
 
                 <div className="text-center my-8">
-                    <Link href="/appointments">
-                    <button className=" cursor-pointer text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
-          Refer a Patient
-        </button>
-                    </Link>
+                    <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx">
+                        <button className=" cursor-pointer text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
+                            Refer a Patient
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>

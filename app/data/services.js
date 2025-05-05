@@ -52,7 +52,7 @@ export const services = [
         title: "Emergency Care",
         link: "/procedures/emergency-care",
         description:
-            "Emergency endodontic care immediate treatment for sudden tooth pain or dental trauma.",
+            "Emergency endodontic care is immediate treatment for sudden tooth pain or dental trauma.",
         bullets: [
             "Immediate pain relief",
             "Prevents further complications",

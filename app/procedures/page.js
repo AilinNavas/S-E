@@ -19,9 +19,9 @@ const ProceduresPage = () => {
         title="Endodontic Care for a Healthier, Pain-Free Smile"
         subtitle="Endodontic treatments delivered with precision, and care."
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="/#contact"
         secondaryButtonText="Refer Now"
-        secondaryButtonLink="/referrals"
+        secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics"
       />

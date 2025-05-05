@@ -19,9 +19,9 @@ const AboutUsPage = () => {
         title="Experienced Endodontist in Fort Worth, TX"
         subtitle="Discover trusted, skilled, and passionate endodontic care at Southside Endodontics"
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="/#contact"
         secondaryButtonText="Refer Now"
-        secondaryButtonLink="/referrals"
+        secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <Journey />
@@ -39,7 +39,8 @@ const AboutUsPage = () => {
         imageSrc={NealParallax}
         title="Schedule a Consultation with Dr. Horn"
         description="Experience expert endodontic care with Dr. Horn."
-        buttonText="Call Us: (817) 555-1234"
+        buttonText="Call Us: (817) 3869007"
+        buttonLink="tel:+8173869007"
       />
       <Faqs title="Frequently Asked Questions About Dr. Horn"
         description="Find answers to common questions about endodontic treatments and our practice."

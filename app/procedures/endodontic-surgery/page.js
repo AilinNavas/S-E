@@ -22,9 +22,9 @@ const EndodonticSurgeryPage = () => {
       <Hero title="Endodontic Surgery in Fort Worth "
         subtitle="Advanced microsurgical techniques for optimal tooth health"
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="/#contact"
         secondaryButtonText="Emergency Care"
-        secondaryButtonLink="/"
+        secondaryButtonLink="tel:+8173869007"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhatIs content={whatIsEndodonticSurgery[0]} />
@@ -33,7 +33,7 @@ const EndodonticSurgeryPage = () => {
         symptoms={symptomsEndodonticSurgery} />
       <TreatmentProcess title="Our Endodontic Surgery Process"
         subtitle="Our step-by-step approach ensures a precise, comfortable procedure with optimal healing."
-        gridCols={"md:grid-cols-5"}
+        gridCols={"lg:grid-cols-5"}
         steps={stepsEndodonticSurgery}
         subtitle2={"Recovery After Endodontic Surgery"}
         afterCareItems={afterCareItemsEndodonticSurgery} />

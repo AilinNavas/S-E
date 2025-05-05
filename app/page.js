@@ -29,12 +29,12 @@ export default function Home() {
       {/* <NavbarMobile />
       <NavbarPC /> */}
       <Hero
-        title="SOUTHSIDE ENDODONTICS  FORT WORTH, TX"
+        title="SOUTHSIDE ENDODONTICS"
         subtitle="We make your experience as seamless and comfortable as possible."
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="/#contact"
         secondaryButtonText="Refer Now"
-        secondaryButtonLink="/referrals"
+        secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics"
       />

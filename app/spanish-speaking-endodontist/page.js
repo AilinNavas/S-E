@@ -19,9 +19,9 @@ const SpanishSpeakingEndodontistPage = () => {
       <Hero title="Spanish-Speaking Endodontist in Fort Worth"
         subtitle="Endodontic care for spanish-speaking patients with seamless communication"
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="/#contact"
         secondaryButtonText="Refer Now"
-        secondaryButtonLink="/referrals"
+        secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhyTrustUs cards={trustSpeakingSpanish}

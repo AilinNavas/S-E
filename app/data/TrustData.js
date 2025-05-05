@@ -32,19 +32,19 @@ export const trustPatients = [
       icon: TvMinimal,
       title: "State-of-the-Art Technology",
       description: "Our practice utilizes Cone Beam CT imaging and microscopic endodontics for unparalleled precision and effectiveness in treatment.",
-      benefits: ["3D imaging for accurate diagnosis", "Microscopic precision", "Digital record-keeping"],
+      benefits: ["3D imaging for accuracy", "Microscopic precision", "Digital record-keeping"],
     },
     {
       icon: HandHeart,
       title: "Pain-Free, Patient-Centered Care",
       description: "We prioritize your comfort with sedation options, gentle techniques, and a compassionate approach to endodontic care.",
-      benefits: ["Anesthesia for painless treatment", "Sedation options for anxious patients", "Team focused on your comfort"],
+      benefits: ["Painless anesthesia", "Sedation for anxious patients", "Team focused on your comfort"],
     },
     {
       icon: Handshake,
       title: "Seamless Doctor Communication",
       description: "We maintain clear communication with referring dentists through secure referrals and detailed case updates. We take care of everything.",
-      benefits: ["Comprehensive treatment reports", "Secure digital image sharing", "Easy online referral process"],
+      benefits: ["Comprehensive reports", "Secure digital image sharing", "Easy online referral process"],
     },
    
   ];
@@ -127,19 +127,19 @@ export const trustHablaHispana = [
     icon: MessageCircle,
     title: "Comunicación Clara",
     description: "Entendemos sus preocupaciones y explicamos todo el proceso de tratamiento en su idioma para que se sienta seguro.",
-    benefits: ["Explicaciones detalladas en español", "Respuestas a todas sus preguntas", "Instrucciones claras post-tratamiento"],
+    benefits: ["Explicaciones detalladas", "Respuestas sus preguntas", "Instrucciones post-tratamiento"],
   },
   {
     icon: Heart,
     title: "Atención Sin Estrés",
     description: "Creamos un ambiente cálido y profesional donde se sentirá cómodo y bien atendido durante todo el tratamiento.",
-    benefits: ["Ambiente tranquilo y acogedor", "Equipo amable y comprensivo", "Tratamientos sin dolor con anestesia"],
+    benefits: ["Ambiente tranquilo y acogedor", "Equipo amable y comprensivo", "Tratamientos sin dolor"],
   },
   {
     icon: TvMinimal,
     title: "Tecnología Avanzada",
     description: "Utilizamos los equipos más modernos para diagnósticos precisos y tratamientos efectivos con resultados duraderos.",
-    benefits: ["Radiografías de alta precisión", "Microscopios de alta calidad", "Técnicas modernas de endodoncia"],
+    benefits: ["Radiografías de alta precisión", "Microscopios de alta calidad", "Técnicas modernas"],
   },
 
 

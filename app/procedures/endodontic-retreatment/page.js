@@ -21,9 +21,9 @@ const EndodonticRetreatmentPage = () => {
     <Hero title="Root Canal Retreatment in Fort Worth "
         subtitle="If your previous root canal is causing pain or infection, retreatment can help"
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="/#contact"
         secondaryButtonText="Emergency Care"
-        secondaryButtonLink="/"
+        secondaryButtonLink="tel:+8173869007"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhatIs content={whatIsRetreatment[0]} />
@@ -32,7 +32,7 @@ const EndodonticRetreatmentPage = () => {
         symptoms={symptomsRetreatment} />
       <TreatmentProcess title="Our Pain-Free Root Canal Retreatment Process"
         subtitle="Our step-by-step approach ensures a thorough, effective retreatment with minimal discomfort."
-        gridCols={"md:grid-cols-5"}
+        gridCols={"lg:grid-cols-5"}
         steps={stepsRetreatment}
         subtitle2={"The Retreatment Advantage"}
         afterCareItems={afterCareItemsRetreatment} />

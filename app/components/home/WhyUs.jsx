@@ -8,13 +8,13 @@ const WhyUs = () => {
             <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
                 <header className='flex flex-col items-center space-y-8 mb-8'>
                     <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>
-                    <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl'> We provide compassionate care, affordable treatments, and efficient service.</p>
+                    <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center'> We provide compassionate care, affordable treatments, and efficient service.</p>
                 </header>
 
-                <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start lg:space-x-8 lg:space-y-0">
+                <div className="flex flex-col-reverse lg:flex-row lg:items-start lg:space-x-8 lg:space-y-0">
 
                     <div className="lg:w-1/2 space-y-8">
-                        <p className='text-[#5a6065] font-inter md:text-xl text-left'>
+                        <p className='text-[#5a6065] font-inter md:text-xl text-center lg:text-left'>
                             Here's how we make your experience as seamless and comfortable as possible.
                         </p>
 
@@ -48,8 +48,9 @@ const WhyUs = () => {
                                 </div>
                             </li>
                         </ul>
+                       <a href="/#contact"><div className="text-center lg:text-left">
                         <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">Book An Appointment</button>
-
+                     </div></a>
                     </div>
 
                     <div className="lg:w-1/2  mb-8 lg:mb-0 lg:p-1">

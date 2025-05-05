@@ -19,9 +19,9 @@ const DoctorsPage = () => {
       <Hero title="Your Trusted Endodontic Partner"
         subtitle="Seamless referrals and clear communication. Ensure the best outcomes for your patients."
         primaryButtonText="Refer Now"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         secondaryButtonText="Call Us"
-        secondaryButtonLink="/referrals"
+        secondaryButtonLink="tel:+8173869007"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhyTrustUs cards={trustDoctors}

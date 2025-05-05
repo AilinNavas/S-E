@@ -198,16 +198,16 @@ const NavbarPC = () => {
           </ul>
 
           <div className="hidden lg:flex ml-12 space-x-4">
-            <Link href={"/"}>
+            <Link href={"/#contact"}>
               <button className="cursor-pointer w-full rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
                 {isSpanishPage ? "Agendar Cita" : "Book An Appointment"}
               </button>
             </Link>
-            <Link href={"/"}>
+            <a href={"https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"}>
               <button className="cursor-pointer w-full text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
                 {isSpanishPage ? "Referir Ahora" : "Refer Now"}
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </nav>

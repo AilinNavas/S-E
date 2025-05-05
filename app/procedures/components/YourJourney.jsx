@@ -18,9 +18,9 @@ const YourJourney = () => {
 
             <div className="relative">
                 {/* Desktop connector line */}
-                <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#3c8dbc]/20 hidden md:block"></div>
+                <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#3c8dbc]/20 hidden lg:block"></div>
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-4 font-inter">
+                <div className="grid grid-cols-1 gap-8 lg:grid-cols-4 font-inter">
                     {/* Step 1 */}
                     <div className="relative flex flex-col items-center">
                         <div className="z-10 flex h-16 w-16 items-center justify-center rounded-full border-4 border-[#3c8dbc] text-white mb-4">

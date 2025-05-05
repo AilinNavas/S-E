@@ -53,7 +53,7 @@ export const testimonialsForServices = [
       role: "Patient",
       image: "/images/reviews/Marcus-Taite.png",
       text:
-        "If you need dental work performed (Root Canal) I highly recommend Southside Orthodontist, Dr. Horn does an excellent job and the customer service is top notch. Everyone is very professional and treat you with the utmost courtesy.",
+        "If you need dental work performed (Root Canal) I highly recommend Southside Endodontics, Dr. Horn does an excellent job and the customer service is top notch. Everyone is very professional and treat you with the utmost courtesy.",
     },
     {
       name: "Karla Speck",
@@ -141,6 +141,30 @@ export const testimonialsForServices = [
       image: "/images/reviews/Kathryn-Fleming.png",
       text:
         "I almost fell asleep during the root canal!Very professional, empathetic, courteous!",
+    },
+
+  ]
+  export const testimonialsInSpanish = [
+    {
+      name: "Irma",
+      role: "Patient",
+      image: "/images/reviews/Irma.png",
+      text:
+        "Mi experiencia fue muy agradable. Desde El momento que entras a la oficina. La recepcionista es una persona muy amable y la la assistente es muy profesional y no te sientes nerviosa. El Doctor te explica y contesta todas Tus preguntas. Les recomiendo que visiten Esta oficina. Yo estoy muy satisfecha.",
+    },
+    {
+      name: "Yuni - Jan Lopez",
+      role: "Patient",
+      image: "/images/reviews/yuni.png",
+      text:
+        "Tuve una experiencia muy agradable y la atencion que me brindaron fue muy Profesional recomiendo al doctor Neal Horn 100% a toda la raza",
+    },
+    {
+      name: "Natalie Price",
+      role: "Patient",
+      image: "/images/reviews/natalie.png",
+      text:
+        "At Southside Endodontics I had a very comfortable and pleasant experience. I would gladly recommend them to anyone needing their services. Thank you Dr. Horn and staff for taking great care of me!",
     },
 
   ]

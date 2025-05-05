@@ -41,7 +41,7 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
                   </div>
                 )}
                 <div>
-                  <h3 className="text-lg font-inter font-semibold bg-gradient-to-b from-[#0a2a54] via-blue-900 to-blue-950 bg-clip-text text-transparent">{testimonial.name}</h3>
+                  <h3 className="text-lg font-inter font-semibold text-[#0a2a54]">{testimonial.name}</h3>
                   <p className="text-sm text-[#5a6065] font-inter">{testimonial.role}</p>
                 </div>
               </div>

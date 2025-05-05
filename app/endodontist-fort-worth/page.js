@@ -20,9 +20,9 @@ const EndodontistFortWorthPage = () => {
             <Hero title="Trusted Endodontist in Fort Worth"
                 subtitle="Advanced care for tooth pain, infections, and root canal treatment"
                 primaryButtonText="Book An Appointment"
-                primaryButtonLink="/appointments"
+                primaryButtonLink="/#contact"
                 secondaryButtonText="Refer Now"
-                secondaryButtonLink="/referrals"
+                secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
                 imageSrc={DrHorn}
                 imageAlt="Dr. Neal Horn at Southside Endodontics" />
             <Services title="Our Endodontic Procedures"

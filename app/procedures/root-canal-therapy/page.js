@@ -22,7 +22,7 @@ const RootCanalPage = () => {
       <Hero title="Pain-Free Root Canal Therapy in Fort Worth"
         subtitle="A root canal can save your tooth and relieve discomfort"
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="/#contact"
         secondaryButtonText="Emergency Care"
         secondaryButtonLink="/"
         imageSrc={DrHorn}
@@ -33,7 +33,7 @@ const RootCanalPage = () => {
         symptoms={symptomsRootCanal} />
       <TreatmentProcess title="A Comfortable, Pain-Free Experience"
         subtitle="Our step-by-step approach ensures a smooth, efficient root canal procedure with minimal discomfort."
-        gridCols={"md:grid-cols-4"}
+        gridCols={"lg:grid-cols-4"}
         steps={stepsRootCanal}
         subtitle2={"What to expect after your root canal"}
         afterCareItems={afterCareItemsRootCanal} />

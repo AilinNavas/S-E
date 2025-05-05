@@ -8,7 +8,7 @@ const FormContact = () => {
     const pathname = usePathname()
     const isSpanishPage = pathname.includes('/endodoncista-de-habla-hispana')
     return (
-        <section className='bg-[#0a2a54]'>
+        <section id='contact' className='bg-[#0a2a54]'>
             <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
                 <header className='pb-8 space-y-8'>
                     <h2 className='text-white font-zen font-bold uppercase text-3xl md:text-5xl text-center'>{isSpanishPage ? 'Contáctenos' : 'Contact Us'}</h2>
@@ -19,8 +19,8 @@ const FormContact = () => {
 
                     <div className="lg:w-1/2 mt-8 lg:mt-0">
                         <div id="appointment" className="rounded-lg bg-white p-6 shadow-sm">
-                            <h3 className="mb-4 text-xl font-zen font-bold text-[#0a2a54] uppercase">{isSpanishPage ? 'Solicitar una cita' : 'Request an Appointment'}</h3>
-                            <p className="mb-4 text-[#5a6065] font-inter text-lg">
+                            <h3 className="mb-4 text-xl font-zen font-bold text-[#0a2a54] uppercase text-center md:text-left">{isSpanishPage ? 'Solicitar una cita' : 'Request an Appointment'}</h3>
+                            <p className="mb-4 text-[#5a6065] font-inter text-lg text-center md:text-left">
                             {isSpanishPage ? 'Rellene el siguiente formulario y nos pondremos en contacto con usted para concertar su cita.' : "Fill out the form below and we'll contact you to schedule your appointment."}
                             </p>
                             <form className="space-y-4">
@@ -147,13 +147,13 @@ const FormContact = () => {
                                     ></textarea>
                                 </div>
 
-                                <p className="text-sm text-[#5a6065] italic font-inter">
+                                <p className="text-sm text-[#5a6065] italic font-inter text-center md:text-left">
                                 {isSpanishPage ? 'Le responderemos en el plazo de un día laborable en relación con su cita.' : 'We will reply within one business day regarding your appointment.'}
                                 </p>
-
+                                <div className="text-center lg:text-left">
                                 <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
                                 {isSpanishPage ? 'Enviar solicitud' : 'Submit Request'}
-                                </button>
+                                </button></div>
                             </form>
                         </div>
 
@@ -162,7 +162,7 @@ const FormContact = () => {
                     <div className="lg:w-1/2">
                         <Image src={office} alt="office" className="rounded-t-md" />
 
-                        <div className="bg-white p-6 rounded-b-md font-inter text-[#0a2a54] text-lg">
+                        <div className="bg-white p-6 rounded-b-md font-inter text-[#0a2a54] text-lg text-center lg:text-left">  
                             <p>  {isSpanishPage ? 'Leslie Horn, nuestra directora de oficina, se pondrá en contacto con usted para responder a sus preguntas y concertar una cita' : 'Leslie Horn, our office manager will contact you to answer your questions and schedule an appointment.'}</p>
                         </div>
 

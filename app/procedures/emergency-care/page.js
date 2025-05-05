@@ -21,9 +21,9 @@ const EmergencyCarePage = () => {
     <Hero title="Emergency Care in Fort Worth"
         subtitle="Same-Day appointments for tooth pain, infection, and dental trauma"
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/appointments"
+        primaryButtonLink="/#contact"
         secondaryButtonText="Emergency Care"
-        secondaryButtonLink="/"
+        secondaryButtonLink="tel:+8173869007"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhatIs content={whatIsEmergencyCare[0]} />
@@ -32,7 +32,7 @@ const EmergencyCarePage = () => {
         symptoms={symptomsEmergencyCare} />
       <TreatmentProcess title="Our Emergency Care Process"
         subtitle="Step-by-step care when every minute matters."
-        gridCols={"md:grid-cols-5"}
+        gridCols={"lg:grid-cols-5"}
         steps={stepsEmergencyCare}
         subtitle2={"Post-Treatment Care & Recovery"}
         afterCareItems={afterCareItemsEmergencyCare} />
