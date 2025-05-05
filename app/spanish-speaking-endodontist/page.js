@@ -17,7 +17,7 @@ const SpanishSpeakingEndodontistPage = () => {
   return (
     <>
       <Hero title="Spanish-Speaking Endodontist in Fort Worth"
-        subtitle="Endodontic care for spanish-speaking patients with seamless communication"
+        subtitle="Endodontic care for spanish-speaking patients with seamless communication."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/#contact"
         secondaryButtonText="Refer Now"
@@ -26,7 +26,7 @@ const SpanishSpeakingEndodontistPage = () => {
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhyTrustUs cards={trustSpeakingSpanish}
         title="Why Choose a Spanish-Speaking Endodontist"
-        subtitle="Refer your Spanish-speaking patients to a bilingual specialist for a better experience"
+        subtitle="Refer your Spanish-speaking patients to a bilingual specialist for a better experience."
         bgColor="bg-white"
         mdCols={3} />
       <ReferralProcess />

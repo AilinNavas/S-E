@@ -18,7 +18,7 @@ const EndodontistFortWorthPage = () => {
     return (
         <>
             <Hero title="Trusted Endodontist in Fort Worth"
-                subtitle="Advanced care for tooth pain, infections, and root canal treatment"
+                subtitle="Advanced care for tooth pain, infections, and root canal treatment."
                 primaryButtonText="Book An Appointment"
                 primaryButtonLink="/#contact"
                 secondaryButtonText="Refer Now"
@@ -47,7 +47,7 @@ const EndodontistFortWorthPage = () => {
                 items={faqsAboutUs} />
             <ParallaxSection imageSrc={drHorn}
                 title="Trusted Endodontist in Fort Worth"
-                description="Advanced care for tooth pain, infections, and root canal treatment"
+                description="Advanced care for tooth pain, infections, and root canal treatment."
                 buttonText="Book an Appoinment" />
 
         </>

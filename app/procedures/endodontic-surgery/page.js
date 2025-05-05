@@ -51,7 +51,7 @@ const EndodonticSurgeryPage = () => {
         items={faqsForPatients} />
       <ParallaxSection imageSrc={smile}
         title="Endodontic Surgery in Fort Worth "
-        description="Advanced microsurgical techniques for optimal tooth health"
+        description="Advanced microsurgical techniques for optimal tooth health."
         buttonText="Book an Appointment" />
 
     </>

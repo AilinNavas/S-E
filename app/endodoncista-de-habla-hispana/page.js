@@ -18,7 +18,7 @@ const EndodoncistaHablaEspañolPage = () => {
   return (
     <>
       <Hero title="Endodoncista Que Habla Español en Fort Worth"
-        subtitle="Atención endodontica en español para un tratamiento sin estrés y con confianza"
+        subtitle="Atención endodontica en español para un tratamiento sin estrés y con confianza."
         primaryButtonText="Agendar Cita"
         primaryButtonLink="/#contact"
         secondaryButtonText="Referir Paciente"
@@ -27,7 +27,7 @@ const EndodoncistaHablaEspañolPage = () => {
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhyTrustUs cards={trustHablaHispana}
         title="¿Por Qué Elegir a un Endodoncista Que Habla Español?"
-        subtitle="Recibir atención dental especializada en su idioma hace toda la diferencia"
+        subtitle="Recibir atención dental especializada en su idioma hace toda la diferencia."
         bgColor="bg-white"
         mdCols={3} />
       <Services title="Servicios Endodónticos"

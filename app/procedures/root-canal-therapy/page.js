@@ -51,7 +51,7 @@ const RootCanalPage = () => {
         items={faqsForPatients} />
       <ParallaxSection imageSrc={smile}
         title="Pain-Free Root Canal Therapy in Fort Worth"
-        description="A root canal can save your tooth and relieve discomfort"
+        description="A root canal can save your tooth and relieve discomfort."
         buttonText="Book an Appointment" />
 
     </>
