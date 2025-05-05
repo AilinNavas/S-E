@@ -26,7 +26,7 @@ const ProceduresPage = () => {
         imageAlt="Dr. Neal Horn at Southside Endodontics"
       />
       <Services
-        title="Endodontic Care Designed for Your Comfort"
+        title="Endodontic care designed for your comfort"
         subtitle="We offer endodontic treatments to save your natural teeth and relieve pain."
         services={services}
         showButton={false} // o false si no quieres mostrar el botón

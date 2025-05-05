@@ -40,13 +40,7 @@ const Referring = () => {
             Let us help your patients get the best care possible.
           </p>
         </header>
-        {/* <div className='pb-8'>
-          <p className='text-[#5a6065] font-inter md:text-xl lg:text-center'>
-            We understand the importance of smooth communication and fast, reliable patient care.
-            Our advanced software ensures seamless patient registration, quick data sharing, and
-            timely clinical outcomes. Let us help your patients get the best care possible.
-          </p>
-        </div> */}
+    
 
         {/* GRID de 6 celdas */}
         <div
