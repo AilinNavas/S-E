@@ -19,7 +19,7 @@ const SpanishSpeakingEndodontistPage = () => {
       <Hero title="Spanish-Speaking Endodontist in Fort Worth"
         subtitle="Endodontic care for spanish-speaking patients with seamless communication."
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/#contact"
+        primaryButtonLink="/contact"
         secondaryButtonText="Refer Now"
         secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
@@ -40,8 +40,9 @@ const SpanishSpeakingEndodontistPage = () => {
         items={faqsForDoctors} />
       <ParallaxSection imageSrc={drHorn}
         title="Your Trusted Endodontic Partner"
-        description="Seamless referrals and clear communication."
-        buttonText="Refer Now" />
+        description="Endodontic care for spanish-speaking patients with seamless communication."
+        buttonText="Refer Now"
+        buttonLink={"https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"} />
 
     </>
 

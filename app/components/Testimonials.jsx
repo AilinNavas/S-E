@@ -1,6 +1,5 @@
 
 import Image from "next/image";
-import Link from "next/link";
 import star from '@/public/icons/star.svg';
 import google from '@/public/icons/google.svg';
 
@@ -63,15 +62,15 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
 
         {showCTA && (
           <div className="mt-8 text-center">
-            <p className="text-lg text-white mb-4">Join our +240 reviews on Google!</p>
+            <p className="text-lg text-white mb-4">Join our +245 reviews on Google!</p>
             <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter text-white border-2 border-white bg-[#0a2a54] hover:bg-white hover:text-[#0a2a54] ease-in duration-300">
-              <Link
-                href="https://g.page/r/southside-endodontics/review"
+              <a
+                href="https://g.page/r/CQMrOM1YvxidEBM/review"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Leave a Review
-              </Link>
+              </a>
             </button>
           </div>
         )}

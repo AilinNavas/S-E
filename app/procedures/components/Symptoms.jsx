@@ -128,7 +128,7 @@ export default function Symptoms({ title, subtitle, symptoms }) {
         </div>
 
         <div className="text-center my-8">
-          <Link href="/#contact">
+          <Link href="/contact">
             <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
               Book An Appointment
             </button>

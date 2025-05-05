@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import drHorn from "@/public/images/about-us/DrHorn.webp"
 import check from "@/public/icons/check.svg"
 
@@ -48,9 +49,9 @@ const WhyUs = () => {
                                 </div>
                             </li>
                         </ul>
-                       <a href="/#contact"><div className="text-center lg:text-left">
+                       <Link href="/contact"><div className="text-center lg:text-left">
                         <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">Book An Appointment</button>
-                     </div></a>
+                     </div></Link>
                     </div>
 
                     <div className="lg:w-1/2  mb-8 lg:mb-0 lg:p-1">

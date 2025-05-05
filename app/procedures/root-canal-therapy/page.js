@@ -22,7 +22,7 @@ const RootCanalPage = () => {
       <Hero title="Pain-Free Root Canal Therapy in Fort Worth"
         subtitle="A root canal can save your tooth and relieve discomfort."
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/#contact"
+        primaryButtonLink="/contact"
         secondaryButtonText="Emergency Care"
         secondaryButtonLink="/"
         imageSrc={DrHorn}
@@ -52,7 +52,8 @@ const RootCanalPage = () => {
       <ParallaxSection imageSrc={smile}
         title="Pain-Free Root Canal Therapy in Fort Worth"
         description="A root canal can save your tooth and relieve discomfort."
-        buttonText="Book an Appointment" />
+        buttonText="Book an Appointment" 
+        buttonLink={"/contact"}/>
 
     </>
 

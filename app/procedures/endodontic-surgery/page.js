@@ -22,7 +22,7 @@ const EndodonticSurgeryPage = () => {
       <Hero title="Endodontic Surgery in Fort Worth "
         subtitle="Advanced microsurgical techniques for optimal tooth health."
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/#contact"
+        primaryButtonLink="/contact"
         secondaryButtonText="Emergency Care"
         secondaryButtonLink="tel:+8173869007"
         imageSrc={DrHorn}
@@ -52,7 +52,8 @@ const EndodonticSurgeryPage = () => {
       <ParallaxSection imageSrc={smile}
         title="Endodontic Surgery in Fort Worth "
         description="Advanced microsurgical techniques for optimal tooth health."
-        buttonText="Book an Appointment" />
+        buttonText="Book an Appointment"
+        buttonLink={"/contact"}/>
 
     </>
 

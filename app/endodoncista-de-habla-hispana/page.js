@@ -20,7 +20,7 @@ const EndodoncistaHablaEspañolPage = () => {
       <Hero title="Endodoncista Que Habla Español en Fort Worth"
         subtitle="Atención endodontica en español para un tratamiento sin estrés y con confianza."
         primaryButtonText="Agendar Cita"
-        primaryButtonLink="/#contact"
+        primaryButtonLink="/contact"
         secondaryButtonText="Referir Paciente"
         secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
@@ -45,7 +45,8 @@ const EndodoncistaHablaEspañolPage = () => {
       <ParallaxSection imageSrc={drHorn}
         title="Endodoncista Que Habla Español en Fort Worth"
         description="Atención endodontica en español para un tratamiento sin estrés."
-        buttonText="Agendar Cita" />
+        buttonText="Agendar Cita" 
+        buttonLink={'/contact'}/>
 
     </>
 

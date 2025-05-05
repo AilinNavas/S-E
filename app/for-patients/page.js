@@ -20,8 +20,8 @@ const PatientsPage = () => {
                 subtitle="Everything you need to know before, during, and after your visit."
                 primaryButtonText="Book An Appointment"
                 primaryButtonLink="/appointments"
-                secondaryButtonText="Insurance"
-                secondaryButtonLink="/"
+                secondaryButtonText="Emergency Care"
+                secondaryButtonLink="tel:+8173869007"
                 imageSrc={DrHorn}
                 imageAlt="Dr. Neal Horn at Southside Endodontics" />
             <WhyTrustUs cards={trustPatients}
@@ -40,7 +40,8 @@ const PatientsPage = () => {
                 imageSrc={office}
                 title="Compassionate Endodontic Care You Can Trust"
                 description="Call our office for immediate assistance or to schedule an appointment."
-                buttonText="Call Us: (817) 386-9007" /> 
+                buttonText="Call Us: (817) 386-9007" 
+                buttonLink={"tel:+8173869007"}/>
             <Faqs title="Have Questions? We Have Answers."
                 description="Find answers to common endodontic questions."
                 items={faqsForPatients} />

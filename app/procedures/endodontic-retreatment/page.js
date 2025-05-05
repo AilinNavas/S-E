@@ -21,7 +21,7 @@ const EndodonticRetreatmentPage = () => {
     <Hero title="Root Canal Retreatment in Fort Worth "
         subtitle="If your previous root canal is causing pain or infection, retreatment can help."
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/#contact"
+        primaryButtonLink="/contact"
         secondaryButtonText="Emergency Care"
         secondaryButtonLink="tel:+8173869007"
         imageSrc={DrHorn}
@@ -51,7 +51,8 @@ const EndodonticRetreatmentPage = () => {
       <ParallaxSection imageSrc={smile}
         title="Root Canal Retreatment in Fort Worth "
         description="If your previous root canal is causing pain or infection, retreatment can help."
-        buttonText="Book an Appointment" />
+        buttonText="Book an Appointment" 
+        buttonLink={"/contact"}/>
 
     </>
    

@@ -8,10 +8,10 @@ const YourJourney = () => {
 
             <div className="mb-8 text-center">
                 <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl mb-8">
-                 Your Journey to a Healthy Smile
+                    Your Journey to a Healthy Smile
                 </h2>
                 <p className="text-xl font-semibold font-inter text-[#5a6065] md:text-2xl text-center">
-                We've designed a process to ensure your treatment is  comfortable and effective
+                    We've designed a process to ensure your treatment is  comfortable and effective
                 </p>
 
             </div>
@@ -87,7 +87,7 @@ const YourJourney = () => {
                             <div className="flex flex-col gap-4 p-4 text-center ">
                                 <h3 className="text-xl font-semibold text-[#0a2a54] ">Follow-Up & Communication</h3>
                                 <p className="text-brand-secondary">
-                                We coordinate with your general dentist for lasting treatment success.
+                                    We coordinate with your general dentist for lasting treatment success.
                                 </p>
                                 <div className="flex items-center justify-center text-[#3c8dbc]">
                                     <MessageCircle className="h-6 w-6 mr-2" />
@@ -100,9 +100,10 @@ const YourJourney = () => {
             </div>
 
             <div className="mt-12 text-center">
-            <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
-                Book an Appointment
-              </button>
+                <Link href="/contact">
+                    <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
+                        Book an Appointment
+                    </button></Link>
             </div>
 
 

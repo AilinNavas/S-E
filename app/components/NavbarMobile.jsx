@@ -231,8 +231,8 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                                             </Link>
                                         </div>
 
-                                        <div className="/#contact">
-                                            <Link href="/book-appointment" className="text-[#0a2a54]" onClick={handleLinkClick}>
+                                        <div className="">
+                                            <Link href="/contact" className="text-[#0a2a54]" onClick={handleLinkClick}>
                                                 {isSpanishPage ? "Agendar Cita" : "Book An Appointment"}
                                             </Link>
                                         </div>

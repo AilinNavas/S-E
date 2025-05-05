@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect } from "react";
 import Faqs from "./components/Faqs";
-import Referring from "./components/home/Referring";
 import Services from "./components/home/Services";
 import Technology from "./components/home/Technology";
 import Testimonials from "./components/Testimonials";
@@ -26,13 +25,12 @@ export default function Home() {
 
   return (
     <>
-      {/* <NavbarMobile />
-      <NavbarPC /> */}
+     
       <Hero
         title="SOUTHSIDE ENDODONTICS"
         subtitle="We make your experience as seamless and comfortable as possible."
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/#contact"
+        primaryButtonLink="/contact"
         secondaryButtonText="Refer Now"
         secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
@@ -66,6 +64,7 @@ export default function Home() {
         title="SOUTHSIDE ENDODONTICS FORT WORTH, TX"
         description="We make your experience as seamless and comfortable as possible."
         buttonText="Book an Appointment"
+        buttonLink={"/contact"}
       />
       <Faqs title="Frequently Asked Questions"
         description="Find answers to common questions about endodontic treatments and our practice."

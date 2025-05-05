@@ -19,7 +19,7 @@ const ProceduresPage = () => {
         title="Endodontic Care for a Healthier, Pain-Free Smile"
         subtitle="Endodontic treatments delivered with precision, and care."
         primaryButtonText="Book An Appointment"
-        primaryButtonLink="/#contact"
+        primaryButtonLink="/contact"
         secondaryButtonText="Refer Now"
         secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
@@ -46,7 +46,9 @@ const ProceduresPage = () => {
       <ParallaxSection imageSrc={smile}
         title="Endodontic Care for a Healthier, Pain-Free Smile"
         description="Schedule your consultation and transform your dental health."
-        buttonText="Book an Appointment" />
+        buttonText="Book an Appointment" 
+        buttonLink={"/contact"}/>
+       
       <Faqs title="Have Questions? We Have Answers."
         description="Find answers to common endodontic questions."
         items={faqsForPatients} />

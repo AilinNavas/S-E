@@ -41,7 +41,8 @@ const DoctorsPage = () => {
       <ParallaxSection imageSrc={drHorn}
         title="Your Trusted Endodontic Partner"
         description="Seamless referrals and clear communication."
-        buttonText="Refer Now" />
+        buttonText="Refer Now" 
+        buttonLink={"https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"}/>
 
     </>
 
