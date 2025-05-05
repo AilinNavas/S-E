@@ -22,8 +22,8 @@ const EmergencyCarePage = () => {
         subtitle="Same-Day appointments for tooth pain, infection, and dental trauma."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/contact"
-        secondaryButtonText="Emergency Care"
-        secondaryButtonLink="tel:+8173869007"
+         secondaryButtonText="Refer Now"
+        secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhatIs content={whatIsEmergencyCare[0]} />

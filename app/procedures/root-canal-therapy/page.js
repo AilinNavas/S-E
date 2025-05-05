@@ -23,8 +23,8 @@ const RootCanalPage = () => {
         subtitle="A root canal can save your tooth and relieve discomfort."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/contact"
-        secondaryButtonText="Emergency Care"
-        secondaryButtonLink="/"
+      secondaryButtonText="Refer Now"
+        secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhatIs content={whatIsRootCanal[0]} />

@@ -23,8 +23,8 @@ const EndodonticSurgeryPage = () => {
         subtitle="Advanced microsurgical techniques for optimal tooth health."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/contact"
-        secondaryButtonText="Emergency Care"
-        secondaryButtonLink="tel:+8173869007"
+      secondaryButtonText="Refer Now"
+        secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
       <WhatIs content={whatIsEndodonticSurgery[0]} />
