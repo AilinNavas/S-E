@@ -11,7 +11,7 @@ const Insurance = () => {
             <div className="mx-auto max-w-7xl py-16 lg:py-32 px-4">
                 <div className="mb-8 text-center">
                     <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl mb-8">
-                        Affordable Care with Flexible Payment Options
+                        Affordable Care for Everyone
                     </h2>
                     <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl'>
                         Our team will help verify your coverage and discuss financing options.
@@ -53,10 +53,10 @@ const Insurance = () => {
                     >
                         <div className="flex items-center mb-4">
                             <CheckCircle className="h-8 w-8 text-[#3c8dbc] mr-3" />
-                            <h3 className="text-xl font-bold text-[#0a2a54] font-zen">Flexible Payment Plans</h3>
+                            <h3 className="text-xl font-bold text-[#0a2a54] font-zen">We accept CareCredit.com</h3>
                         </div>
                         <p className="text-[#5a6065] font-inter">
-                            We offer payment plans to help make your treatment more affordable.
+                            We want to make your treatment more affordable.
                         </p>
                     </div>
                 </div>
@@ -72,7 +72,8 @@ const Insurance = () => {
                         Book An Appointment
                     </button></Link>
                     <p className="mt-4 text-[#5a6065] font-inter">
-                        Have questions about coverage? Call us at{" "}
+                        Have questions about coverage? 
+                        <p className="mt-4 text-[#5a6065] font-inter">Call us at{" "}</p>
                         <a href="tel:+8173869007" className="text-[#3c8dbc] font-semibold hover:underline">
                             817-386-9007
                         </a>
