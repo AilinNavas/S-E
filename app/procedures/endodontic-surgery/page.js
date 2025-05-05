@@ -20,7 +20,7 @@ const EndodonticSurgeryPage = () => {
   return (
     <>
       <Hero title="Endodontic Surgery in Fort Worth "
-        subtitle="Advanced microsurgical techniques for optimal tooth health"
+        subtitle="Advanced microsurgical techniques for optimal tooth health."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/#contact"
         secondaryButtonText="Emergency Care"

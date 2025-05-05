@@ -19,7 +19,7 @@ const EmergencyCarePage = () => {
   return (
    <>
     <Hero title="Emergency Care in Fort Worth"
-        subtitle="Same-Day appointments for tooth pain, infection, and dental trauma"
+        subtitle="Same-Day appointments for tooth pain, infection, and dental trauma."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/#contact"
         secondaryButtonText="Emergency Care"
@@ -50,7 +50,7 @@ const EmergencyCarePage = () => {
         items={faqsForPatients} />
       <ParallaxSection imageSrc={smile}
         title="Emergency Care in Fort Worth "
-        description="Same-Day appointments for tooth pain, infection, and dental trauma"
+        description="Same-Day appointments for tooth pain, infection, and dental trauma."
         buttonText="Book an Appointment" />
 
     </>

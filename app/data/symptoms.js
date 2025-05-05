@@ -1,27 +1,27 @@
 export const symptomsRootCanal = [
     {
         title: "Severe Toothache",
-        subtitle: "Persistent pain that may radiate to the jaw, ear, or neck",
+        subtitle: "Persistent pain that may radiate to the jaw, ear, or neck.",
     },
     {
         title: "Sensitivity to Temperature",
-        subtitle: "Sharp pain when consuming hot or cold foods and beverages",
+        subtitle: "Sharp pain when consuming hot or cold foods and beverages.",
     },
     {
         title: "Swollen Gums",
-        subtitle: "Inflammation and tenderness around a specific tooth",
+        subtitle: "Inflammation and tenderness around a specific tooth.",
     },
     {
         title: "Facial Swelling",
-        subtitle: "Puffiness of the face, cheek, or jaw area",
+        subtitle: "Puffiness of the face, cheek, or jaw area.",
     },
     {
         title: "Persistent Bad Breath",
-        subtitle: "Unpleasant odor that doesn't go away with brushing",
+        subtitle: "Unpleasant odor that doesn't go away with brushing.",
     },
     {
         title: "Discolored Tooth",
-        subtitle: "Darkening or discoloration of an individual tooth",
+        subtitle: "Darkening or discoloration of an individual tooth.",
     },
 ]
 export const symptomsRetreatment = [

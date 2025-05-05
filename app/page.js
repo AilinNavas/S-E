@@ -41,7 +41,7 @@ export default function Home() {
       <AboutUs />
       <WhyUs />
       <Testimonials data={testimonialsMain}
-        title="What Our Patients and Referring Doctors Say"
+        title="What Our Patients Say"
         subtitle="We are proud to have earned the trust of our patients and referring doctors."
         showCTA={false} />
       <Services

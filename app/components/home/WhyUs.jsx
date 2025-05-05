@@ -23,7 +23,7 @@ const WhyUs = () => {
                                 <Image alt="icon-check" src={check} className="mt-1 h-6 w-6 flex-shrink-0 text-brand-accent" />
                                 <div>
                                     <h3 className=" font-semibold bg-gradient-to-b text-[#0a2a54]">Fast Appointments</h3>
-                                    <p className="text-[#5a6065]">With TDO software, we reduce waiting times and paperwork.</p>
+                                    <p className="text-[#5a6065]">TDO software reduces waiting times and paperwork.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3 font-inter">

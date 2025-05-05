@@ -20,7 +20,7 @@ const RootCanalPage = () => {
 
     <>
       <Hero title="Pain-Free Root Canal Therapy in Fort Worth"
-        subtitle="A root canal can save your tooth and relieve discomfort"
+        subtitle="A root canal can save your tooth and relieve discomfort."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/#contact"
         secondaryButtonText="Emergency Care"
