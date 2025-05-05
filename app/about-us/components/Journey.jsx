@@ -13,7 +13,7 @@ const timeline = [
         icon: <GraduationCap className="w-8 h-8 text-[#3c8dbc]" />,
         title: 'Dental School & Specialization',
         description:
-            'Dr. Horn earned his Doctor of Dental Surgery (DDS) degree from the University of Texas Health Science Center at Houston School of Dentistry. He then completed a General Practice Residency at UCLA, gaining advanced training in complex dental cases. His passion for endodontics led him to specialize further, completing a residency in Endodontics at UT Houston.',
+            'Dr. Horn earned his DDS from the University of Texas Health Science Center at Houston, completed a General Practice Residency at UCLA for advanced training, and specialized in endodontics through a residency at UT Houston.',
     },
     {
         icon: <Briefcase className="w-8 h-8 text-[#3c8dbc]" />,
