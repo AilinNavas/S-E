@@ -65,7 +65,7 @@ const Hero = ({
 
   return (
     <section className="relative">
-      <div className="container grid grid-cols-1 items-center gap-8 px-4 md:grid-cols-2 mx-auto max-w-7xl py-16">
+      <div className="container grid grid-cols-1 items-center gap-8 px-4 md:grid-cols-2 md:gap-12 mx-auto max-w-7xl py-16">
         <div className="flex flex-col gap-6">
           <h1 className="font-zen text-5xl font-bold leading-tight text-[#0a2a54] uppercase lg:text-7xl">
             {title}
