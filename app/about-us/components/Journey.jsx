@@ -7,7 +7,7 @@ const timeline = [
         icon: <School className="w-8 h-8 text-[#3c8dbc]" />,
         title: 'Education & Early Years',
         description:
-            'Born in Alexandria, Louisiana, Dr. Horn later moved to Tyler, Texas, where he attended middle and high school. He pursued a degree in molecular biology at Brigham Young University. During his studies, he spent two years in Argentina as a missionary, becoming fluent in Spanish.',
+            'Born in Alexandria, Louisiana, Dr. Horn later moved to Tyler, Texas, where he attended middle and high school. He pursued a degree in molecular biology at BYU. During his studies, he spent two years in Argentina as a missionary, becoming fluent in Spanish.',
     },
     {
         icon: <GraduationCap className="w-8 h-8 text-[#3c8dbc]" />,

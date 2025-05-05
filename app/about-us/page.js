@@ -31,8 +31,8 @@ const AboutUsPage = () => {
         bgColor="bg-[#3c8dbc]/5"
         mdCols={4} />
       <Testimonials data={testimonialsAboutUs3}
-        title="What Patients & Doctors Say About Dr. Horn"
-        subtitle="Real feedback on exceptional endodontics care"
+        title="What Patients Say About Dr. Horn"
+        subtitle="Real feedback on exceptional endodontics care."
         showCTA={false} />
       <AfterOffice />
       <ParallaxSection

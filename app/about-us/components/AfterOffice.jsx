@@ -11,7 +11,7 @@ const AfterOffice = () => {
           Outside the Office: Meet Dr. Horn
           </h2>
           <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center'>
-          Dr. Horn's Hobbies and Interests
+          Dr. Horn's Hobbies and interests.
           </p>
         </header>
 
@@ -25,8 +25,7 @@ const AfterOffice = () => {
               </p>
               <p className="text-lg text-brand-secondary">
                 Dr. Horn believes in giving back to the community and regularly participates in dental outreach
-                programs. His experience living in Argentina gave him a deep appreciation for different cultures and a
-                desire to provide care to underserved populations.
+                programs. His experience living in Argentina gave him a deep appreciation for different cultures.
               </p>
               <p className="text-lg text-brand-secondary">
                 When not in the office, you might find Dr. Horn at a local baseball game, tending to his garden, or
