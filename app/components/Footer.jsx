@@ -31,28 +31,28 @@ const Footer = () => {
             <h3 className="mb-4 text-xl font-bold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="about-us" className="hover:underline">
+                <Link href="/about-us" className="hover:underline">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="procedures" className="hover:underline">
+                <Link href="/procedures" className="hover:underline">
                   Procedures
                 </Link>
               </li>
               <li>
-                <Link href="for-patients" className="hover:underline">
+                <Link href="/for-patients" className="hover:underline">
                   For Patients
                 </Link>
               </li>
               <li>
-                <Link href="for-doctors" className="hover:underline">
+                <Link href="/for-doctors" className="hover:underline">
                   For Doctors
                 </Link>
               </li>
 
               <li>
-                <Link href="#contact" className="hover:underline">
+                <Link href="/contact" className="hover:underline">
                   Contact Us
                 </Link>
               </li>
@@ -154,7 +154,7 @@ const Footer = () => {
                "longitude": -97.3308
              },
              "url": "https://southsideendo.com",
-             "telephone": "(817) 555-1234",
+             "telephone": "(817) 3869007",
              "priceRange": "$$",
              "openingHoursSpecification": [
                {
