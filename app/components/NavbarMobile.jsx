@@ -243,7 +243,7 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                                             </a>
                                         </div>
 
-                                        <Link href="tel:+1234567890" onClick={handleLinkClick}>
+                                        <Link href="tel:+8173869007" onClick={handleLinkClick}>
                                             <button className="flex items-center bg-[#119960] border-2 border-[#119960] hover:bg-[#119960]/80 text-white px-8 py-3 font-inter font-semibold rounded-md hover:bg-primary/70 ease-in-out duration-300">
                                                 <Phone className="w-6 h-6 mr-2 text-white" />
                                                 {isSpanishPage ? "Llamar Ahora" : "Call Us"}
