@@ -59,7 +59,7 @@ const Referring2 = () => {
 
                 <div className="text-center my-8">
                     <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx">
-                        <button className=" cursor-pointer text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
+                        <button className="cursor-pointer text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
                             Refer a Patient
                         </button>
                     </a>
