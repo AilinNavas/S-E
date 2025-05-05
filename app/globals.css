@@ -33,4 +33,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.mapboxgl-popup-tip {
+  display: none !important;
+}
 
+.mapboxgl-popup-close-button {
+  font-size: 1.25rem !important; /* Por ejemplo, 20px */
+  top: 6px !important;           /* Opcional: ajustar la posición */
+  right: 6px !important;
+}
