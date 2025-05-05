@@ -1,4 +1,4 @@
-import { Award, Cpu, Heart, AlertCircle, Handshake, HandHeart, Clock , MessageCircle} from 'lucide-react';
+import { Award, Heart, AlertCircle, Handshake, HandHeart, Clock , MessageCircle, TvMinimal} from 'lucide-react';
 
 export const trustPatients = [
     {
@@ -8,7 +8,7 @@ export const trustPatients = [
       benefits: ["Gentle procedures", "Proven success rates"],
     },
     {
-      icon: Cpu,
+      icon: TvMinimal,
       title: "Advanced Technology",
       description: "Cutting-edge tools for precise diagnostics and treatments.",
       benefits: ["Digital X-rays", "3D Imaging"],
@@ -29,7 +29,7 @@ export const trustPatients = [
 
   export const trustServices = [
     {
-      icon: Cpu,
+      icon: TvMinimal,
       title: "State-of-the-Art Technology",
       description: "Our practice utilizes Cone Beam CT imaging and microscopic endodontics for unparalleled precision and effectiveness in treatment.",
       benefits: ["3D imaging for accurate diagnosis", "Microscopic precision", "Digital record-keeping"],
@@ -85,13 +85,13 @@ export const trustAboutUs = [
     benefits: ["Clear communication", "Cultural understanding"],
   },
   {
-    icon: Clock,
+    icon: HandHeart,
     title: "Compassionate Care",
     description: "Creates a stress-free, comfortable environment for all patients.",
     benefits: ["Prioritizes Comfort", "Gentle Approach"],
   },
   {
-    icon: Cpu,
+    icon: TvMinimal,
     title: "Advanced Technology",
     description: "Uses the latest innovations in endodontics for precise, effective treatments.",
     benefits: ["Digital Imaging", "Microscopic endodontics"],
@@ -136,7 +136,7 @@ export const trustHablaHispana = [
     benefits: ["Ambiente tranquilo y acogedor", "Equipo amable y comprensivo", "Tratamientos sin dolor con anestesia"],
   },
   {
-    icon: Award,
+    icon: TvMinimal,
     title: "Tecnología Avanzada",
     description: "Utilizamos los equipos más modernos para diagnósticos precisos y tratamientos efectivos con resultados duraderos.",
     benefits: ["Radiografías de alta precisión", "Microscopios de alta calidad", "Técnicas modernas de endodoncia"],

@@ -1,4 +1,9 @@
-import rootCanal from "@/public/images/root-canal.webp";
+import rootCanalTherapy from "@/public/images/procedures/root-canal-treatment-southside-endodontics.webp";  
+import rootCanalRetreatment from "@/public/images/procedures/root-canal-retreatment-southside-endodontics.webp";  
+import endodonticSurgery from "@/public/images/procedures/endodontic-surgery-southside-endodontics.webp";  
+import emergencyCare from "@/public/images/procedures/emergency-care.webp";  
+
+
 
 
 export const services = [
@@ -121,7 +126,7 @@ export const whatIsRootCanal = [{
         "Inside each tooth is soft tissue called pulp that contains blood vessels, nerves, and connective tissue. When this pulp becomes infected or inflamed due to deep decay, repeated dental procedures, cracks, or trauma, a root canal becomes necessary.",
         "During the procedure, our endodontist, Dr. Horn, carefully removes the damaged pulp, cleans and shapes the root canal system, and then fills and seals the space. This prevents bacteria from re-entering and causing further infection.",
     ],
-    "imageSrc": rootCanal,
+    "imageSrc": rootCanalTherapy,
     "imageAlt": "Root Canal Therapy Diagram"
 }]
 
@@ -133,7 +138,7 @@ export const whatIsRetreatment = [{
         "In some cases, complex anatomy, narrow or curved canals, or delays in placing a final restoration can leave the tooth vulnerable to bacteria. New decay, fractures, or a loose filling can also expose the root canal system, leading to renewed infection.",
         "During retreatment, our endodontist carefully removes the previous filling material, thoroughly cleans and reshapes the canals, and then seals the tooth again to prevent future issues—giving your tooth a second chance at lasting health.",
     ],
-    "imageSrc": rootCanal,
+    "imageSrc": rootCanalRetreatment,
     "imageAlt": "Root Canal Retreatment Diagram"
 }]
 
@@ -145,7 +150,7 @@ export const whatIsEndodonticSurgery = [{
         "The most common type of endodontic surgery is called an apicoectomy. In this procedure, the endodontist carefully removes the tip of the tooth’s root, along with any surrounding infected tissue, to stop the spread of infection and promote healing.",
         "Using a surgical microscope and advanced instruments, the area is cleaned, sealed with a small filling, and the gum tissue is sutured. This precise approach protects nearby structures and helps save your natural tooth with minimal discomfort.",
     ],
-    "imageSrc": rootCanal,
+    "imageSrc": endodonticSurgery,
     "imageAlt": "Endodontic Surgery Diagram"
 }]
 export const whatIsEmergencyCare = [{
@@ -156,6 +161,6 @@ export const whatIsEmergencyCare = [{
         "As an endodontist, Dr. Neal Horn specializes in treating infections inside the tooth. With advanced tools and training, he can save your natural tooth—even in difficult cases.",
         "Dental emergencies can worsen fast. Our team is equipped to respond quickly and effectively, giving you the focused care you need, right when you need it.",
     ],
-    "imageSrc": rootCanal,
+    "imageSrc": emergencyCare,
     "imageAlt": "Emergency Care Diagram"
 }]

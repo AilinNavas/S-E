@@ -151,7 +151,7 @@ const FormContact = () => {
                                 {isSpanishPage ? 'Le responderemos en el plazo de un día laborable en relación con su cita.' : 'We will reply within one business day regarding your appointment.'}
                                 </p>
 
-                                <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/90 ease-in duration-300">
+                                <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
                                 {isSpanishPage ? 'Enviar solicitud' : 'Submit Request'}
                                 </button>
                             </form>

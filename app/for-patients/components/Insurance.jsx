@@ -13,7 +13,7 @@ const Insurance = () => {
                     <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl mb-8">
                         Affordable Care with Flexible Payment Options
                     </h2>
-                    <p className='text-xl font-semibold font-inter text-[#5a6065] md:text-2xl text-center'>
+                    <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl'>
                         Our team will help verify your coverage and discuss financing options.
                     </p>
                 </div>
@@ -104,15 +104,15 @@ const Insurance = () => {
                 {/* CTA */}
                 <div className="mt-16 text-center">
                     <button
-                        className="bg-[#3c8dbc] text-white px-8 py-3 rounded-md font-semibold hover:bg-[#0a2a54] transition-colors duration-300 font-inter"
+                        className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300"
 
                     >
                         Verify Your Insurance
                     </button>
                     <p className="mt-4 text-[#5a6065] font-inter">
                         Have questions about coverage? Call us at{" "}
-                        <a href="tel:+1234567890" className="text-[#3c8dbc] font-semibold hover:underline">
-                            123-456-7890
+                        <a href="tel:+8173869007" className="text-[#3c8dbc] font-semibold hover:underline">
+                         817-386-9007
                         </a>
                     </p>
                 </div>

@@ -40,7 +40,7 @@ const PatientsPage = () => {
                 imageSrc={office}
                 title="Compassionate Endodontic Care You Can Trust"
                 description="Call our office for immediate assistance or to schedule an appointment."
-                buttonText="Call Us: (817) 555-1234" />
+                buttonText="Call Us: (817) 386-9007" /> 
             <Faqs title="Have Questions? We Have Answers."
                 description="Find answers to common endodontic questions."
                 items={faqsForPatients} />
