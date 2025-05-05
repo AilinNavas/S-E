@@ -98,7 +98,7 @@ export default function DentalClinicMap() {
         const directionsBtn = document.createElement("button")
         directionsBtn.textContent = "Go to the office"
         directionsBtn.className =
-          "bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] font-inter border border-[#0a2a54] text-white text-xs py-1 px-3 rounded-md transition-colors duration-300 mb-2 font-inter"
+          "bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] font-inter border border-[#0a2a54] text-white text-xs py-1 px-3 rounded-md transition-colors duration-300 mb-2 font-inter cursor-pointer"
         directionsBtn.onclick = (e) => {
           // Prevenir comportamiento por defecto
           e.preventDefault()
@@ -173,9 +173,7 @@ export default function DentalClinicMap() {
         onWheel={handleMapContainerWheel}
         tabIndex="-1" // Evitar que reciba enfoque por tabulación
       />
-      <p className="text-xs text-gray-500 mt-2 text-center">
-        Click on the marker to see more information about our clinic
-      </p>
+      
     </div>
   )
 }
