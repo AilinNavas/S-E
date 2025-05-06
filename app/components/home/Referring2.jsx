@@ -1,5 +1,3 @@
-import { Clipboard, CheckCircle, Lock } from "lucide-react"
-import Link from "next/link"
 
 const Referring2 = () => {
 

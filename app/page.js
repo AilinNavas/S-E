@@ -14,6 +14,9 @@ import DrHorn from '@/public/images/about-us/Neal.webp'
 import smile from '@/public/images/smile.webp'
 import { services } from "./data/services";
 import Referring2 from "./components/home/Referring2";
+import InsuranceSearch from "./for-patients/components/Insurance-search";
+import InsuranceSection from "./components/home/InsuranceSection";
+
 
 export default function Home() {
   // Asegurar que la página comienza en la parte superior al cargar
@@ -37,7 +40,9 @@ export default function Home() {
         imageAlt="Dr. Neal Horn at Southside Endodontics"
       />
       <AboutUs />
+      <InsuranceSection />
       <WhyUs />
+    
       <Testimonials data={testimonialsMain}
         title="What Our Patients Say"
         subtitle="We are proud to have earned the trust of our patients and referring doctors."

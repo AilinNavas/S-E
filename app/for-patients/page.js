@@ -3,13 +3,13 @@ import DrHorn from '@/public/images/about-us/DrHorn.webp'
 import Expect from "./components/Expect"
 import Testimonials from "../components/Testimonials"
 import { testimonialsForDPatients3 } from "../data/testimonials";
-import Insurance from "./components/Insurance"
 import ParallaxSection from "../components/ParallaxSection"
 import office from "@/public/images/about-us/before.webp"
 import Faqs from "../components/Faqs"
 import { faqsForPatients } from "../data/faqsHome"
 import { trustPatients } from "../data/TrustData"
 import WhyTrustUs from "../procedures/components/WhyTrustUs"
+import Insurance from "./components/Insurance";
 
 
 const PatientsPage = () => {

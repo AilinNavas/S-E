@@ -1,6 +1,6 @@
-import rootCanalTherapy from "@/public/images/procedures/root-canal-treatment-southside-endodontics.webp";  
-import rootCanalRetreatment from "@/public/images/procedures/root-canal-retreatment-southside-endodontics.webp";  
-import endodonticSurgery from "@/public/images/procedures/endodontic-surgery-southside-endodontics.webp";  
+import rootCanalTherapy from "@/public/images/procedures/infected-tooth-fort-worth.webp";  
+import rootCanalRetreatment from "@/public/images/procedures/endodontic-retreatment-fort-worth.webp";  
+import endodonticSurgery from "@/public/images/procedures/endodontic-surgery-fort-worth.webp";  
 import emergencyCare from "@/public/images/procedures/emergency-care.webp";  
 
 

@@ -106,9 +106,9 @@ const DoubleCrrousel = () => {
     }, [])
 
     return (
-        <div className="w-full overflow-hidden py-8">
+        <div className="w-full overflow-hidden">
             {/* Carrusel superior - se mueve hacia la derecha */}
-            <div ref={topCarouselRef} className="flex overflow-x-hidden  py-4">
+            <div ref={topCarouselRef} className="flex overflow-x-hidden py-4">
                 {duplicatedLogos.map((logo, index) => (
                     <div key={`top-${logo.id}-${index}`} className="flex-shrink-0 mx-6">
                         <Image src={logo.src || "/placeholder.svg"} alt={logo.alt} className="h-24 w-auto object-contain" />
