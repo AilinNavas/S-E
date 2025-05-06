@@ -132,7 +132,7 @@ const NavbarPC = () => {
         </div>
         {/* larger screen navigation */}
         <div className="flex justify-end items-center w-10/12">
-          <ul className="hidden lg:flex text-[20px] space-x-8 ">
+          <ul className="hidden lg:flex text-[20px] space-x-6 ">
             <Link href={"/about-us"}>
               <li className="text-[#0a2a54] drop-shadow hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter cursor-pointer">
                 {isSpanishPage ? "Sobre nosotros" : "About Us"}
@@ -146,7 +146,7 @@ const NavbarPC = () => {
               >
                 {isSpanishPage ? "Tratamientos" : "Procedures"}
                 <motion.div>
-                  <ChevronDown className="ml-1 h-6 w-6" />
+                  <ChevronDown className="ml-1 mt-0.5 h-6 w-6" />
                 </motion.div>
               </button>
 
@@ -195,9 +195,14 @@ const NavbarPC = () => {
                 {isSpanishPage ? "Pacientes" : "Patients"}
               </li>
             </Link>
+            <Link href={"/endodoncista-de-habla-hispana"}>
+              <li className="text-[#0a2a54] drop-shadow hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter cursor-pointer">
+                {isSpanishPage ? "Español" : "Español"}
+              </li>
+            </Link>
           </ul>
 
-          <div className="hidden lg:flex ml-12 space-x-4">
+          <div className="hidden lg:flex ml-6 space-x-4">
             <Link href={"/contact"}>
               <button className="cursor-pointer w-full rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
                 {isSpanishPage ? "Agendar Cita" : "Book An Appointment"}

@@ -24,13 +24,15 @@ export default function WhatIs({ content }) {
         </div>
 
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 font-inter items-center">
-        <div className="relative h-[300px]">
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              fill
-              className="object-cover rounded-lg"
-            />
+          <div className="flex justify-center md:justify-end">
+            <div className="relative w-full max-w-[400px] h-[300px] mx-auto">
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-6">
             {paragraphs.map((text, index) => (
@@ -41,7 +43,7 @@ export default function WhatIs({ content }) {
 
           </div>
 
-       
+
         </div>
       </div>
     </section>
