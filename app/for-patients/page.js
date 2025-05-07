@@ -16,7 +16,7 @@ const PatientsPage = () => {
     return (
         <>
             <Hero
-                title="Compassionate Endodontic Care"
+                title="Gentle Endodontic Care"
                 subtitle="Everything you need to know before, during, and after your visit."
                 primaryButtonText="Book An Appointment"
                 primaryButtonLink="/appointments"
