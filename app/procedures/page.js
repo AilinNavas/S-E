@@ -11,6 +11,7 @@ import Faqs from "../components/Faqs"
 import { faqsForPatients } from "../data/faqsHome"
 import ParallaxSection from "../components/ParallaxSection"
 import smile from '@/public/images/smile.webp'
+import InsuranceSection from "../components/home/InsuranceSection"
 
 const ProceduresPage = () => {
   return (
@@ -33,6 +34,7 @@ const ProceduresPage = () => {
         buttonText="" // opcional, puedes personalizarlo
         buttonLink="" // opcional, puedes cambiar el link
       />
+      <InsuranceSection />
       <WhyTrustUs cards={trustServices}
         title="Why Patients & Dentists Trust Us"
         subtitle="We combine advanced technology with compassionate endodontics care."

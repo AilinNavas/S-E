@@ -14,6 +14,7 @@ import { testimonialsMain } from "@/app/data/testimonials"
 import { faqsForPatients } from "@/app/data/faqsHome"
 import { afterCareItemsRetreatment, stepsRetreatment } from "@/app/data/treatmentProcess"
 import smile from "@/public/images/smile.webp"
+import InsuranceSection from "@/app/components/home/InsuranceSection"
 
 const EndodonticRetreatmentPage = () => {
   return (
@@ -36,6 +37,7 @@ const EndodonticRetreatmentPage = () => {
         steps={stepsRetreatment}
         subtitle2={"The Retreatment Advantage"}
         afterCareItems={afterCareItemsRetreatment} />
+        <InsuranceSection />
       <WhyTrustUs cards={trustServices}
         title="Why Fort Worth Trusts Southside Endodontics"
         subtitle="Our commitment to excellence in endodontic care sets us apart."

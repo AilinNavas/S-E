@@ -10,6 +10,7 @@ import drHorn from '@/public/images/about-us/Neal.webp'
 import WhyTrustUs from '../procedures/components/WhyTrustUs'
 import Services from '../components/home/Services'
 import { services } from '../data/services'
+import InsuranceSection from '../components/home/InsuranceSection'
 
 
 
@@ -32,6 +33,7 @@ const EndodontistFortWorthPage = () => {
                 buttonText="See All Procedures" // opcional, puedes personalizarlo
                 buttonLink="/procedures" // opcional, puedes cambiar el link
             />
+            <InsuranceSection />
             <WhyTrustUs cards={trustAboutUs}
                 title="Why Trust Southside Endodontics"
                 subtitle="Dr. Horn combines clinical expertise with a compassionate approach."

@@ -10,6 +10,7 @@ import { faqsForDoctors } from '../data/faqsHome'
 import ParallaxSection from '../components/ParallaxSection'
 import drHorn from '@/public/images/about-us/Neal.webp'
 import WhyTrustUs from '../procedures/components/WhyTrustUs'
+import InsuranceSection from '../components/home/InsuranceSection'
 
 
 
@@ -29,6 +30,7 @@ const SpanishSpeakingEndodontistPage = () => {
         subtitle="Refer your Spanish-speaking patients to a bilingual specialist for a better experience."
         bgColor="bg-white"
         mdCols={3} />
+        <InsuranceSection />
       <ReferralProcess />
       <Testimonials data={testimonialsMain}
         title="Fort Worth dentists trust"

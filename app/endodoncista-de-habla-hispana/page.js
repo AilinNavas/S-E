@@ -11,6 +11,7 @@ import drHorn from '@/public/images/about-us/Neal.webp'
 import WhyTrustUs from '../procedures/components/WhyTrustUs'
 import Services from '../components/home/Services'
 import { servicios } from '../data/services'
+import InsuranceSection from '../components/home/InsuranceSection'
 
 
 
@@ -30,6 +31,7 @@ const EndodoncistaHablaEspañolPage = () => {
         subtitle="Recibir atención dental especializada en su idioma hace toda la diferencia."
         bgColor="bg-white"
         mdCols={3} />
+      <InsuranceSection />
       <Services title="Servicios Endodónticos"
         subtitle="Ofrecemos una amplia gama de tratamientos de endodoncia."
         services={servicios}
@@ -45,8 +47,8 @@ const EndodoncistaHablaEspañolPage = () => {
       <ParallaxSection imageSrc={drHorn}
         title="Endodoncista Que Habla Español en Fort Worth"
         description="Atención endodontica en español para un tratamiento sin estrés."
-        buttonText="Agendar Cita" 
-        buttonLink={'/contact'}/>
+        buttonText="Agendar Cita"
+        buttonLink={'/contact'} />
 
     </>
 

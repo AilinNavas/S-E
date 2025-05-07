@@ -12,8 +12,9 @@ import { symptomsEmergencyCare} from "@/app/data/symptoms"
 import { trustServices } from "@/app/data/TrustData"
 import { testimonialsMain } from "@/app/data/testimonials"
 import { faqsForPatients } from "@/app/data/faqsHome"
-import { afterCareItemsEmergencyCare, afterCareItemsRetreatment, stepsEmergencyCare, stepsRetreatment } from "@/app/data/treatmentProcess"
+import { afterCareItemsEmergencyCare, stepsEmergencyCare} from "@/app/data/treatmentProcess"
 import smile from "@/public/images/smile.webp"
+import InsuranceSection from "@/app/components/home/InsuranceSection"
 
 const EmergencyCarePage = () => {
   return (
@@ -36,6 +37,7 @@ const EmergencyCarePage = () => {
         steps={stepsEmergencyCare}
         subtitle2={"Post-Treatment Care & Recovery"}
         afterCareItems={afterCareItemsEmergencyCare} />
+      <InsuranceSection />
       <WhyTrustUs cards={trustServices}
         title="Why Fort Worth Trusts Southside Endodontics"
         subtitle="Our commitment to excellence in endodontic care sets us apart."

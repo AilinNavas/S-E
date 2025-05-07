@@ -1,6 +1,8 @@
+
 "use client"
 
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { Search } from "lucide-react"
 
@@ -10,7 +12,9 @@ export default function InsuranceSearch() {
   const [message, setMessage] = useState("")
   const [showResults, setShowResults] = useState(false)
 
-  // List of accepted insurances
+  const pathname = usePathname()
+  const isSpanish = pathname === "/endodoncista-de-habla-hispana"
+
   const acceptedInsurances = [
     "Aetna PPO",
     "Ameritas PPO",
@@ -32,23 +36,31 @@ export default function InsuranceSearch() {
   useEffect(() => {
     if (searchTerm.length > 1) {
       const filteredResults = acceptedInsurances.filter((insurance) =>
-        insurance.toLowerCase().includes(searchTerm.toLowerCase()),
+        insurance.toLowerCase().includes(searchTerm.toLowerCase())
       )
 
       setResults(filteredResults)
       setShowResults(true)
 
       if (filteredResults.length > 0) {
-        setMessage("Great news! We accept the following insurance plans:")
+        setMessage(
+          isSpanish
+            ? "¡Buenas noticias! Aceptamos los siguientes planes de seguro:"
+            : "Great news! We accept the following insurance plans:"
+        )
       } else {
-        setMessage("We couldn't find an exact match for your insurance. Please call our office for more information.")
+        setMessage(
+          isSpanish
+            ? "No encontramos una coincidencia exacta para tu seguro. Por favor llama a nuestra oficina para más información."
+            : "We couldn't find an exact match for your insurance. Please call our office for more information."
+        )
       }
     } else {
       setShowResults(false)
       setResults([])
       setMessage("")
     }
-  }, [searchTerm])
+  }, [searchTerm, isSpanish])
 
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value)
@@ -56,13 +68,6 @@ export default function InsuranceSearch() {
 
   return (
     <div className="w-full max-w-2xl mx-auto p-6 rounded-lg shadow-lg z-50" style={{ backgroundColor: "#fcfdfd" }}>
-      {/* <h2 className="text-2xl font-bold mb-4" style={{ color: "#0a2a54" }}>
-        Insurance Verification
-      </h2>
-      <p className="mb-6" style={{ color: "#5a6065" }}>
-        Check if we accept your dental insurance plan
-      </p> */}
-
       <div className="relative">
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
           <Search className="h-5 w-5" style={{ color: "#3c8dbc" }} />
@@ -70,7 +75,9 @@ export default function InsuranceSearch() {
         <input
           type="text"
           className="w-full pl-10 pr-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-opacity-50"
-          placeholder="Type your insurance name..."
+          placeholder={
+            isSpanish ? "Escribe el nombre de tu seguro..." : "Type your insurance name..."
+          }
           value={searchTerm}
           onChange={handleInputChange}
           style={{
@@ -141,11 +148,23 @@ export default function InsuranceSearch() {
               {results.length === 0 && searchTerm.length > 1 && (
                 <div className="text-center py-2">
                   <p className="text-sm" style={{ color: "#5a6065" }}>
-                    Please call our office at{" "}
-                    <span className="font-bold" style={{ color: "#3c8dbc" }}>
-                    817-386-9007
-                    </span>{" "}
-                    for more information about your specific insurance plan.
+                    {isSpanish ? (
+                      <>
+                        Por favor llama a nuestra oficina al{" "}
+                        <span className="font-bold" style={{ color: "#3c8dbc" }}>
+                          817-386-9007
+                        </span>{" "}
+                        para más información sobre tu seguro.
+                      </>
+                    ) : (
+                      <>
+                        Please call our office at{" "}
+                        <span className="font-bold" style={{ color: "#3c8dbc" }}>
+                          817-386-9007
+                        </span>{" "}
+                        for more information about your specific insurance plan.
+                      </>
+                    )}
                   </p>
                 </div>
               )}
@@ -155,7 +174,9 @@ export default function InsuranceSearch() {
       </AnimatePresence>
 
       <div className="mt-6 text-sm" style={{ color: "#B3BBC1" }}>
-        We accept many insurance plans. If you don't see yours listed, please contact us directly.
+        {isSpanish
+          ? "Aceptamos muchos planes de seguro. Si no ves el tuyo en la lista, por favor contáctanos directamente."
+          : "We accept many insurance plans. If you don't see yours listed, please contact us directly."}
       </div>
     </div>
   )

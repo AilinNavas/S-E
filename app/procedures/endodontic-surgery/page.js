@@ -14,6 +14,7 @@ import smile from '@/public/images/smile.webp'
 import { whatIsEndodonticSurgery } from '@/app/data/services'
 import { symptomsEndodonticSurgery } from '@/app/data/symptoms'
 import { afterCareItemsEndodonticSurgery, stepsEndodonticSurgery } from '@/app/data/treatmentProcess'
+import InsuranceSection from '@/app/components/home/InsuranceSection'
 
 
 const EndodonticSurgeryPage = () => {
@@ -37,6 +38,7 @@ const EndodonticSurgeryPage = () => {
         steps={stepsEndodonticSurgery}
         subtitle2={"Recovery After Endodontic Surgery"}
         afterCareItems={afterCareItemsEndodonticSurgery} />
+        <InsuranceSection />
       <WhyTrustUs cards={trustServices}
         title="Why Fort Worth Trusts Southside Endodontics"
         subtitle="Our commitment to excellence in endodontic care sets us apart."

@@ -10,6 +10,7 @@ import { faqsForPatients } from "../data/faqsHome"
 import { trustPatients } from "../data/TrustData"
 import WhyTrustUs from "../procedures/components/WhyTrustUs"
 import Insurance from "./components/Insurance";
+import InsuranceSection from "../components/home/InsuranceSection";
 
 
 const PatientsPage = () => {
@@ -29,6 +30,7 @@ const PatientsPage = () => {
                 subtitle="Dr. Horn combines clinical expertise with a compassionate approach."
                 bgColor="bg-white"
                 mdCols={4} />
+            <InsuranceSection />
             <Expect />
             <Testimonials data={testimonialsForDPatients3}
                 title="What Patients & Doctors Say About Dr. Horn"
@@ -40,8 +42,8 @@ const PatientsPage = () => {
                 imageSrc={office}
                 title="Compassionate Endodontic Care You Can Trust"
                 description="Call our office for immediate assistance or to schedule an appointment."
-                buttonText="Call Us: (817) 386-9007" 
-                buttonLink={"tel:+8173869007"}/>
+                buttonText="Call Us: (817) 386-9007"
+                buttonLink={"tel:+8173869007"} />
             <Faqs title="Have Questions? We Have Answers."
                 description="Find answers to common endodontic questions."
                 items={faqsForPatients} />
