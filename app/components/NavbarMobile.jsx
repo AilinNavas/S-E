@@ -319,12 +319,12 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                                 repeatDelay: 2
                               }}
                             >
-                              <Phone className="h-7 w-7 text-[#119960]" />
+                              <Phone className="h-7 w-7 text-[#267E60]" />
                             </motion.div>
                             
                             {/* Sound wave effect */}
                             <motion.div
-                              className="absolute rounded-full border-2 border-[#119960]/20"
+                              className="absolute rounded-full border-2 border-[#267E60]/20"
                               initial={{ width: 30, height: 30, opacity: 0 }}
                               animate={{ 
                                 width: ["30px", "60px"], 
@@ -343,7 +343,7 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                           <div className="text-xs text-center px-2 font-light text-[#5a6065]">
                             {isSpanishPage ? "¡Resolvemos todas tus dudas!" : "We'll answer all your questions!"}
                           </div>
-                          <div className="flex items-center mt-1 text-xs text-[#119960]">
+                          <div className="flex items-center mt-1 text-xs text-[#267E60]">
                             <span>817-386-9007</span>
                             <ArrowRight className="h-3 w-3 ml-1" />
                           </div>
