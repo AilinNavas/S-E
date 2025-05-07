@@ -4,7 +4,7 @@ import Link from "next/link"
 import { motion, MotionConfig, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import logo from "@/public/logo-svg.svg"
-import { ChevronDown, Phone } from "lucide-react"
+import { ChevronDown, Phone, MapPin } from "lucide-react"
 import { usePathname } from "next/navigation"
 
 const NavbarMobile = () => {
@@ -29,18 +29,18 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
     const [active, setActive] = useState(false)
     const [proceduresOpen, setProceduresOpen] = useState(false)
 
-    // Lock body scroll when menu is open
+    //Lock body scroll when menu is open
     useEffect(() => {
         if (active) {
-            // Save current scroll position
+            //Save current scroll position
             const scrollY = window.scrollY
 
-            // Add styles to body to prevent scrolling
+            //Add styles to body to prevent scrolling
             document.body.style.position = "fixed"
             document.body.style.top = `-${scrollY}px`
             document.body.style.width = "100%"
         } else {
-            // Restore scroll position when menu is closed
+            //  Restore scroll position when menu is closed
             const scrollY = document.body.style.top
             document.body.style.position = ""
             document.body.style.top = ""
@@ -51,7 +51,7 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
         }
 
         return () => {
-            // Cleanup function to restore body styles when component unmounts
+            //             // Cleanup function to restore body styles when component unmounts
             document.body.style.position = ""
             document.body.style.top = ""
             document.body.style.width = ""
@@ -147,6 +147,7 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                     />
                 </motion.button>
 
+
                 <AnimatePresence>
                     {active && (
                         <motion.div
@@ -168,7 +169,7 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
 
                                 {/* Scrollable menu content */}
                                 <div className="flex-1 overflow-y-auto">
-                                    <nav className="flex flex-col items-start justify-start space-y-8 p-8 font-inter text-2xl">
+                                    <nav className="flex flex-col items-start justify-start space-y-8 p-8 font-inter text-xl">
                                         <div className="flex">
                                             <Link href="/about-us" className="text-[#0a2a54]" onClick={handleLinkClick}>
                                                 {isSpanishPage ? "Sobre nosotros" : "About Us"}
@@ -248,17 +249,42 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                                             </a>
                                         </div>
 
-                                        <a href="tel:+8173869007" onClick={handleLinkClick}>
+                                        <div className="fixed bottom-0 left-0 right-0 z-50 bg-white ">
+                                            <div className="grid grid-cols-2 border-t border-gray-200 shadow-sm">
+                                                {/* Directions Button */}
+                                                <a
+                                                    href="https://maps.app.goo.gl/xx2i9XrdQaAjtDbW7"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex flex-col items-center justify-center py-3 text-[#3c8dbc] transition-colors"
+                                                >
+                                                    <MapPin className="h-6 w-6 mb-1" />
+                                                    <span className="text-lg font-medium font-inter">{isSpanishPage ? "Dirección" : "Directions"}</span>
+                                                </a>
+
+                                                {/* Call Us Button */}
+                                                <a
+                                                    href="tel:+8173869007"
+                                                    className="flex flex-col items-center justify-center py-3 text-[#3c8dbc] transition-colors"
+                                                >
+                                                    <Phone className="h-6 w-6 mb-1" />
+                                                    <span className="text-lg font-medium font-inter">{isSpanishPage ? "Llamar" : "Call us"}</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        {/* <a href="tel:+8173869007" onClick={handleLinkClick}>
                                             <button className="flex items-center bg-[#119960] border-2 border-[#119960] hover:bg-[#119960]/80 text-white px-8 py-3 font-inter font-semibold rounded-md hover:bg-primary/70 ease-in-out duration-300">
                                                 <Phone className="w-6 h-6 mr-2 text-white" />
                                                 {isSpanishPage ? "Llamar Ahora" : "Call Us"}
                                             </button>
-                                        </a>
+                                        </a> */}
                                     </nav>
                                 </div>
                             </div>
                         </motion.div>
                     )}
+
                 </AnimatePresence>
             </div>
         </MotionConfig>
