@@ -1,6 +1,7 @@
 
 "use client"
 import { useEffect, useRef, useState } from "react"
+import { usePathname } from "next/navigation"
 import mapboxgl from "mapbox-gl"
 import "mapbox-gl/dist/mapbox-gl.css"
 
@@ -26,7 +27,7 @@ export default function DentalClinicMap() {
   const mapContainer = useRef(null)
   const map = useRef(null)
   const [mapLoaded, setMapLoaded] = useState(false)
-
+  const pathname = usePathname()
 
 
   useEffect(() => {
@@ -96,7 +97,11 @@ export default function DentalClinicMap() {
 
         // Botón para direcciones
         const directionsBtn = document.createElement("button")
-        directionsBtn.textContent = "Go to the office"
+        // directionsBtn.textContent = "Go to the office"
+        directionsBtn.textContent = pathname === "/endodoncista-de-habla-hispana"
+          ? "Ir a la clínica"
+          : "Go to the office"
+
         directionsBtn.className =
           "bg-[#0a2a54] hover:bg-transparent hover:text-[#0a2a54] font-inter border border-[#0a2a54] text-white text-xs py-1 px-3 rounded-md transition-colors duration-300 mb-2 font-inter cursor-pointer"
         directionsBtn.onclick = (e) => {
@@ -173,7 +178,7 @@ export default function DentalClinicMap() {
         onWheel={handleMapContainerWheel}
         tabIndex="-1" // Evitar que reciba enfoque por tabulación
       />
-      
+
     </div>
   )
 }

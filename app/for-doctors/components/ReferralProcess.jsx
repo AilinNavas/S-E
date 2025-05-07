@@ -104,11 +104,11 @@ const ReferralProcess = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center mt-8">
-                    <Link href="">
+                    <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target="_blank" rel="noopener noreferrer">
                         <button className="cursor-pointer text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
                             Refer Now
                         </button>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </section>

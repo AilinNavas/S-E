@@ -31,7 +31,7 @@ const EndodoncistaHablaEspañolPage = () => {
         bgColor="bg-white"
         mdCols={3} />
       <Services title="Servicios Endodónticos"
-        description="Tratamientos de conducto y más para mantener su sonrisa saludable."
+        subtitle="Ofrecemos una amplia gama de tratamientos de endodoncia."
         services={servicios}
         showAllLink={false} />
       <Testimonials data={testimonialsInSpanish}

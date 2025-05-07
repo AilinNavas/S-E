@@ -30,7 +30,7 @@ const FormContact = () => {
                                         <input
                                             id="first-name"
                                             className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"
-                                            placeholder="Enter your first name"
+                                            placeholder={isSpanishPage ? "Ingrese su nombre" : "Enter your first name"}
                                         />
                                     </div>
                                     <div className="space-y-2">
@@ -38,7 +38,7 @@ const FormContact = () => {
                                         <input
                                             id="last-name"
                                             className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"
-                                            placeholder="Enter your last name"
+                                            placeholder={isSpanishPage ? "Ingrese su apellido" : "Enter your last name"}
                                         />
                                     </div>
                                 </div>
@@ -48,7 +48,7 @@ const FormContact = () => {
                                         id="email"
                                         type="email"
                                         className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"
-                                        placeholder="Enter your email"
+                                        placeholder={isSpanishPage ? "Ingrese su correo electrónico" : "Enter your email"}
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -57,7 +57,7 @@ const FormContact = () => {
                                         id="phone"
                                         type="tel"
                                         className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"
-                                        placeholder="Enter your phone number"
+                                        placeholder={isSpanishPage ? "Ingrese su número de teléfono" : "Enter your phone number"}
                                     />
                                 </div>
 
@@ -142,7 +142,7 @@ const FormContact = () => {
                                     <textarea
                                         id="message"
                                         className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-brand-accent focus:outline-none focus:ring-1 focus:ring-brand-accent"
-                                        placeholder="Tell us about your dental concerns"
+                                        placeholder={isSpanishPage ? "Cuéntenos sus inquietudes dentales" : "Tell us about your dental concerns"}
                                         rows={3}
                                     ></textarea>
                                 </div>
@@ -163,7 +163,7 @@ const FormContact = () => {
                         <Image src={office} alt="office" className="rounded-t-md" />
 
                         <div className="bg-white p-6 rounded-b-md font-inter text-[#0a2a54] text-lg text-center lg:text-left">  
-                            <p>  {isSpanishPage ? 'Leslie Horn, nuestra directora de oficina, se pondrá en contacto con usted para responder a sus preguntas y concertar una cita' : 'Leslie Horn, our office manager will contact you to answer your questions and schedule an appointment.'}</p>
+                            <p>  {isSpanishPage ? 'Leslie Horn, nuestra directora de oficina, se pondrá en contacto con usted para responder a sus preguntas y concertar una cita.' : 'Leslie Horn, our office manager will contact you to answer your questions and schedule an appointment.'}</p>
                         </div>
 
                     </div>

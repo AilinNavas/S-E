@@ -254,7 +254,7 @@ const Footer = () => {
 
       <div className="bg-[#0a2a54] pb-12">
         <div className="mt-8 flex justify-center space-x-6 border-t border-white/20 pt-8">
-          <Link href="#" aria-label="Facebook">
+          <a href="https://www.facebook.com/southsideendodontics/" target="_blank" aria-label="Facebook">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -269,7 +269,7 @@ const Footer = () => {
             >
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
             </svg>
-          </Link>
+          </a>
         </div>
         <div className="mt-8 text-center text-sm text-white">
           <p>&copy; {new Date().getFullYear()} Southside Endodontics. All rights reserved.</p>

@@ -73,7 +73,7 @@ export const servicios = [
             "Alivia el dolor y la sensibilidad dental",
             "Evita que la infección se propague",
             "Preserva tu diente natural",
-            "Normalmente se completa en 1-2 visitas",
+            "Se completa en 1-2 visitas",
         ],
     },
     {
@@ -83,7 +83,7 @@ export const servicios = [
         description:
             "Se realiza cuando un diente tratado previamente no sana correctamente o desarrolla nuevos problemas.",
         bullets: [
-            "Elimina infecciones persistentes o nuevas",
+            "Elimina infecciones",
             "Prolonga la vida del diente",
             "Alternativa a la extracción dental",
             "Generalmente requiere 1-2 visitas",
@@ -96,7 +96,7 @@ export const servicios = [
         description:
             "La cirugía endodóntica puede salvar un diente cuando los tratamientos de conducto tradicionales no son suficientes.",
         bullets: [
-            "Apicectomía para eliminar tejido infectado",
+            "Elimina tejido infectado",
             "Preserva tu diente natural",
             "Procedimiento quirúrgico menor",
             "Favorece la estabilidad a largo plazo",
@@ -111,7 +111,7 @@ export const servicios = [
         bullets: [
             "Alivio inmediato del dolor",
             "Previene complicaciones mayores",
-            "Disponible el mismo día en muchos casos",
+            "Disponiblidad el mismo día",
             "Protege los dientes cercanos",
         ],
     },

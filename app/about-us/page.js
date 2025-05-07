@@ -37,8 +37,8 @@ const AboutUsPage = () => {
       <AfterOffice />
       <ParallaxSection
         imageSrc={NealParallax}
-        title="Schedule a Consultation with Dr. Horn"
-        description="Experience expert endodontic care with Dr. Horn."
+        title="Experienced Endodontist in Fort Worth, TX"
+        description="Discover trusted, skilled, and passionate endodontic care at Southside Endodontics."
         buttonText="Call Us: (817) 3869007"
         buttonLink="tel:+8173869007"
       />

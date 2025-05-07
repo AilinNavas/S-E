@@ -164,7 +164,7 @@ export const testimonialsForServices = [
       role: "Patient",
       image: "/images/reviews/natalie.png",
       text:
-        "At Southside Endodontics I had a very comfortable and pleasant experience. I would gladly recommend them to anyone needing their services. Thank you Dr. Horn and staff for taking great care of me!",
+        "En Southside Endodontics tuve una experiencia muy cómoda y agradable. Con gusto los recomendaría a cualquiera que necesite sus servicios. Gracias Dr. Horn y personal por cuidarme tan bien!",
     },
 
   ]
