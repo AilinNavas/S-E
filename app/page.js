@@ -14,8 +14,8 @@ import DrHorn from '@/public/images/about-us/Neal.webp'
 import smile from '@/public/images/smile.webp'
 import { services } from "./data/services";
 import Referring2 from "./components/home/Referring2";
-import InsuranceSearch from "./for-patients/components/Insurance-search";
 import InsuranceSection from "./components/home/InsuranceSection";
+import Insurance from "./for-patients/components/Insurance";
 
 
 export default function Home() {
@@ -55,6 +55,7 @@ export default function Home() {
         buttonText="See All Procedures" // opcional, puedes personalizarlo
         buttonLink="/procedures" // opcional, puedes cambiar el link
       />
+      <Insurance />
       <Referring2 />
    
       <Technology />

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
-import DoubleCrrousel from './DoubleCrrousel'
 import InsuranceGrid from './Insurance-grid'
 
 
@@ -8,7 +7,7 @@ const Insurance = () => {
 
 
     return (
-        <section id='insurance' className="bg-white">
+        <section id='insurance' className="bg-[#3c8dbc]/5">
             <div className="mx-auto max-w-7xl py-16 lg:py-32 px-4">
                 <div className="mb-8 text-center">
                     <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl mb-8">
@@ -20,9 +19,6 @@ const Insurance = () => {
                 </div>
 
                 <InsuranceGrid />
-
-              
-                
 
                 {/* Benefits */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
@@ -52,10 +48,6 @@ const Insurance = () => {
                             We provide clear cost estimates before treatment so there are no surprises.
                         </p>
                     </div>
-
-
-
-
 
                     <div
                         className="bg-[#fcfdfd] p-6 rounded-lg shadow-sm"

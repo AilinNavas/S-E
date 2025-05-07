@@ -12,7 +12,7 @@ const NavbarMobile = () => {
     const isSpanishPage = pathname.includes("/endodoncista-de-habla-hispana")
 
     return (
-        <div className="md:mt-10 lg:hidden bg-white">
+        <div className="md:mt-10 lg:hidden bg-white fixed top-0 left-0 right-0 z-50 shadow-sm ">
             <div className="flex items-center justify-between py-2">
                 <div className="h-20 pt-4 ml-4">
                     <Link href={"/"}>
@@ -248,12 +248,12 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                                             </a>
                                         </div>
 
-                                        <Link href="tel:+8173869007" onClick={handleLinkClick}>
+                                        <a href="tel:+8173869007" onClick={handleLinkClick}>
                                             <button className="flex items-center bg-[#119960] border-2 border-[#119960] hover:bg-[#119960]/80 text-white px-8 py-3 font-inter font-semibold rounded-md hover:bg-primary/70 ease-in-out duration-300">
                                                 <Phone className="w-6 h-6 mr-2 text-white" />
                                                 {isSpanishPage ? "Llamar Ahora" : "Call Us"}
                                             </button>
-                                        </Link>
+                                        </a>
                                     </nav>
                                 </div>
                             </div>

@@ -61,15 +61,11 @@ export default function InsuranceGrid() {
     <div className="w-full mx-auto py-8">
 
 
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate="show"
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-      >
+      {/* Desktop Grid View (lg screens and up) */}
+      <motion.div variants={container} initial="hidden" animate="show" className="hidden lg:grid lg:grid-cols-4 gap-4">
         {insurances.map((insurance, index) => (
           <motion.div
-            key={index}
+            key={`grid-${index}`}
             variants={item}
             whileHover={{
               scale: 1.03,
@@ -85,7 +81,7 @@ export default function InsuranceGrid() {
                 transition={{ delay: 0.2 + index * 0.05 }}
                 className="bg-white rounded-full p-1 shadow-md"
               >
-                <Check size={16} style={{ color: "#119960" }} />
+                <Check size={16} style={{ color: "#3c8dbc" }} />
               </motion.div>
             </div>
 
@@ -118,11 +114,61 @@ export default function InsuranceGrid() {
         ))}
       </motion.div>
 
+      {/* Mobile and Tablet List View (below lg screens) */}
+      <motion.div variants={container} initial="hidden" animate="show" className="lg:hidden space-y-3">
+        {insurances.map((insurance, index) => (
+          <motion.div
+            key={`list-${index}`}
+            variants={item}
+            whileHover={{
+              scale: 1.01,
+              boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+            className="relative rounded-lg overflow-hidden border-l-4"
+            style={{
+              backgroundColor: "#ffffff",
+              borderLeftColor: getInsuranceColor(insurance),
+            }}
+          >
+            <div className="p-4 flex items-center justify-between">
+              <div className="flex items-center">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center mr-3 flex-shrink-0 text-white font-bold text-sm"
+                  style={{ backgroundColor: getInsuranceColor(insurance) }}
+                >
+                  {getInsuranceInitial(insurance)}
+                </div>
+                <div>
+                  <h3 className="font-medium" style={{ color: "#0a2a54" }}>
+                    {insurance}
+                  </h3>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <span className="text-xs mr-2 hidden sm:inline" style={{ color: "#5a6065" }}>
+                  In-Network
+                </span>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.1 + index * 0.03 }}
+                  className="bg-white rounded-full p-1 shadow-sm"
+                  style={{ backgroundColor: "rgba(60, 141, 188, 0.1)" }}
+                >
+                  <Check size={16} style={{ color: "#3c8dbc" }} />
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
+
       <div className="mt-10 p-4 rounded-lg text-center" style={{ backgroundColor: "rgba(60, 141, 188, 0.1)" }}>
         <p style={{ color: "#5a6065" }}>
-          Don't see your insurance listed? Contact us at {" "}
-          <span className="font-bold" style={{ color: "#3c8dbc" }}>
-          817-386-9007
+          Don't see your insurance listed? Contact us at{" "}
+          <span className="font-bold" style={{ color: "#0a2a54" }}>
+            555-123-4567
           </span>{" "}
           to verify your coverage.
         </p>
