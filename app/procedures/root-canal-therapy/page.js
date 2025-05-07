@@ -14,6 +14,7 @@ import { testimonialsMain } from '@/app/data/testimonials'
 import { faqsForPatients } from '@/app/data/faqsHome'
 import smile from '@/public/images/smile.webp'
 import { afterCareItemsRootCanal, stepsRootCanal } from '@/app/data/treatmentProcess'
+import InsuranceSection from '@/app/components/home/InsuranceSection'
 
 const RootCanalPage = () => {
   return (
@@ -23,10 +24,11 @@ const RootCanalPage = () => {
         subtitle="A root canal can save your tooth and relieve discomfort."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/contact"
-      secondaryButtonText="Refer Now"
+        secondaryButtonText="Refer Now"
         secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
+
       <WhatIs content={whatIsRootCanal[0]} />
       <Symptoms title="Do You Have These Symptoms?"
         subtitle="Recognizing the signs early can save your natural tooth."
@@ -37,6 +39,7 @@ const RootCanalPage = () => {
         steps={stepsRootCanal}
         subtitle2={"What to expect after your root canal"}
         afterCareItems={afterCareItemsRootCanal} />
+      <InsuranceSection />
       <WhyTrustUs cards={trustServices}
         title="Why Fort Worth Trusts Southside Endodontics"
         subtitle="Our commitment to excellence in endodontic care sets us apart."
@@ -52,8 +55,8 @@ const RootCanalPage = () => {
       <ParallaxSection imageSrc={smile}
         title="Pain-Free Root Canal Therapy in Fort Worth"
         description="A root canal can save your tooth and relieve discomfort."
-        buttonText="Book an Appointment" 
-        buttonLink={"/contact"}/>
+        buttonText="Book an Appointment"
+        buttonLink={"/contact"} />
 
     </>
 
