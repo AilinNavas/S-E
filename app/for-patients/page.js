@@ -20,7 +20,7 @@ const PatientsPage = () => {
                 title="Gentle Endodontic Care"
                 subtitle="Everything you need to know before, during, and after your visit."
                 primaryButtonText="Book An Appointment"
-                primaryButtonLink="/appointments"
+                primaryButtonLink="/contact"
                 secondaryButtonText="Emergency Care"
                 secondaryButtonLink="tel:+8173869007"
                 imageSrc={DrHorn}

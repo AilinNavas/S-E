@@ -48,7 +48,7 @@ const ProceduresPage = () => {
       <YourJourney />
       <Insurance title={'Affordable Care for Everyone'}
         subtitle={'Our team will help verify your insurance coverage and answer any questions you have.'} 
-        showCTA={false}/>
+        showCTA={true}/>
       <ParallaxSection imageSrc={smile}
         title="Endodontic Care for a Healthier, Pain-Free Smile"
         description="Schedule your consultation and transform your dental health."

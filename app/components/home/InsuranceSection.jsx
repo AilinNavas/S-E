@@ -156,7 +156,7 @@ const InsuranceSection = () => {
         <div className="text-center my-8">
           <a href="/contact" target="_blank" rel="noopener noreferrer">
             <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
-              {isSpanish ? "Agenda Cita" : "Book An Appointment"}
+              {isSpanish ? "Agendar Cita" : "Book An Appointment"}
             </button>
           </a>
         </div>
