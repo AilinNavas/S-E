@@ -1,6 +1,6 @@
 import Hero from "@/app/components/Hero"
 import WhatIs from "../components/WhatIs"
-import Symptoms from "../components/Symptoms"     
+import Symptoms from "../components/Symptoms"
 import TreatmentProcess from "../components/TreatmentProcess"
 import WhyTrustUs from "../components/WhyTrustUs"
 import Testimonials from "@/app/components/Testimonials"
@@ -15,15 +15,16 @@ import { faqsForPatients } from "@/app/data/faqsHome"
 import { afterCareItemsRetreatment, stepsRetreatment } from "@/app/data/treatmentProcess"
 import smile from "@/public/images/smile.webp"
 import InsuranceSection from "@/app/components/home/InsuranceSection"
+import Insurance from "@/app/for-patients/components/Insurance"
 
 const EndodonticRetreatmentPage = () => {
   return (
-   <>
-    <Hero title="Root Canal Retreatment in Fort Worth "
+    <>
+      <Hero title="Root Canal Retreatment in Fort Worth "
         subtitle="If your previous root canal is causing pain or infection, retreatment can help."
         primaryButtonText="Book An Appointment"
         primaryButtonLink="/contact"
-         secondaryButtonText="Refer Now"
+        secondaryButtonText="Refer Now"
         secondaryButtonLink="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"
         imageSrc={DrHorn}
         imageAlt="Dr. Neal Horn at Southside Endodontics" />
@@ -37,7 +38,7 @@ const EndodonticRetreatmentPage = () => {
         steps={stepsRetreatment}
         subtitle2={"The Retreatment Advantage"}
         afterCareItems={afterCareItemsRetreatment} />
-        <InsuranceSection />
+      <InsuranceSection />
       <WhyTrustUs cards={trustServices}
         title="Why Fort Worth Trusts Southside Endodontics"
         subtitle="Our commitment to excellence in endodontic care sets us apart."
@@ -47,17 +48,19 @@ const EndodonticRetreatmentPage = () => {
         title="Real Patient Experiences"
         subtitle="Hear from patients who have experienced."
         showCTA={false} />
+      <Insurance title={'Affordable Care for Everyone'}
+        subtitle={'Our team will help verify your insurance coverage and answer any questions you have.'} />
       <Faqs title="Have Questions? We Have Answers."
         description="Find answers to common endodontic questions."
         items={faqsForPatients} />
       <ParallaxSection imageSrc={smile}
         title="Root Canal Retreatment in Fort Worth "
         description="If your previous root canal is causing pain or infection, retreatment can help."
-        buttonText="Book an Appointment" 
-        buttonLink={"/contact"}/>
+        buttonText="Book an Appointment"
+        buttonLink={"/contact"} />
 
     </>
-   
+
 
   )
 }

@@ -73,7 +73,7 @@ const ParallaxSection = ({
   buttonText,
   buttonLink,
   overlayOpacity = 0.6, // Valor por defecto, permite personalización
-  parallaxIntensity = 0.2, // Controla la intensidad del efecto parallax
+  parallaxIntensity = 0.4, // Controla la intensidad del efecto parallax
 }) => {
   const ref = useRef(null)
   const [isMobile, setIsMobile] = useState(false)

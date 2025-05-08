@@ -36,7 +36,8 @@ const PatientsPage = () => {
                 title="What Patients & Doctors Say About Dr. Horn"
                 showCTA={false} />
 
-            <Insurance />
+            <Insurance title={'Affordable Care for Everyone'}
+      subtitle={'Our team will help verify your coverage and discuss financing options.'} />
 
             <ParallaxSection
                 imageSrc={office}

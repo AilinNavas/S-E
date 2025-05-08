@@ -10,6 +10,7 @@ import { faqsForDoctors } from '../data/faqsHome'
 import ParallaxSection from '../components/ParallaxSection'
 import drHorn from '@/public/images/about-us/Neal.webp'
 import WhyTrustUs from '../procedures/components/WhyTrustUs'
+import Insurance from '../for-patients/components/Insurance'
 
 
 
@@ -34,7 +35,9 @@ const DoctorsPage = () => {
         title="Fort Worth dentists trust"
         subtitle="Real experiences working with Southside Endodontics."
         showCTA={true} />
-
+      <Insurance title={'Insurance Accepted'}
+        subtitle={'We work with most major insurance providers to ensure your patients the maximum benefits.'}
+      showCTA={false} />
       <Faqs title="Frequently Asked Questions"
         description="What referring dentists need to know."
         items={faqsForDoctors} />

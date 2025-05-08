@@ -63,12 +63,13 @@ export const testimonialsForServices = [
         "I have severe dental anxiety and was very much dreading this. The staff was supportive and compassionate. Dr. Horn was very professional and you can tell he is very good at what he does. If I need another procedure I will definitely go back. Thank you everyone!",
     },
     {
-      name: "Judy Corbeille",
+      name: "Scott Tanner",
       role: "Patient",
-      image: "/images/reviews/Judy-Corbeille.png",
+      image: "/images/reviews/Scott-Tanner.png",
       text:
-        "Dr. Horn and his staff were exceedingly professional and kind. Highly recommend his services for anyone needing endodontic care.",
+        "Dr. Horn and his staff were excellent. First, they were so great to fit us into their busy schedule with very little notice for an emergency root canal. The process and experience were so good. Friendly and professional. I highly recommend them to anyone.",
     },
+   
   ]
 
   export const testimonialsAboutUs3 = [
@@ -111,11 +112,11 @@ export const testimonialsForServices = [
         "Dr. Horn is thorough, caring and competent. I have seen three Endodontists during the last ten years and Dr. Neal Horn is certainly the best of the three.",
     },
     {
-      name: "Scott Tanner",
+      name: "Judy Corbeille",
       role: "Patient",
-      image: "/images/reviews/Scott-Tanner.png",
+      image: "/images/reviews/Judy-Corbeille.png",
       text:
-        "Dr. Horn and his staff were excellent. First, they were so great to fit us into their busy schedule with very little notice for an emergency root canal. The process and experience were so good. Friendly and professional. I highly recommend them to anyone.",
+        "Dr. Horn and his staff were exceedingly professional and kind. Highly recommend his services for anyone needing endodontic care.",
     },
 
   ]

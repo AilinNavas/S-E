@@ -15,6 +15,7 @@ import { whatIsEndodonticSurgery } from '@/app/data/services'
 import { symptomsEndodonticSurgery } from '@/app/data/symptoms'
 import { afterCareItemsEndodonticSurgery, stepsEndodonticSurgery } from '@/app/data/treatmentProcess'
 import InsuranceSection from '@/app/components/home/InsuranceSection'
+import Insurance from '@/app/for-patients/components/Insurance'
 
 
 const EndodonticSurgeryPage = () => {
@@ -48,6 +49,8 @@ const EndodonticSurgeryPage = () => {
         title="Real Patient Experiences"
         subtitle="Hear from patients who have experienced."
         showCTA={false} />
+        <Insurance title={'Affordable Care for Everyone'}
+      subtitle={'Our team will help verify your insurance coverage and answer any questions you have.'}/>
       <Faqs title="Have Questions? We Have Answers."
         description="Find answers to common endodontic questions."
         items={faqsForPatients} />

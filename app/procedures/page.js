@@ -12,6 +12,7 @@ import { faqsForPatients } from "../data/faqsHome"
 import ParallaxSection from "../components/ParallaxSection"
 import smile from '@/public/images/smile.webp'
 import InsuranceSection from "../components/home/InsuranceSection"
+import Insurance from "../for-patients/components/Insurance"
 
 const ProceduresPage = () => {
   return (
@@ -45,6 +46,9 @@ const ProceduresPage = () => {
         subtitle="Real experiences from our patients and dentists."
         showCTA={false} />
       <YourJourney />
+      <Insurance title={'Affordable Care for Everyone'}
+        subtitle={'Our team will help verify your insurance coverage and answer any questions you have.'} 
+        showCTA={false}/>
       <ParallaxSection imageSrc={smile}
         title="Endodontic Care for a Healthier, Pain-Free Smile"
         description="Schedule your consultation and transform your dental health."

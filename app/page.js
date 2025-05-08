@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <>
-     
+
       <Hero
         title="SOUTHSIDE ENDODONTICS"
         subtitle="We make your experience as seamless and comfortable as possible."
@@ -42,7 +42,7 @@ export default function Home() {
       <AboutUs />
       <InsuranceSection />
       <WhyUs />
-    
+
       <Testimonials data={testimonialsMain}
         title="What Our Patients Say"
         subtitle="We are proud to have earned the trust of our patients and referring doctors."
@@ -55,9 +55,11 @@ export default function Home() {
         buttonText="See All Procedures" // opcional, puedes personalizarlo
         buttonLink="/procedures" // opcional, puedes cambiar el link
       />
-      <Insurance />
+      <Insurance 
+      title={'Affordable Care for Everyone'}
+      subtitle={'Our team will help verify your insurance coverage and answer any questions you have.'} />
       <Referring2 />
-   
+
       <Technology />
 
       <Testimonials data={testimonialsForServices}
@@ -65,7 +67,7 @@ export default function Home() {
         subtitle="We're grateful for the trust and kind words from our patients and partners."
         showCTA={true} />
 
-<ParallaxSection
+      <ParallaxSection
         imageSrc={smile}
         title="SOUTHSIDE ENDODONTICS FORT WORTH, TX"
         description="We make your experience as seamless and comfortable as possible."
