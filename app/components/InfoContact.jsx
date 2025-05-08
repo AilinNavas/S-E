@@ -2,6 +2,7 @@
 import Contact from "./Contact"
 import DentalClinicMap from "./home/DentalClinicMap"
 import { usePathname } from 'next/navigation'
+import ScrollToTopButton from "./SrollToTopButton"
 
 
 const InfoContact = () => {
@@ -31,6 +32,7 @@ const InfoContact = () => {
 
                 </div>
             </div>
+            <ScrollToTopButton />
         </section>
     )
 }

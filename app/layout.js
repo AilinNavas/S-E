@@ -6,6 +6,7 @@ import NavbarPC from "./components/NavbarPC";
 import Footer from "./components/Footer";
 import ConditionalFormContact from "./components/CondicionalFormContact";
 import InfoContact from "./components/InfoContact";
+import InfoTop from "./components/InfoTop";
 
 const zenMaruGothic = Zen_Maru_Gothic({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${zenMaruGothic.variable} font-sans`}>
+        <InfoTop />
         <NavbarMobile />
         <NavbarPC />
         {children}
