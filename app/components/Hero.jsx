@@ -25,7 +25,7 @@
 //               <button className="cursor-pointer w-full text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-primary/70 ease-in-out duration-300">Refer Now</button>
 //             </Link>
 //           </div>
-        
+
 //         </div>
 //         <div className="relative h-[400px] w-full md:h-[500px]">
 //           <Image
@@ -48,6 +48,7 @@
 import { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { MapPin } from 'lucide-react'
 
 const Hero = ({
   title,
@@ -95,6 +96,13 @@ const Hero = ({
             priority
           />
         </div>
+
+      </div>
+      <div className='bg-[#3c8dbc]/5 px-8 py-4 text-[#5a6065] font-inter text-center rounded-md md:hidden -mt-6'>
+        <p className='flex items-center justify-center'> <MapPin className='inline text-[#3c8dbc] mr-1' /><span className='text-lg text-[#3c8dbc]'>See Location</span></p>
+        <a href="https://maps.app.goo.gl/xx2i9XrdQaAjtDbW7"
+          target="_blank"><p className=''>
+          1307 8th Avenue, Suite 303 Fort Worth, TX</p></a>
       </div>
     </section>
   )
