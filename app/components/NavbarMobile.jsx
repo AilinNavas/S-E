@@ -268,6 +268,7 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                             <motion.div
                               animate={{ 
                                 translateY: [-1, 1, -1, 1, 0],
+                                scale: [1, 1.05, 1]
                                 
                               }}
                               transition={{
