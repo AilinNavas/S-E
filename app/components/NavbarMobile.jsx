@@ -263,9 +263,19 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                           className=" relative overflow-hidden flex flex-col items-center justify-end py-4 bg-white text-[#0a2a54] border-r border-gray-100 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]"
                           onClick={handleLinkClick}
                         >
-                          <div className="flex items-center justify-center mb-4 relative">
+                          <div className="flex items-center justify-center mb-5 relative">
                             {/* Animated pin drop effect */}
                             <motion.div
+                              animate={{ 
+                                translateY: [-1, 1, -1, 1, 0],
+                                
+                              }}
+                              transition={{
+                                repeat: Number.POSITIVE_INFINITY,
+                                repeatType: "loop",
+                                duration: 1.5,
+                                repeatDelay: 2
+                              }}
                               className="absolute"
                              
                             >
@@ -274,11 +284,11 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                             
                             {/* Ripple effect */}
                             <motion.div
-                              className="absolute rounded-full bg-[#3c8dbc]/15"
+                              className="absolute rounded-full bg-[#3c8dbc]/10"
                               initial={{ width: 0, height: 0, opacity: 0 }}
                               animate={{ 
-                                width: ["0px", "50px"], 
-                                height: ["0px", "50px"],
+                                width: ["0px", "50px", "20px"], 
+                                height: ["0px", "50px", "20px"],
                                 opacity: [0, 0.5, 0]
                               }}
                               transition={{

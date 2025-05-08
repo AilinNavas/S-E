@@ -40,7 +40,7 @@ export const services = [
         description:
             "Endodontic surgery can save a tooth when traditional root canal treatments are not sufficient.",
         bullets: [
-            "Apicoectomy to remove infected tissue",
+            "Apicoectomy removes infection",
             "Preserves your natural tooth",
             "Minor surgical procedure",
             "Supports long-term stability",
