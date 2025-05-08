@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, CheckCircle } from "lucide-react";
@@ -13,6 +14,8 @@ const Services = ({
   showButton = true
 }) => {
   const [selectedTab, setSelectedTab] = useState(services[0]);
+  const pathname = usePathname()
+  const isSpanish = pathname === "/endodoncista-de-habla-hispana"
 
   return (
     <section className="bg-white">
@@ -79,13 +82,13 @@ const Services = ({
                   href={selectedTab.link}
                   className="ml-1 inline-flex items-center text-[#3c8dbc] hover:underline"
                 >
-                  Learn more 
+                 { isSpanish? 'Saber más' : 'Learn more'}
                 </Link>
               </div>
-             
-             
+
+
               <Link href={'/contact'}><button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
-                Schedule Treatment
+              { isSpanish? 'Programar tratamiento' : 'Schedule Treatment'} 
               </button></Link>
             </motion.div>
           </AnimatePresence>
@@ -97,7 +100,7 @@ const Services = ({
             href='/procedures'
             className="ml-1 inline-flex items-center text-[#3c8dbc] hover:underline text-xl"
           >
-            See All Procedures <ArrowRight className="ml-1 h-6 w-6" />
+            { isSpanish? 'Ver todos los procedimientos' : ' See all procedures'}  <ArrowRight className="ml-1 h-6 w-6" />
           </Link>
         )}
       </div>

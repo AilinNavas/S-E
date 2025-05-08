@@ -284,7 +284,7 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                             
                             {/* Ripple effect */}
                             <motion.div
-                              className="absolute rounded-full bg-[#3c8dbc]/10"
+                              className="absolute rounded-full bg-[#3c8dbc]/10++"
                               initial={{ width: 0, height: 0, opacity: 0 }}
                               animate={{ 
                                 width: ["0px", "50px", "20px"], 
