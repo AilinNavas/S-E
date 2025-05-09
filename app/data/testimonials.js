@@ -38,13 +38,14 @@ export const testimonialsForServices = [
       text:
         "I went into my appointment with Dr.Horne with anxiety and fear. I have a high fear of the dentist, and let the office know. They provided top tier care and were very supportive and continued to check if I was doing on during my procedure. Thank you for putting my fear at ease. 5 stars for sure, I strongly recommend ⭐️",
     },
-    {
-      name: "Terry Valles",
+     {
+      name: "Robert Keith",
       role: "Patient",
-      image: "/images/reviews/Terry-Valles.png",
+      image: "/images/reviews/Robert-Keith.png",
       text:
-        "My experience with Dr. Horn and Kayla were great. They made me very comfortable during my procedure. They did a great job explaining the process and checking on me during the procedure. Additional staff was professional and friendly. I definitely would recommend Southside Endodontics.",
+        "There is not enough good things I can say about this place. I have been struggling with mouth pain for years, and Dr. Horn is putting me on the path to living a pain-free life. I drive almost 3 hours for my appointments, but it is absolutely worth it! The care I receive here is far beyond anything I could ever hope to receive back home. If you’re looking for someone to do your root canal extraction or oral surgery, this is the place. You will not regret it!",
     },
+  
   ];
   
   export const testimonialsMain = [
@@ -98,11 +99,11 @@ export const testimonialsForServices = [
 
   export const testimonialsForDoctors3 = [
     {
-      name: "Robert Keith",
+      name: "Derrick Smith",
       role: "Patient",
-      image: "/images/reviews/Robert-Keith.png",
+      image: "/images/reviews/Derrik-smith.png",
       text:
-        "I drive almost 3 hours for my appointments, but it is absolutely worth it! The care I receive here is far beyond anything I could ever hope to receive back home. If you’re looking for someone to do your root canal extraction or oral surgery, this is the place. You will not regret it!",
+        "Excellent service. The staff and Dr. Horn were incredible which put my fear at ease. I highly recommend this establishment.",
     },
     {
       name: "Mark Crutchfield",
@@ -148,21 +149,21 @@ export const testimonialsForServices = [
   export const testimonialsInSpanish = [
     {
       name: "Irma",
-      role: "Patient",
+      role: "Paciente",
       image: "/images/reviews/Irma.png",
       text:
         "Mi experiencia fue muy agradable. Desde El momento que entras a la oficina. La recepcionista es una persona muy amable y la la assistente es muy profesional y no te sientes nerviosa. El Doctor te explica y contesta todas Tus preguntas. Les recomiendo que visiten Esta oficina. Yo estoy muy satisfecha.",
     },
     {
       name: "Yuni - Jan Lopez",
-      role: "Patient",
+      role: "Paciente",
       image: "/images/reviews/yuni.png",
       text:
         "Tuve una experiencia muy agradable y la atencion que me brindaron fue muy Profesional recomiendo al doctor Neal Horn 100% a toda la raza",
     },
     {
       name: "Natalie Price",
-      role: "Patient",
+      role: "Paciente",
       image: "/images/reviews/natalie.png",
       text:
         "En Southside Endodontics tuve una experiencia muy cómoda y agradable. Con gusto los recomendaría a cualquiera que necesite sus servicios. Gracias Dr. Horn y personal por cuidarme tan bien!",

@@ -3,7 +3,10 @@ import Image from "next/image";
 import star from '@/public/icons/star.svg';
 import google from '@/public/icons/google.svg';
 
+
 const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
+
+
   return (
     <section className='bg-[#0a2a54] '>
       <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
@@ -20,7 +23,7 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
           {data.map((testimonial, index) => (
             <div
               key={index}
-              className="flex flex-col gap-4 rounded-lg bg-white p-6 shadow-[0px_2px_10px_0px_rgba(255,_255,_255,_0.5)] transition-opacity duration-500"
+              className="flex flex-col justify-between h-full min-h-[280px] gap-4 rounded-lg bg-white p-6 shadow-[0px_2px_10px_0px_rgba(255,_255,_255,_0.5)] transition-opacity duration-500"
             >
               <div className="flex items-center gap-4">
                 {testimonial.image ? (
@@ -40,8 +43,12 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
                   </div>
                 )}
                 <div>
-                  <h3 className="text-lg font-inter font-semibold text-[#0a2a54]">{testimonial.name}</h3>
-                  <p className="text-sm text-[#5a6065] font-inter">{testimonial.role}</p>
+                  <h3 className="text-lg font-inter font-semibold text-[#0a2a54]">
+                    {testimonial.name}
+                  </h3>
+                  <p className="text-sm text-[#5a6065] font-inter">
+                    {testimonial.role}
+                  </p>
                 </div>
               </div>
 
@@ -53,12 +60,14 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
 
               <p className="italic text-[#5a6065] font-inter">"{testimonial.text}"</p>
 
-              <p className="text-left">
-                <Image src={google} alt="google icon" className="w-8 inline-block mr-2" />
-              </p>
+              {/* Icono de Google siempre al fondo */}
+              <div className="mt-auto pt-4">
+                <Image src={google} alt="google icon" className="w-8" />
+              </div>
             </div>
           ))}
         </div>
+
 
         {showCTA && (
           <div className="mt-8 text-center">

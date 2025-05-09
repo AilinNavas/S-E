@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero'
 import DrHorn from '@/public/images/about-us/DrHorn.webp'
-import { trustDoctors, trustSpeakingSpanish } from '../data/TrustData'
+import { trustSpeakingSpanish } from '../data/TrustData'
 import ReferralProcess from '../for-doctors/components/ReferralProcess'
 import Testimonials from '../components/Testimonials'
 import { testimonialsMain } from '../data/testimonials'
