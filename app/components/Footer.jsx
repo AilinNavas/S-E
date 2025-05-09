@@ -48,7 +48,7 @@ const Footer = () => {
 
             </p>
             <p className="mb-2">Monday - Thursday: 8am - 5pm</p>
-            <p className="mb-2">Friday - Saturday - Sunday: Closed</p>
+            <p className="mb-2">Friday - Saturday: Closed</p>
           </div>
 
           {/* Third Column - Quick Links (Desktop Only) */}

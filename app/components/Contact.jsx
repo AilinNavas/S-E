@@ -42,8 +42,8 @@ const Contact = () => {
             <Clock className="mt-1 h-5 w-5 flex-shrink-0 text-[#3c8dbc]" />
             <div>
               <h4 className="font-medium text-[#0a2a54]">{isSpanishPage ? 'Horario de oficina' : 'Office Hours'}</h4>
-              <p className="text-[#5a6065]">{isSpanishPage ? 'Lunes - Jueves : 8h - 17h' : 'Monday - Thursday : 8am - 5pm'}</p>
-              <p className="text-[#5a6065]">{isSpanishPage ? 'Viernes - Sábado - Domingo : Cerrado' : 'Friday - Saturday - Sunday : Closed'}</p>
+              <p className="text-[#5a6065]">{isSpanishPage ? 'Lunes - Jueves : 8h - 17h' : 'Monday - Thursday: 8am - 5pm'}</p>
+              <p className="text-[#5a6065]">{isSpanishPage ? 'Viernes - Sábado : Cerrado' : 'Friday - Saturday: Closed'}</p>
             </div>
           </div>
      
