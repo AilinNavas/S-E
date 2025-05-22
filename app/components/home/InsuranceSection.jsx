@@ -5,6 +5,7 @@ import InsuranceSearch from "@/app/for-patients/components/Insurance-search"
 import { useRef, useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
 import { motion, useScroll, useTransform } from "framer-motion"
+import Link from "next/link"
 
 const InsuranceSection = () => {
   const pathname = usePathname()
@@ -101,11 +102,11 @@ const InsuranceSection = () => {
         <InsuranceSearch />
 
         <div className="text-center my-8">
-          <a href="/contact" target="_blank" rel="noopener noreferrer">
+          <Link href="/contact" target="_blank" rel="noopener noreferrer">
             <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
               {isSpanish ? "Agendar Cita" : "Book An Appointment"}
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

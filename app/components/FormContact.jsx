@@ -11,6 +11,8 @@ const FormContact = () => {
   const pathname = usePathname()
   const isSpanishPage = pathname.includes("/endodoncista-de-habla-hispana")
 
+  const [errors, setErrors] = useState({});
+
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [formValues, setFormValues] = useState({
     firstname: "",
@@ -40,6 +42,37 @@ const FormContact = () => {
     setIsSubmitted(false)
   }, [pathname]) // Se ejecuta cuando cambia la ruta
 
+  const validateForm = () => {
+    const newErrors = {}
+
+    if (!formValues.firstname.trim()) {
+      newErrors.firstname = "First name is required."
+    }
+
+    if (!formValues.lastname.trim()) {
+      newErrors.lastname = "Last name is required."
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!formValues.email.trim()) {
+      newErrors.email = "Email is required."
+    } else if (!emailRegex.test(formValues.email)) {
+      newErrors.email = "Please enter a valid email address."
+    }
+
+    const phoneRegex = /^[0-9+\-()\s]{7,15}$/
+    if (!formValues.phone.trim()) {
+      newErrors.phone = "Phone number is required."
+    } else if (!phoneRegex.test(formValues.phone)) {
+      newErrors.phone = "Please enter a valid phone number."
+    }
+
+    setErrors(newErrors)
+
+    return Object.keys(newErrors).length === 0
+  }
+
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target
 
@@ -49,7 +82,7 @@ const FormContact = () => {
           const updated = checked ? [...prev.timeOfDay, value] : prev.timeOfDay.filter((v) => v !== value)
           return { ...prev, timeOfDay: updated }
         })
-      } else if (name === "entry.574738630") {
+      } else if (name === "entry.767978455") {
         setFormValues((prev) => {
           const updated = checked ? [...prev.preferredDays, value] : prev.preferredDays.filter((v) => v !== value)
           return { ...prev, preferredDays: updated }
@@ -65,25 +98,29 @@ const FormContact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
+    if (!validateForm()) return
+
     const formData = new FormData()
 
-    formData.append("entry.1110121502", formValues.firstname) //First name
-    formData.append("entry.771061880", formValues.lastname) //Last name
-    formData.append("entry.378735544", formValues.email) // Email
-    formData.append("entry.1270848604", formValues.phone) //Phone
+    formData.append("entry.1963922266", formValues.firstname) //First name
+    formData.append("entry.1810530054", formValues.lastname) //Last name
+    formData.append("entry.5617925", formValues.email) // Email
+    formData.append("entry.1067969056", formValues.phone) //Phone
 
     formValues.timeOfDay.forEach((value) => {
-      formData.append("entry.1864441499", value)
+      formData.append("entry.279769405", value)
     })
 
     formValues.preferredDays.forEach((value) => {
-      formData.append("entry.574738630", value)
+      formData.append("entry.767978455", value)
     })
 
-    formData.append("entry.682431526", formValues.message) //Message
+    formData.append("entry.1286276654", formValues.message) //Message
 
     try {
-      await fetch("https://docs.google.com/forms/d/1MYIhtaxribpRIKCx_PB0psXDw2xaXksabAnn5Zo4nrk/formResponse", {
+      await fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSe_6dwfXKRZUrN9Ynhyjt0dyw6NMw23MwsaSOLyAEOcBkaotQ/formResponse", {
+
         method: "POST",
         mode: "no-cors",
         body: formData,
@@ -140,20 +177,28 @@ const FormContact = () => {
                           name="firstname"
                           value={formValues.firstname}
                           onChange={handleChange}
-                          className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"
+                          className={`w-full font-inter rounded-md border px-3 py-2 text-sm 
+                          ${errors.firstname ? "border-red-400 focus:ring-red-400" : "border-gray-200 focus:border-[#3c8dbc] focus:ring-[#3c8dbc]"}
+                          focus:outline-none focus:ring-1`}
                           placeholder={isSpanishPage ? "Ingrese su nombre" : "Enter your first name"}
-                          required
-                        />
+                         
+                        />{errors.firstname && (
+                          <p className="text-sm ml-1 text-red-400 font-inter">{errors.firstname}</p>
+                        )}
                       </div>
                       <div className="space-y-2">
                         <input
                           name="lastname"
                           value={formValues.lastname}
                           onChange={handleChange}
-                          className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"
+                          className={`w-full font-inter rounded-md border px-3 py-2 text-sm 
+                          ${errors.lastname ? "border-red-400 focus:ring-red-400" : "border-gray-200 focus:border-[#3c8dbc] focus:ring-[#3c8dbc]"}
+                          focus:outline-none focus:ring-1`}
                           placeholder={isSpanishPage ? "Ingrese su apellido" : "Enter your last name"}
-                          required
-                        />
+                         
+                        />{errors.lastname && (
+                          <p className="text-sm ml-1 text-red-400 font-inter">{errors.lastname}</p>
+                        )}
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -162,10 +207,14 @@ const FormContact = () => {
                         name="email"
                         value={formValues.email}
                         onChange={handleChange}
-                        className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"
+                         className={`w-full font-inter rounded-md border px-3 py-2 text-sm 
+                          ${errors.email ? "border-red-400 focus:ring-red-400" : "border-gray-200 focus:border-[#3c8dbc] focus:ring-[#3c8dbc]"}
+                          focus:outline-none focus:ring-1`}
                         placeholder={isSpanishPage ? "Ingrese su correo electrónico" : "Enter your email"}
-                        required
-                      />
+                        
+                      />{errors.email && (
+                          <p className="text-sm ml-1 text-red-400 font-inter">{errors.email}</p>
+                        )}
                     </div>
                     <div className="space-y-2">
                       <input
@@ -173,14 +222,18 @@ const FormContact = () => {
                         name="phone"
                         value={formValues.phone}
                         onChange={handleChange}
-                        className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"
+                        className={`w-full font-inter rounded-md border px-3 py-2 text-sm 
+                          ${errors.phone ? "border-red-400 focus:ring-red-400" : "border-gray-200 focus:border-[#3c8dbc] focus:ring-[#3c8dbc]"}
+                          focus:outline-none focus:ring-1`}
                         placeholder={isSpanishPage ? "Ingrese su número de teléfono" : "Enter your phone number"}
-                        required
-                      />
+                        
+                      />{errors.phone && (
+                          <p className="text-sm ml-1 text-red-400 font-inter">{errors.phone}</p>
+                        )}
                     </div>
 
                     {/* Best Time of Day */}
-                    <div className="space-y-2">
+                    <div className="space-y-2 ml-1">
                       <label className="text-sm font-inter text-[#0a2a54]">
                         {isSpanishPage ? "Mejor horario del día" : "Best time of day"}
                       </label>
@@ -188,7 +241,7 @@ const FormContact = () => {
                         <div className="flex items-center">
                           <input
                             type="checkbox"
-                            name="entry.1864441499"
+                            name="entry.279769405"
                             value="Morning"
                             id="Morning"
                             onChange={handleChange}
@@ -201,7 +254,7 @@ const FormContact = () => {
                         <div className="flex items-center">
                           <input
                             type="checkbox"
-                            name="entry.1864441499"
+                            name="entry.279769405"
                             value="Afternoon"
                             id="Afternoon"
                             onChange={handleChange}
@@ -215,7 +268,7 @@ const FormContact = () => {
                     </div>
 
                     {/* Preferred Days */}
-                    <div className="space-y-2">
+                    <div className="space-y-2 ml-1">
                       <label className="text-sm text-[#0a2a54] font-inter">
                         {isSpanishPage ? "Día(s) de la semana preferido(s)" : "Preferred day(s) of week"}
                       </label>
@@ -223,7 +276,7 @@ const FormContact = () => {
                         <div className="flex items-center">
                           <input
                             type="checkbox"
-                            name="entry.574738630"
+                            name="entry.767978455"
                             value="Monday"
                             id="Monday"
                             onChange={handleChange}
@@ -236,7 +289,7 @@ const FormContact = () => {
                         <div className="flex items-center">
                           <input
                             type="checkbox"
-                            name="entry.574738630"
+                            name="entry.767978455"
                             value="Tuesday"
                             id="Tuesday"
                             onChange={handleChange}
@@ -249,7 +302,7 @@ const FormContact = () => {
                         <div className="flex items-center">
                           <input
                             type="checkbox"
-                            name="entry.574738630"
+                            name="entry.767978455"
                             value="Wednesday"
                             id="Wednesday"
                             onChange={handleChange}
@@ -263,7 +316,7 @@ const FormContact = () => {
                           <input
                             value="Thursday"
                             type="checkbox"
-                            name="entry.574738630"
+                            name="entry.767978455"
                             id="Thursday"
                             onChange={handleChange}
                             className="h-4 w-4 rounded border-gray-300 text-[#3c8dbc] focus:ring-[#3c8dbc]"
@@ -283,10 +336,9 @@ const FormContact = () => {
                         onChange={handleChange}
                         className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"
                         placeholder={
-                          isSpanishPage ? "Cuéntenos sus inquietudes dentales" : "Tell us about your dental concerns"
+                          isSpanishPage ? "Cuéntenos sus inquietudes dentales (opcional)" : "Tell us about your dental concerns (optional)"
                         }
                         rows={3}
-                        required
                       ></textarea>
                     </div>
 
