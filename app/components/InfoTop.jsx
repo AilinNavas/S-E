@@ -37,7 +37,7 @@ const InfoTop = () => {
           {/* Información de contacto */}
           <div className="flex items-center space-x-6 text-white">
             {/* Dirección */}
-            <Link href="https://maps.app.goo.gl/xx2i9XrdQaAjtDbW7" target="_blank" rel="noopener noreferrer">
+            <Link href="https://maps.app.goo.gl/xx2i9XrdQaAjtDbW7" target="_blank" rel="noopener noreferrer" aria-label="Click to view location on Google Maps (opens in a new tab)">
               <motion.div
                 className="flex items-center cursor-pointer group"
                 whileHover={{ scale: 1.02 }}

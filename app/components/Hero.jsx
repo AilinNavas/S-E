@@ -29,9 +29,9 @@ const Hero = ({
           <h1 className="font-zen text-5xl font-bold leading-tight text-[#0a2a54] uppercase lg:text-7xl">
             {title}
           </h1>
-          <p className="text-xl  font-semibold font-inter text-[#0a2a54] md:text-2xl">
+          <h2 className="text-xl  font-semibold font-inter text-[#0a2a54] md:text-2xl">
             {subtitle}
-          </p>
+          </h2>
           <div className="flex flex-col lg:flex-row gap-4">
             <Link href={primaryButtonLink}>
               <button className="cursor-pointer w-full rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
@@ -63,7 +63,7 @@ const Hero = ({
           </span>
           </p>
         <a href="https://maps.app.goo.gl/xx2i9XrdQaAjtDbW7"
-          target="_blank"><p className=''>
+          target="_blank" aria-label="Click to view location on Google Maps (opens in a new tab)" ><p className=''>
             1307 8th Avenue, Suite 303 Fort Worth, TX</p></a>
       </div>
     </section>

@@ -124,7 +124,7 @@ const NavbarPC = () => {
 
   return (
     <header className="hidden lg:block sticky top-0 z-50 w-full bg-white/80 backdrop-blur-lg shadow-md">
-      <nav className="max-w-7xl mx-auto h-30 flex justify-between">
+      <nav role="navigation" aria-label="Main menu" className="max-w-7xl mx-auto h-30 flex justify-between">
         <div className="z-20 h-28 w-2/12 mr-12 mt-1.5">
           <Link href={"/"}>
             <Image src={logo || "/placeholder.svg"} className="h-full w-full" alt="Logotipo de la empresa" />
@@ -141,6 +141,7 @@ const NavbarPC = () => {
 
             <div className="relative" ref={dropdownRef}>
               <button
+                aria-haspopup="true" aria-expanded="false"
                 onClick={toggleProceduresDropdown}
                 className="flex items-center text-[#0a2a54] drop-shadow hover:text-[#0a2a54]/70 ease-in-out duration-300 font-inter cursor-pointer"
               >
@@ -208,7 +209,7 @@ const NavbarPC = () => {
                 {isSpanishPage ? "Agendar Cita" : "Book An Appointment"}
               </button>
             </Link>
-            <a href={"https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"} target="_blank">
+            <a href={"https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"} target="_blank" aria-label="Click to refer patient (opens in a new tab)">
               <button className="cursor-pointer w-full text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
                 {isSpanishPage ? "Referir Ahora" : "Refer Now"}
               </button>

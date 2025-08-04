@@ -11,9 +11,9 @@ const ReferralProcess = () => {
                     <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
                         A Seamless Referral Process
                     </h2>
-                    <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center'>
+                    <h3 className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center'>
                         Referring is quick and easy. Just the way it should be.
-                    </p>
+                    </h3>
                 </header>
 
                 <div className="relative">
@@ -104,7 +104,7 @@ const ReferralProcess = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center mt-8">
-                    <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target="_blank" rel="noopener noreferrer">
+                    <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target="_blank" rel="noopener noreferrer" aria-label="Click to refer patient (opens in a new tab)">
                         <button className="cursor-pointer text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
                             Refer Now
                         </button>

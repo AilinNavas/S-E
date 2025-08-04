@@ -170,9 +170,9 @@ const Referring2 = () => {
           <h2 className="text-white font-zen font-bold uppercase text-3xl md:text-5xl text-center">
             For Referring Doctors
           </h2>
-          <p className="text-xl font-semibold font-inter text-center text-white md:text-2xl">
+          <h3 className="text-xl font-semibold font-inter text-center text-white md:text-2xl">
             Let us help your patients get the best care possible.
-          </p>
+          </h3>
         </div>
 
         {/* Síntomas dinámicos */}
@@ -189,7 +189,7 @@ const Referring2 = () => {
         </div>
 
         <div className="text-center my-8">
-          <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target="_blank" rel="noopener noreferrer">
+          <a href="https://securesite1246.tdo4endo.com/RefDocsLogin.aspx" target="_blank" rel="noopener noreferrer" aria-label="Click to refer patient (opens in a new tab)">
             <button className="cursor-pointer text-[#3c8dbc] border-2 border-[#3c8dbc] px-6 py-2 font-inter text-lg font-semibold rounded-md hover:bg-[#3c8dbc]/20 ease-in-out duration-300">
               Refer a Patient
             </button>

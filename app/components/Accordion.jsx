@@ -19,6 +19,7 @@ const AccordionItem = ({ question, answer }) => {
                         fill="currentColor"
                         className="h-5 w-5 ml-1"
                         aria-hidden="true"
+                        role="presentation"
                         animate={{ rotate: isOpen ? 180 : 0 }}
                         transition={{ duration: 0.3 }}
                     >

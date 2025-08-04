@@ -9,7 +9,7 @@ const WhyUs = () => {
             <div className='mx-auto max-w-7xl py-16 lg:py-32 px-4 flex flex-col justify-center items-center'>
                 <header className='flex flex-col items-center space-y-8 mb-8'>
                     <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl'>Why Choose Us?</h2>
-                    <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center'> We provide compassionate care, affordable treatments, and efficient service.</p>
+                    <h3 className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center'> We provide compassionate care, affordable treatments, and efficient service.</h3>
                 </header>
 
                 <div className="flex flex-col-reverse lg:flex-row lg:items-start lg:space-x-8 lg:space-y-0">

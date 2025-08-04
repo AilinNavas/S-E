@@ -107,6 +107,7 @@ const Expect = () => {
                                 <a
                                     href="/Comprehensive Guide-for-Post-Root Canal Care and Pain Management.pdf"
                                     target="_blank"
+                                    aria-label="Click to view aftercare instructions (opens in a new tab)"                            
                                     rel="noopener noreferrer"
                                     className=""
                                 >

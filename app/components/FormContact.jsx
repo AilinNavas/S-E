@@ -150,11 +150,11 @@ const FormContact = () => {
           <h2 className="text-white font-zen font-bold uppercase text-3xl md:text-5xl text-center">
             {isSpanishPage ? "Contáctenos" : "Contact Us"}
           </h2>
-          <p className="text-xl font-semibold font-inter text-center text-white md:text-2xl">
+          <h3 className="text-xl font-semibold font-inter text-center text-white md:text-2xl">
             {isSpanishPage
               ? "Póngase en contacto con nosotros. Estamos aquí para ayudarle."
               : "Get in touch with us. We're here to assist you."}
-          </p>
+          </h3>
         </header>
 
         <div className="lg:w-7xl flex flex-col-reverse lg:space-y-0 lg:flex-row lg:items-center lg:space-x-16">
@@ -175,6 +175,8 @@ const FormContact = () => {
                       <div className="space-y-2">
                         <input
                           name="firstname"
+                          aria-label="First Name"
+                          aria-required="true"
                           value={formValues.firstname}
                           onChange={handleChange}
                           className={`w-full font-inter rounded-md border px-3 py-2 text-sm 
@@ -189,6 +191,8 @@ const FormContact = () => {
                       <div className="space-y-2">
                         <input
                           name="lastname"
+                          aria-label="Last Name"
+                          aria-required="true"
                           value={formValues.lastname}
                           onChange={handleChange}
                           className={`w-full font-inter rounded-md border px-3 py-2 text-sm 
@@ -205,6 +209,8 @@ const FormContact = () => {
                       <input
                         type="email"
                         name="email"
+                        aria-label="email"
+                        aria-required="true"
                         value={formValues.email}
                         onChange={handleChange}
                          className={`w-full font-inter rounded-md border px-3 py-2 text-sm 
@@ -220,6 +226,8 @@ const FormContact = () => {
                       <input
                         type="tel"
                         name="phone"
+                        aria-label="phone"
+                        aria-required="true"
                         value={formValues.phone}
                         onChange={handleChange}
                         className={`w-full font-inter rounded-md border px-3 py-2 text-sm 
@@ -243,6 +251,7 @@ const FormContact = () => {
                             type="checkbox"
                             name="entry.279769405"
                             value="Morning"
+                            aria-label="morning"
                             id="Morning"
                             onChange={handleChange}
                             className="h-4 w-4 rounded font-inter border-gray-300 text-[#3c8dbc] focus:ring-[#3c8dbc]"
@@ -255,6 +264,7 @@ const FormContact = () => {
                           <input
                             type="checkbox"
                             name="entry.279769405"
+                            aria-label="afternoon"
                             value="Afternoon"
                             id="Afternoon"
                             onChange={handleChange}
@@ -276,6 +286,7 @@ const FormContact = () => {
                         <div className="flex items-center">
                           <input
                             type="checkbox"
+                            aria-label="monday"
                             name="entry.767978455"
                             value="Monday"
                             id="Monday"
@@ -290,6 +301,7 @@ const FormContact = () => {
                           <input
                             type="checkbox"
                             name="entry.767978455"
+                            aria-label="tuesday"
                             value="Tuesday"
                             id="Tuesday"
                             onChange={handleChange}
@@ -303,6 +315,7 @@ const FormContact = () => {
                           <input
                             type="checkbox"
                             name="entry.767978455"
+                            aria-label="wednesday"
                             value="Wednesday"
                             id="Wednesday"
                             onChange={handleChange}
@@ -317,6 +330,7 @@ const FormContact = () => {
                             value="Thursday"
                             type="checkbox"
                             name="entry.767978455"
+                            aria-label="thursday"
                             id="Thursday"
                             onChange={handleChange}
                             className="h-4 w-4 rounded border-gray-300 text-[#3c8dbc] focus:ring-[#3c8dbc]"
@@ -332,6 +346,7 @@ const FormContact = () => {
                     <div className="space-y-2">
                       <textarea
                         name="message"
+                        aria-label="message"
                         value={formValues.message}
                         onChange={handleChange}
                         className="w-full font-inter rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:border-[#3c8dbc] focus:outline-none focus:ring-1 focus:ring-[#3c8dbc]"

@@ -15,7 +15,7 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
             <h2 className='text-white font-zen font-bold uppercase text-3xl md:text-5xl text-center'>
               {title}
             </h2>
-            <p className='text-xl font-semibold font-inter text-center text-white md:text-2xl'>{subtitle}</p>
+            <h3 className='text-xl font-semibold font-inter text-center text-white md:text-2xl'>{subtitle}</h3>
           </header>
         )}
 
@@ -43,9 +43,9 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
                   </div>
                 )}
                 <div>
-                  <h3 className="text-lg font-inter font-semibold text-[#0a2a54]">
+                  <h4 className="text-lg font-inter font-semibold text-[#0a2a54]">
                     {testimonial.name}
-                  </h3>
+                  </h4>
                   <p className="text-sm text-[#5a6065] font-inter">
                     {testimonial.role}
                   </p>
@@ -77,6 +77,7 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
                 href="https://g.page/r/CQMrOM1YvxidEBM/review"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Click to leave a review on Google (opens in a new tab)"
               >
                 Leave a Review
               </a>

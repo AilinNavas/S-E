@@ -11,9 +11,9 @@ const TreatmentProcess = ({ title, subtitle, gridCols,  steps, subtitle2, afterC
           <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center">
             {title}
           </h2>
-          <p className="text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center">
+          <h3 className="text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center">
             {subtitle}
-          </p>
+          </h3>
         </header>
 
         <div className="relative">

@@ -169,7 +169,7 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
 
                 {/* Scrollable menu content */}
                 <div className="flex-1 overflow-y-auto">
-                  <nav className="flex flex-col items-start justify-start space-y-8 p-8 font-inter text-xl">
+                  <nav role="navigation" aria-label="Main menu" className="flex flex-col items-start justify-start space-y-8 p-8 font-inter text-xl">
                     <div className="flex">
                       <Link href="/about-us" className="text-[#0a2a54]" onClick={handleLinkClick}>
                         {isSpanishPage ? "Sobre nosotros" : "About Us"}
@@ -260,6 +260,7 @@ const AnimatedHamburgerButton = ({ isSpanishPage }) => {
                           href="https://maps.app.goo.gl/xx2i9XrdQaAjtDbW7"
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label="Click to view location on Google Maps (opens in a new tab)"
                           className=" relative overflow-hidden flex flex-col items-center justify-end py-4 bg-white text-[#0a2a54] border-r border-gray-100 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]"
                           onClick={handleLinkClick}
                         >

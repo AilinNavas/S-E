@@ -89,7 +89,7 @@ export default function Symptoms({ title, subtitle, symptoms }) {
         {/* Título y subtítulo dinámicos */}
         <div className="text-center mb-8 space-y-8">
           <h2 className="text-white font-zen font-bold uppercase text-3xl md:text-5xl text-center">{title}</h2>
-          <p className="text-xl font-semibold font-inter text-center text-white md:text-2xl">{subtitle}</p>
+          <h3 className="text-xl font-semibold font-inter text-center text-white md:text-2xl">{subtitle}</h3>
         </div>
 
         {/* Síntomas dinámicos */}

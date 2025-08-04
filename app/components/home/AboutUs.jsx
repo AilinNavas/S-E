@@ -10,7 +10,7 @@ const AboutUs = () => {
         <header className='flex flex-col items-center space-y-8 mb-8'>
           {/* <span className='font-zen font-semibold text-md text-[#3c8dbc] uppercase'>Many desktop publishing</span> */}
           <h2 className='text-[#0a2a54] text-center font-zen font-bold uppercase text-3xl md:text-5xl'>A Family-Owned Practice You Can Trust</h2>
-          <p className='text-xl text-center font-semibold font-inter text-[#0a2a54] md:text-2xl'>We believe in building relationships through compassionate care and clear communication.</p>
+          <h3 className='text-xl text-center font-semibold font-inter text-[#0a2a54] md:text-2xl'>We believe in building relationships through compassionate care and clear communication.</h3>
         </header>
         <div className="flex flex-col items-center space-y-8">
 

@@ -14,9 +14,9 @@ const InfoContact = () => {
             <div className='mx-auto max-w-7xl py-16 lg:py-32  px-4 flex flex-col justify-center items-center'>
                 <header className='pb-8 space-y-8'>
                     <h2 className='text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl text-center'>{isSpanishPage ? 'Encuéntranos' : 'find us'}</h2>
-                    <p className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center'>
+                    <h3 className='text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center'>
                     {isSpanishPage ? 'Estamos convenientemente ubicados en Fort Worth para servirle.' : "We're conveniently located in Fort Worth to serve you."}
-          </p>
+          </h3>
                 </header>
 
                 <div className=" md:w-3xl md:p-4 lg:p-0 lg:w-7xl flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:items-start lg:space-x-16 ">

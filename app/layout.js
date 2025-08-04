@@ -8,6 +8,7 @@ import ConditionalFormContact from "./components/CondicionalFormContact";
 import InfoContact from "./components/InfoContact";
 import InfoTop from "./components/InfoTop";
 
+
 const zenMaruGothic = Zen_Maru_Gothic({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
@@ -35,16 +36,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
+
   return (
     <html lang="en">
       <body className={`${inter.variable} ${zenMaruGothic.variable} font-sans`}>
-        <InfoTop />
-        <NavbarMobile />
-        <NavbarPC />
-        {children}
-        <ConditionalFormContact />
-        <InfoContact />
-        <Footer />
+       
+          <InfoTop />
+          <NavbarMobile />
+          <NavbarPC />
+          {children}
+          <ConditionalFormContact />
+          <InfoContact />
+          <Footer />
+        
       </body>
     </html>
   );

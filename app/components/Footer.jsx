@@ -11,7 +11,7 @@ const Footer = () => {
           {/* First Column - Contact Info */}
           <div className="text-center lg:text-left">
             <h3 className="mb-4 text-2xl font-bold font-zen">SOUTHSIDE ENDODONTICS</h3>
-            <a href="https://maps.app.goo.gl/xx2i9XrdQaAjtDbW7" target="_blank" rel="noopener noreferrer">
+            <a href="https://maps.app.goo.gl/xx2i9XrdQaAjtDbW7" target="_blank" rel="noopener noreferrer" aria-label="Click to view location on Google Maps (opens in a new tab)">
               <p className="mb-2 flex flex-col lg:flex-row items-center lg:items-start gap-2 cursor-pointer">
                 <span className="flex items-center mb-1 lg:mb-0">
                   <MapPin className="h-5 w-5 flex-shrink-0 text-white mr-1" />
@@ -89,7 +89,7 @@ const Footer = () => {
 
       <div className="bg-[#0a2a54] pb-12">
         <div className="mt-8 flex justify-center space-x-6 border-t border-white/20 pt-8">
-          <a href="https://www.facebook.com/southsideendodontics/" target="_blank" aria-label="Facebook">
+          <a href="https://www.facebook.com/southsideendodontics/" target="_blank" aria-label="click to go to facebook profile (opens in a new tab)" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -101,6 +101,7 @@ const Footer = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               className="h-6 w-6 text-white"
+              role="presentation"
             >
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
             </svg>
