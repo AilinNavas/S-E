@@ -13,6 +13,7 @@ const NavbarPC = () => {
   const isSpanishPage = pathname.includes("/endodoncista-de-habla-hispana")
   const [isProceduresOpen, setIsProceduresOpen] = useState(false)
   const dropdownRef = useRef(null)
+      if (pathname.startsWith("/secure-pay")) return null
 
   const proceduresLinks = [
     {
