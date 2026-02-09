@@ -12,7 +12,7 @@ export default function PaymentsPage() {
         <div className="mb-8 text-center">
           <h2 className="text-[#0a2a54] font-zen font-bold uppercase text-3xl md:text-5xl mb-8 flex items-center justify-center gap-4">
             
-            Make a Payment
+            Make a Payment - Process your dental treatment payment securely and conveniently online.
           </h2>
           <h3 className="text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl text-center ">
             Secure online payment for your dental treatment.
