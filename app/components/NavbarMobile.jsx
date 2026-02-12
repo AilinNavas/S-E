@@ -11,7 +11,7 @@ import { usePathname } from "next/navigation"
 const NavbarMobile = () => {
   const pathname = usePathname()
   const isSpanishPage = pathname.includes("/endodoncista-de-habla-hispana")
-      if (pathname.startsWith("/secure-pay")) return null
+      if (pathname.startsWith("/payment")) return null
 
   return (
     <div className="md:mt-10 lg:hidden bg-white fixed top-0 left-0 right-0 z-50 shadow-sm ">

@@ -7,7 +7,7 @@ const ConditionalFormContact = () => {
   const pathname = usePathname()
 
   // Evita renderizar el formulario en /for-doctors
-  if (pathname.startsWith("/for-doctors") || pathname.startsWith("/secure-pay")) return null
+  if (pathname.startsWith("/for-doctors") || pathname.startsWith("/payment")) return null
 
   return <FormContact />
 }

@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 const Footer = () => {
    const pathname = usePathname()
-      if (pathname.startsWith("/secure-pay")) return null
+      if (pathname.startsWith("/payment")) return null
   return (
     <footer className="w-full bg-[#0a2a54] pt-12 text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6">

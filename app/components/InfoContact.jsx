@@ -8,7 +8,7 @@ import ScrollToTopButton from "./SrollToTopButton"
 const InfoContact = () => {
 
     const pathname = usePathname()
-    if (pathname.startsWith("/secure-pay")) return null
+    if (pathname.startsWith("/payment")) return null
     const isSpanishPage = pathname.includes('/endodoncista-de-habla-hispana')
     return (
         <section className='bg-white'>
