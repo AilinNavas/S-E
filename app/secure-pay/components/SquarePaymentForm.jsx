@@ -5,7 +5,7 @@ import { CheckCircle2, ShieldCheck } from "lucide-react"
 
 
 
-export default function SquarePaymentForm() {
+export default function SquarePaymentForm({ onSuccess }) {
   const cardContainerRef = useRef(null)
   const cardInstanceRef = useRef(null)
 
@@ -107,6 +107,15 @@ export default function SquarePaymentForm() {
         throw new Error("Tokenization failed")
       }
 
+      const payload = {
+        token: result.token,
+        amount: Number(formData.amount),
+        ...formData,
+      }
+
+      console.log("📤 Sending payment payload:", payload)
+
+
       const response = await fetch("/api/payments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -124,6 +133,7 @@ export default function SquarePaymentForm() {
       }
 
       setPaymentSuccess(true)
+      onSuccess?.()
     } catch {
       setError("Payment could not be processed. Please try again.")
     } finally {
@@ -222,7 +232,7 @@ export default function SquarePaymentForm() {
 
         <div className="text-sm">
           <p className="font-semibold text-[#0a2a54]">
-            Secure Payment Powered by Square
+            Secure Payment Powered by <a href="https://squareup.com/" target="_blank" rel="noopener noreferrer" className="underline">Square</a>
           </p>
           <p className="text-gray-500">
             Your card information is encrypted and processed safely.
@@ -236,14 +246,14 @@ export default function SquarePaymentForm() {
     <div className="rounded-lg border border-gray-200 bg-white p-6 overflow-hidden">
 
       <div className="mb-6">
-       
+
         <div className="h-2 w-full bg-gray-200 rounded-full overflow-hidden">
           <div
             className="h-full bg-[#0a2a54] transition-all duration-500"
             style={{ width: `${progress}%` }}
           />
         </div>
-      </div> 
+      </div>
       <SecurePaymentIndicator />
 
       <div className="flex justify-between mb-8 font-inter text-sm">
@@ -251,8 +261,8 @@ export default function SquarePaymentForm() {
           <div
             key={label}
             className={`flex-1 text-center ${step === index + 1
-                ? "text-[#3c8dbc] font-semibold"
-                : "text-gray-400"
+              ? "text-[#3c8dbc] font-semibold"
+              : "text-gray-400"
               }`}
           >
             {label}
@@ -264,18 +274,20 @@ export default function SquarePaymentForm() {
 
         {step === 1 && (
           <div className="space-y-4">
-            <input name="fullName" placeholder="Full Name *" onChange={handleChange} className={inputClass} />
-            <input name="email" placeholder="Email *" onChange={handleChange} className={inputClass} />
-            <input name="phone" placeholder="Phone" onChange={handleChange} className={inputClass} />
-            <input name="invoiceId" placeholder="Invoice / Treatment ID" onChange={handleChange} className={inputClass} />
+            <input name="fullName" value={formData.fullName} placeholder="Full Name *" onChange={handleChange} className={inputClass} />
+            <input name="email" value={formData.email} placeholder="Email *" onChange={handleChange} className={inputClass} />
+            <input name="phone" value={formData.phone} placeholder="Phone" onChange={handleChange} className={inputClass} />
+            <input name="invoiceId" value={formData.invoiceId} placeholder="Invoice / Treatment ID" onChange={handleChange} className={inputClass} />
+
           </div>
         )}
 
         {step === 2 && (
           <div className="space-y-4">
-            <input name="amount" type="number" placeholder="Amount USD *" onChange={handleChange} className={inputClass} />
-            <input name="zip" placeholder="Billing ZIP Code" onChange={handleChange} className={inputClass} />
-            <textarea name="description" placeholder="Treatment Description" onChange={handleChange} className={inputClass} />
+            <input name="amount" type="number" value={formData.amount} placeholder="Amount USD *" onChange={handleChange} className={inputClass} />
+            <input name="zip" value={formData.zip} placeholder="Billing ZIP Code" onChange={handleChange} className={inputClass} />
+            <textarea name="description" value={formData.description} placeholder="Treatment Description" onChange={handleChange} className={inputClass} />
+
           </div>
         )}
 
