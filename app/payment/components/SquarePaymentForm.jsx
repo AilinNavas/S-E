@@ -95,51 +95,73 @@ export default function SquarePaymentForm({ onSuccess }) {
     setStep((s) => s - 1)
   }
 
-  async function handlePayment() {
-    setError(null)
+async function handlePayment() {
+  setError(null)
 
-    try {
-      setIsProcessing(true)
+  try {
+    setIsProcessing(true)
 
-      const result = await cardInstanceRef.current.tokenize()
+    const result = await cardInstanceRef.current.tokenize()
 
-      if (result.status !== "OK") {
-        throw new Error("Tokenization failed")
-      }
-
-      const payload = {
-        token: result.token,
-        amount: Number(formData.amount),
-        ...formData,
-      }
-
-      console.log("📤 Sending payment payload:", payload)
-
-
-      const response = await fetch("/api/payments", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          token: result.token,
-          amount: Number(formData.amount),
-          ...formData,
-        }),
-      })
-
-      const data = await response.json()
-
-      if (!data.success) {
-        throw new Error(data.error || "Payment failed")
-      }
-
-      setPaymentSuccess(true)
-      onSuccess?.()
-    } catch {
-      setError("Payment could not be processed. Please try again.")
-    } finally {
-      setIsProcessing(false)
+    if (result.status !== "OK") {
+      throw new Error("TOKENIZATION_ERROR")
     }
+
+    const payload = {
+      token: result.token,
+      amount: Number(formData.amount),
+      ...formData,
+    }
+
+    console.log("📤 Sending payment payload:", payload)
+
+    const response = await fetch("/api/payments", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    })
+
+    const data = await response.json()
+
+    if (!data.success) {
+
+      const code = data.errorCode || "UNKNOWN"
+
+      let message = "Payment could not be processed. Please try again or use another card."
+
+      if (code === "INSUFFICIENT_FUNDS") {
+        message = "The card has insufficient funds."
+      }
+      else if (code === "CARD_DECLINED") {
+        message = "The card was declined by the bank."
+      }
+      else if (code === "CVV_FAILURE") {
+        message = "Security code verification failed."
+      }
+      else if (code === "ADDRESS_VERIFICATION_FAILURE") {
+        message = "Billing ZIP code could not be verified."
+      }
+      else if (code === "EXPIRED_CARD") {
+        message = "This card has expired."
+      }
+      else if (code === "PROCESSING_ERROR") {
+        message = "A processing error occurred. Please try again."
+      }
+
+      throw new Error(message)
+    }
+
+    setPaymentSuccess(true)
+    onSuccess?.()
+
+  } catch (err) {
+    console.log("❌ Frontend error caught:", err)
+    setError(err.message || "Payment could not be processed.")
+  } finally {
+    setIsProcessing(false)
   }
+}
+
 
   function resetForm() {
     setPaymentSuccess(false)
@@ -277,7 +299,6 @@ export default function SquarePaymentForm({ onSuccess }) {
             <input name="fullName" value={formData.fullName} placeholder="Full Name *" onChange={handleChange} className={inputClass} />
             <input name="email" value={formData.email} placeholder="Email *" onChange={handleChange} className={inputClass} />
             <input name="phone" value={formData.phone} placeholder="Phone" onChange={handleChange} className={inputClass} />
-            <input name="invoiceId" value={formData.invoiceId} placeholder="Invoice / Treatment ID" onChange={handleChange} className={inputClass} />
 
           </div>
         )}
@@ -286,7 +307,7 @@ export default function SquarePaymentForm({ onSuccess }) {
           <div className="space-y-4">
             <input name="amount" type="number" value={formData.amount} placeholder="Amount USD *" onChange={handleChange} className={inputClass} />
             <input name="zip" value={formData.zip} placeholder="Billing ZIP Code" onChange={handleChange} className={inputClass} />
-            <textarea name="description" value={formData.description} placeholder="Treatment Description" onChange={handleChange} className={inputClass} />
+            <input name="description" value={formData.description} placeholder="Treatment Description" onChange={handleChange} className={inputClass} />
 
           </div>
         )}

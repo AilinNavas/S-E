@@ -1,85 +1,3 @@
-
-
-// import { NextResponse } from "next/server"
-// import crypto from "crypto"
-
-// export async function POST(req) {
-//   console.log("📩 /api/payments HIT")
-
-//   try {
-//     const body = await req.json()
-//     const { token, amount } = body
-
-//     // 🔐 Validaciones básicas
-//     if (!token) {
-//       return NextResponse.json(
-//         { success: false, error: "Missing payment token" },
-//         { status: 400 }
-//       )
-//     }
-
-//     const amountInCents = Math.round(Number(amount) * 100)
-
-//     if (!amountInCents || amountInCents <= 0) {
-//       return NextResponse.json(
-//         { success: false, error: "Invalid amount" },
-//         { status: 400 }
-//       )
-//     }
-
-//     console.log("➡️ Enviando pago a Square:", {
-//       token,
-//       amountInCents,
-//     })
-
-//     const response = await fetch(
-//       "https://connect.squareupsandbox.com/v2/payments",
-//       {
-//         method: "POST",
-//         headers: {
-//           Authorization: `Bearer ${process.env.SQUARE_ACCESS_TOKEN}`,
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({
-//           source_id: token,
-//           idempotency_key: crypto.randomUUID(),
-//           amount_money: {
-//             amount: amountInCents, // USD en centavos
-//             currency: "USD",
-//           },
-//         }),
-//       }
-//     )
-
-//     const data = await response.json()
-
-//     if (!response.ok) {
-//       console.error("❌ Square API error:", data)
-
-//       return NextResponse.json(
-//         {
-//           success: false,
-//           error: data.errors?.[0]?.detail || "Payment failed",
-//         },
-//         { status: 500 }
-//       )
-//     }
-
-//     console.log("✅ Pago aprobado:", data.payment?.id)
-
-//     return NextResponse.json({
-//       success: true,
-//       payment: data.payment,
-//     })
-//   } catch (error) {
-//     console.error("❌ Server error:", error)
-
-//     return NextResponse.json(
-//       { success: false, error: "Server error" },
-//       { status: 500 }
-//     )
-//   }
-// }
 import { NextResponse } from "next/server"
 import crypto from "crypto"
 
@@ -164,18 +82,42 @@ Description: ${body.description || ""}
 
     const data = await response.json()
 
-    console.log("📨 Square raw response:")
-    console.log(JSON.stringify(data, null, 2))
+    // console.log("📨 Square raw response:")
+    // console.log(JSON.stringify(data, null, 2))
+    // 🔍 DEBUG SOLO SANDBOX (muy útil)
+    console.log("🔎 Square payment status:", data.payment?.status)
+    console.log(
+      "🔎 Square card errors:",
+      data.payment?.card_details?.errors
+    )
 
+    // ⛔ ERROR HTTP
     if (!response.ok) {
-      console.error("❌ Square API error:", data)
+      const err = data.errors?.[0] || {}
 
       return NextResponse.json(
         {
           success: false,
-          error: data.errors?.[0]?.detail || "Payment failed",
+          error: err.detail || "Payment failed",
+          errorCode: err.code || "UNKNOWN",
+          errorCategory: err.category || "UNKNOWN",
         },
-        { status: 500 }
+        { status: 400 }
+      )
+    }
+
+    // ⛔ PAGO FALLIDO (MUY IMPORTANTE)
+    if (data.payment?.status !== "COMPLETED") {
+      const err = data.payment?.card_details?.errors?.[0] || {}
+
+      return NextResponse.json(
+        {
+          success: false,
+          error: err.detail || "Payment was not approved",
+          errorCode: err.code || "CARD_DECLINED",
+          errorCategory: err.category || "PAYMENT_METHOD_ERROR",
+        },
+        { status: 402 }
       )
     }
 
