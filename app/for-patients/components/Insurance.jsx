@@ -18,7 +18,7 @@ const Insurance = ({ title, subtitle, showCTA = true }) => {
         <InsuranceGrid />
 
         {/* Benefits */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-12">
           {[
             {
               title: 'Insurance Accepted',
@@ -32,6 +32,10 @@ const Insurance = ({ title, subtitle, showCTA = true }) => {
               title: 'We accept CareCredit.com',
               text: 'We want to make your treatment more affordable.',
             },
+            {
+              title: 'We accept Cherry monthly payment plans',
+              text: 'We want to make your treatment more affordable.',
+            },
           ].map((item, index) => (
             <div key={index} className="bg-[#fcfdfd] p-6 rounded-lg shadow-sm">
               <div className="flex items-center mb-4">
@@ -43,7 +47,55 @@ const Insurance = ({ title, subtitle, showCTA = true }) => {
               <p className="text-[#5a6065] font-inter">{item.text}</p>
             </div>
           ))}
+        </div> */}
+
+{/* Benefits */}
+<div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-12">
+  {[
+    {
+      title: "Insurance Accepted",
+      text: "We work with most major insurance providers to help you maximize your benefits.",
+    },
+    {
+      title: "Transparent Pricing",
+      text: "We provide clear cost estimates before treatment so there are no surprises.",
+    },
+    {
+      title: "CareCredit Financing",
+      text: "Use your CareCredit account to pay for treatment with flexible financing.",
+    },
+    {
+      title: "Cherry Payment Plans",
+      text: "Split your treatment into simple monthly payments. Quick approval with Cherry.",
+      buttonText: "Check your eligibility",
+      buttonLink: "https://pay.withcherry.com/southside-endodontics",
+    },
+  ].map((item, index) => (
+    <div key={index} className="bg-[#fcfdfd] p-6 rounded-lg shadow-sm flex flex-col justify-between">
+      <div>
+        <div className="flex items-center mb-4">
+          <CheckCircle className="h-8 w-8 text-[#3c8dbc] mr-3" />
+          <h3 className="text-xl font-bold text-[#0a2a54] font-zen">
+            {item.title}
+          </h3>
         </div>
+
+        <p className="text-[#5a6065] font-inter">{item.text}</p>
+      </div>
+
+      {item.buttonText && (
+        <a
+          href={item.buttonLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-center mt-4 inline-block text-sm font-semibold text-white bg-[#3c8dbc] px-4 py-2 rounded-md hover:bg-[#32779e] transition"
+        >
+          {item.buttonText}
+        </a>
+      )}
+    </div>
+  ))}
+</div>
 
         {/* CTA */}
         {showCTA && (
