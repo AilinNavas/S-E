@@ -46,7 +46,7 @@ export default function SquarePaymentForm({ onSuccess }) {
 
     const script = document.createElement("script")
     script.id = "square-script"
-    script.src = "https://sandbox.web.squarecdn.com/v1/square.js"
+    script.src = "https://web.squarecdn.com/v1/square.js"
     script.async = true
     script.onload = initializeSquare
     document.body.appendChild(script)
@@ -95,72 +95,72 @@ export default function SquarePaymentForm({ onSuccess }) {
     setStep((s) => s - 1)
   }
 
-async function handlePayment() {
-  setError(null)
+  async function handlePayment() {
+    setError(null)
 
-  try {
-    setIsProcessing(true)
+    try {
+      setIsProcessing(true)
 
-    const result = await cardInstanceRef.current.tokenize()
+      const result = await cardInstanceRef.current.tokenize()
 
-    if (result.status !== "OK") {
-      throw new Error("TOKENIZATION_ERROR")
+      if (result.status !== "OK") {
+        throw new Error("TOKENIZATION_ERROR")
+      }
+
+      const payload = {
+        token: result.token,
+        amount: Number(formData.amount),
+        ...formData,
+      }
+
+      console.log("📤 Sending payment payload:", payload)
+
+      const response = await fetch("/api/payments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+
+      const data = await response.json()
+
+      if (!data.success) {
+
+        const code = data.errorCode || "UNKNOWN"
+
+        let message = "Payment could not be processed. Please try again or use another card."
+
+        if (code === "INSUFFICIENT_FUNDS") {
+          message = "The card has insufficient funds."
+        }
+        else if (code === "CARD_DECLINED") {
+          message = "The card was declined by the bank."
+        }
+        else if (code === "CVV_FAILURE") {
+          message = "Security code verification failed."
+        }
+        else if (code === "ADDRESS_VERIFICATION_FAILURE") {
+          message = "Billing ZIP code could not be verified."
+        }
+        else if (code === "EXPIRED_CARD") {
+          message = "This card has expired."
+        }
+        else if (code === "PROCESSING_ERROR") {
+          message = "A processing error occurred. Please try again."
+        }
+
+        throw new Error(message)
+      }
+
+      setPaymentSuccess(true)
+      onSuccess?.()
+
+    } catch (err) {
+      console.log("❌ Frontend error caught:", err)
+      setError(err.message || "Payment could not be processed.")
+    } finally {
+      setIsProcessing(false)
     }
-
-    const payload = {
-      token: result.token,
-      amount: Number(formData.amount),
-      ...formData,
-    }
-
-    console.log("📤 Sending payment payload:", payload)
-
-    const response = await fetch("/api/payments", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    })
-
-    const data = await response.json()
-
-    if (!data.success) {
-
-      const code = data.errorCode || "UNKNOWN"
-
-      let message = "Payment could not be processed. Please try again or use another card."
-
-      if (code === "INSUFFICIENT_FUNDS") {
-        message = "The card has insufficient funds."
-      }
-      else if (code === "CARD_DECLINED") {
-        message = "The card was declined by the bank."
-      }
-      else if (code === "CVV_FAILURE") {
-        message = "Security code verification failed."
-      }
-      else if (code === "ADDRESS_VERIFICATION_FAILURE") {
-        message = "Billing ZIP code could not be verified."
-      }
-      else if (code === "EXPIRED_CARD") {
-        message = "This card has expired."
-      }
-      else if (code === "PROCESSING_ERROR") {
-        message = "A processing error occurred. Please try again."
-      }
-
-      throw new Error(message)
-    }
-
-    setPaymentSuccess(true)
-    onSuccess?.()
-
-  } catch (err) {
-    console.log("❌ Frontend error caught:", err)
-    setError(err.message || "Payment could not be processed.")
-  } finally {
-    setIsProcessing(false)
   }
-}
 
 
   function resetForm() {

@@ -75,7 +75,7 @@ const InsuranceCard = ({ insurance, index }) => (
     </div>
 
     <div className="p-6 flex items-center">
-      <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0 border border-gray-100 overflow-hidden p-1">
+      <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4 shrink-0 border border-gray-100 overflow-hidden p-1">
         <div className="relative w-full h-full">
           <Image
             src={insuranceLogos[insurance]}
@@ -111,7 +111,7 @@ const InsuranceListItem = ({ insurance, index }) => (
   >
     <div className="p-4 flex items-center justify-between">
       <div className="flex items-center">
-        <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3 flex-shrink-0 bg-gray-50 border border-gray-100 overflow-hidden p-1">
+        <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3 shrink-0 bg-gray-50 border border-gray-100 overflow-hidden p-1">
           <div className="relative w-full h-full">
             <Image
               src={insuranceLogos[insurance]}

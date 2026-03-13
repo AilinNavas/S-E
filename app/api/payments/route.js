@@ -69,7 +69,7 @@ Description: ${body.description || ""}
     }, null, 2))
 
     const response = await fetch(
-      "https://connect.squareupsandbox.com/v2/payments",
+      "https://connect.squareup.com/v2/payments",
       {
         method: "POST",
         headers: {

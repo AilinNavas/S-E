@@ -128,7 +128,7 @@ export default function InsuranceSearch() {
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         transition={{ delay: index * 0.1 + 0.2 }}
-                        className="mr-2 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
+                        className="mr-2 shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
                         style={{ backgroundColor: "#3c8dbc" }}
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="#ffffff">
