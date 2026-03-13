@@ -113,7 +113,6 @@ export default function SquarePaymentForm({ onSuccess }) {
         ...formData,
       }
 
-      console.log("📤 Sending payment payload:", payload)
 
       const response = await fetch("/api/payments", {
         method: "POST",

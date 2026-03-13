@@ -155,7 +155,7 @@ const NavbarPC = () => {
               <AnimatePresence>
                 {isProceduresOpen && (
                   <motion.div
-                    className="absolute left-0 mt-2 w-[270px] rounded-md shadow-lg z-50 overflow-hidden border-[#0a2a54]/40 backdrop-blur-lg  bg-white"
+                    className="absolute left-0 mt-2 w-67.5 rounded-md shadow-lg z-50 overflow-hidden border-[#0a2a54]/40 backdrop-blur-lg  bg-white"
                     initial="hidden"
                     animate="visible"
                     exit="exit"
