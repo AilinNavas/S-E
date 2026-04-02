@@ -23,7 +23,7 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
           {data.map((testimonial, index) => (
             <div
               key={index}
-              className="flex flex-col justify-between h-full min-h-[280px] gap-4 rounded-lg bg-white p-6 shadow-[0px_2px_10px_0px_rgba(255,_255,_255,_0.5)] transition-opacity duration-500"
+              className="flex flex-col justify-between h-full min-h-70 gap-4 rounded-lg bg-white p-6 shadow-[0px_2px_10px_0px_rgba(255,255,255,0.5)] transition-opacity duration-500"
             >
               <div className="flex items-center gap-4">
                 {testimonial.image ? (
@@ -71,7 +71,7 @@ const Testimonials = ({ data = [], title, subtitle, showCTA = true }) => {
 
         {showCTA && (
           <div className="mt-8 text-center">
-            <p className="text-lg text-white mb-4">Join our +245 reviews on Google!</p>
+            <p className="text-lg text-white mb-4">Join our +300 reviews on Google!</p>
             <button className="cursor-pointer rounded-md px-6 py-2 text-lg font-inter text-white border-2 border-white bg-[#0a2a54] hover:bg-white hover:text-[#0a2a54] ease-in duration-300">
               <a
                 href="https://g.page/r/CQMrOM1YvxidEBM/review"
