@@ -9,7 +9,7 @@ const InfoTop = () => {
   const pathname = usePathname()
   const isSpanishPage = pathname.includes("/endodoncista-de-habla-hispana")
   const [isScrolled, setIsScrolled] = useState(false)
-        if (pathname.startsWith("/payment")) return null
+        
 
   // Detectar scroll para cambiar la apariencia
   useEffect(() => {
@@ -26,6 +26,8 @@ const InfoTop = () => {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [])
+
+  if (pathname.startsWith("/payment")) return null
 
   return (
     <div

@@ -13,8 +13,7 @@ const NavbarPC = () => {
   const isSpanishPage = pathname.includes("/endodoncista-de-habla-hispana")
   const [isProceduresOpen, setIsProceduresOpen] = useState(false)
   const dropdownRef = useRef(null)
-      if (pathname.startsWith("/payment")) return null
-
+      
   const proceduresLinks = [
     {
       en: "Root Canal Therapy",
@@ -122,6 +121,8 @@ const NavbarPC = () => {
     }),
     exit: { opacity: 0, x: -10 },
   }
+  if (pathname.startsWith("/payment")) return null
+
 
   return (
     <header className="hidden lg:block sticky top-0 z-50 w-full bg-white/80 backdrop-blur-lg shadow-md">
@@ -205,9 +206,9 @@ const NavbarPC = () => {
           </ul>
 
           <div className="hidden lg:flex ml-6 space-x-4">
-            <Link href={"/contact"}>
+            <Link href={"/payment"}>
               <button className="cursor-pointer w-full rounded-md px-6 py-2 text-lg font-inter bg-[#3c8dbc] text-white border-[#3c8dbc] border-2 font-semibold hover:bg-[#3c8dbc]/75 ease-in duration-300">
-                {isSpanishPage ? "Agendar Cita" : "Book An Appointment"}
+                {isSpanishPage ? "Realizar Pago" : "Make a Payment"}
               </button>
             </Link>
             <a href={"https://securesite1246.tdo4endo.com/RefDocsLogin.aspx"} target="_blank" aria-label="Click to refer patient (opens in a new tab)">
