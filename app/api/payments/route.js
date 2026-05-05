@@ -2,23 +2,12 @@ import { NextResponse } from "next/server"
 import crypto from "crypto"
 
 export async function POST(req) {
-  console.log("\n==============================")
-  console.log("📩 /api/payments HIT")
-
-  try {
+ try {
     const body = await req.json()
-
-    console.log("📦 Incoming frontend payload:")
-    console.log(JSON.stringify({
-      ...body,
-      token: body.token ? body.token.slice(0, 12) + "..." : null // 🔐 no mostrar token completo
-    }, null, 2))
-
     const { token, amount } = body
 
     // 🔐 Validaciones básicas
     if (!token) {
-      console.log("❌ Missing token")
       return NextResponse.json(
         { success: false, error: "Missing payment token" },
         { status: 400 }
@@ -28,7 +17,6 @@ export async function POST(req) {
     const amountInCents = Math.round(Number(amount) * 100)
 
     if (!amountInCents || amountInCents <= 0) {
-      console.log("❌ Invalid amount:", amount)
       return NextResponse.json(
         { success: false, error: "Invalid amount" },
         { status: 400 }
@@ -62,12 +50,6 @@ Description: ${body.description || ""}
     }
 
 
-    console.log("➡️ Square request payload:")
-    console.log(JSON.stringify({
-      ...squarePayload,
-      source_id: token.slice(0, 12) + "..."
-    }, null, 2))
-
     const response = await fetch(
       "https://connect.squareup.com/v2/payments",
       {
@@ -82,14 +64,6 @@ Description: ${body.description || ""}
 
     const data = await response.json()
 
-    // console.log("📨 Square raw response:")
-    // console.log(JSON.stringify(data, null, 2))
-    // 🔍 DEBUG SOLO SANDBOX (muy útil)
-    console.log("🔎 Square payment status:", data.payment?.status)
-    console.log(
-      "🔎 Square card errors:",
-      data.payment?.card_details?.errors
-    )
 
     // ⛔ ERROR HTTP
     if (!response.ok) {
@@ -121,15 +95,11 @@ Description: ${body.description || ""}
       )
     }
 
-    console.log("✅ Payment approved ID:", data.payment?.id)
-    console.log("==============================\n")
-
     return NextResponse.json({
       success: true,
       payment: data.payment,
     })
   } catch (error) {
-    console.error("❌ Server error:", error)
 
     return NextResponse.json(
       { success: false, error: "Server error" },
