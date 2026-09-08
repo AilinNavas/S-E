@@ -34,8 +34,8 @@ const EndodoncistaHablaEspañolPage = () => {
         <VideoSection 
         title="Dr. Horn en Español"
         subtitle="Explicación detallada sobre los procedimientos y preguntas frecuentes."
-        video1Src="/videos/dr-horn-presentacion-v2.mp4"
-        video2Src="/videos/dr-horn-preguntas-v2.mp4"
+        video1Src="/Videos/dr-horn-presentacion-v2.mp4"
+        video2Src="/Videos/dr-horn-preguntas-v2.mp4"
       />
       <InsuranceSection />
       <Services title="Servicios Endodónticos"
