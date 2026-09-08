@@ -23,6 +23,7 @@ export const VideoSection = ({
               src={video1Src}
               controls
               playsInline
+              disablePictureInPicture
              preload="auto"
               className="w-full h-full object-cover"
             />
@@ -33,6 +34,8 @@ export const VideoSection = ({
             <video
               src={video2Src}
               controls
+              controlsList="nofullscreen nodownload"
+              disablePictureInPicture
               playsInline
                preload="auto"
               className="w-full h-full object-cover"
