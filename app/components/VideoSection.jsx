@@ -7,11 +7,11 @@ export const VideoSection = ({
   return (
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1a2b4c] mb-3">
+        <h2 className="text-[#0a2a54] text-center font-zen uppercase font-semibold text-3xl md:text-5xl pb-8">
           {title}
         </h2>
         {subtitle && (
-          <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl font-semibold font-inter text-[#0a2a54] md:text-2xl font-inter text-center lg:text-center pb-8">
             {subtitle}
           </p>
         )}
