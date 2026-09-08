@@ -2,12 +2,16 @@ import { NextResponse } from "next/server"
 import crypto from "crypto"
 
 export async function POST(req) {
- try {
+  console.log("\n==============================")
+  console.log("📩 /api/payments HIT")
+
+  try {
     const body = await req.json()
     const { token, amount } = body
 
     // 🔐 Validaciones básicas
     if (!token) {
+      console.log("❌ Missing token")
       return NextResponse.json(
         { success: false, error: "Missing payment token" },
         { status: 400 }
@@ -17,6 +21,7 @@ export async function POST(req) {
     const amountInCents = Math.round(Number(amount) * 100)
 
     if (!amountInCents || amountInCents <= 0) {
+      console.log("❌ Invalid amount:", amount)
       return NextResponse.json(
         { success: false, error: "Invalid amount" },
         { status: 400 }
@@ -100,6 +105,7 @@ Description: ${body.description || ""}
       payment: data.payment,
     })
   } catch (error) {
+    console.error("❌ Server error:", error)
 
     return NextResponse.json(
       { success: false, error: "Server error" },

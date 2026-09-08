@@ -12,7 +12,7 @@ import WhyTrustUs from '../procedures/components/WhyTrustUs'
 import Services from '../components/home/Services'
 import { servicios } from '../data/services'
 import InsuranceSection from '../components/home/InsuranceSection'
-
+import { VideoSection } from "../components/VideoSection";
 
 
 const EndodoncistaHablaEspañolPage = () => {
@@ -31,6 +31,12 @@ const EndodoncistaHablaEspañolPage = () => {
         subtitle="Recibir atención dental especializada en su idioma hace toda la diferencia."
         bgColor="bg-white"
         mdCols={3} />
+        <VideoSection 
+        title="Dr. Horn en Español"
+        subtitle="Explicación detallada sobre los procedimientos y preguntas frecuentes."
+        video1Src="/videos/dr-horn-presentacion.mp4"
+        video2Src="/videos/dr-horn-preguntas.mp4"
+      />
       <InsuranceSection />
       <Services title="Servicios Endodónticos"
         subtitle="Ofrecemos una amplia gama de tratamientos de endodoncia."
