@@ -23,7 +23,7 @@ export const VideoSection = ({
               src={video1Src}
               controls
               playsInline
-              preload="metadata"
+             preload="auto"
               className="w-full h-full object-cover"
             />
           </div>
@@ -34,7 +34,7 @@ export const VideoSection = ({
               src={video2Src}
               controls
               playsInline
-              preload="metadata"
+               preload="auto"
               className="w-full h-full object-cover"
             />
           </div>
