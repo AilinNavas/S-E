@@ -18,7 +18,7 @@ export const VideoSection = ({
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-8">
           {/* Video 1 */}
-          <div className="w-full max-w-[320px] aspect-[9/16] rounded-2xl overflow-hidden shadow-lg bg-black">
+          <div className="w-full max-w-[320px] aspect-9/16 rounded-2xl overflow-hidden shadow-lg bg-black">
             <video
               src={video1Src}
               controls
@@ -29,7 +29,7 @@ export const VideoSection = ({
           </div>
 
           {/* Video 2 */}
-          <div className="w-full max-w-[320px] aspect-[9/16] rounded-2xl overflow-hidden shadow-lg bg-black">
+          <div className="w-full max-w-[320px] aspect-9/16 rounded-2xl overflow-hidden shadow-lg bg-black">
             <video
               src={video2Src}
               controls
