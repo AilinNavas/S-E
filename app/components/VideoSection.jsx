@@ -23,6 +23,7 @@ export const VideoSection = ({
               src={video1Src}
               controls
               playsInline
+              controlsList="nofullscreen nodownload"
               disablePictureInPicture
              preload="auto"
               className="w-full h-full object-cover"
